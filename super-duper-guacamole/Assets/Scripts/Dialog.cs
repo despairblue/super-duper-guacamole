@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Dialog : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class Dialog : MonoBehaviour
 
     public void Display()
     {
-
+        var Info = GetComponentInChildren<TextMeshProUGUI>();
+        Info.text = npc.GetCurrentDialogue();
     }
 
     // Update is called once per frame
