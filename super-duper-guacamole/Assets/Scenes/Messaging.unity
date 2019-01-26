@@ -896,7 +896,7 @@ MonoBehaviour:
       NodeType: 2
       Parent: 13
       Trigger: 1
-      TriggerText: out
+      TriggerText: win
       Connections: 
     - ID: 16
       Size:
