@@ -401,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1697389007, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8072900080415321703, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -411,7 +411,7 @@ PrefabInstance:
     - target: {fileID: 1233819263780465317, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1992038602081099415, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -586,12 +586,17 @@ PrefabInstance:
     - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.29992676
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877590247863577516, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -602,6 +607,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012517244762878370, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5527040657813754119, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -670,18 +680,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
---- !u!114 &236486567 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5963378703288272508, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 208863432}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &323346972
 GameObject:
   m_ObjectHideFlags: 0
@@ -2719,127 +2717,422 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   npc: {fileID: 0}
-  Answer1: {fileID: 1484310061}
-  answer1Button: {fileID: 0}
-  Answer2: {fileID: 929815961}
-  answer2Button: {fileID: 0}
-  Answer3: {fileID: 236486567}
-  answer3Button: {fileID: 0}
   TopProfilePic: {fileID: 0}
   ScrollViewContent: {fileID: 0}
-  ScrollRect: {fileID: 0}
   HouseMessageBox: {fileID: 0}
   HumansMessageBox: {fileID: 0}
---- !u!114 &929815961 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3735162604581749438, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 208863432}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1450302520 stripped
+  responseButton: {fileID: 0}
+  scrollRect: {fileID: 0}
+--- !u!1 &703330530
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1563484376810682116, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 208863432}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1450302522
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 703330532}
+  - component: {fileID: 703330531}
+  m_Layer: 0
+  m_Name: Gerard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &703330531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450302520}
+  m_GameObject: {fileID: 703330530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
---- !u!114 &1450302525
-MonoBehaviour:
+  Set:
+  - CurrentId: 63
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 760
+        y: 68
+        width: 150
+        height: 125
+      Text: I am looking for a place to sleep from time to time. Don't need much more
+        than that.
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 010000000300000033000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 304
+        y: 167
+        width: 150
+        height: 125
+      Text: What exactly is it that you do for a living?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 39000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 757
+        y: 221
+        width: 150
+        height: 125
+      Text: Is your job dangerous?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 2e000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 499
+        y: 592
+        width: 150
+        height: 125
+      Text: ' I am sent out to assassinate individuals that the government deems as
+        dangerous.'
+      Type: 1
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 050000001e000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 296
+        y: 730
+        width: 150
+        height: 125
+      Text: Wow, you make the world a better place. You are a hero. It would be my
+        honor to provide you shelter.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 299
+        y: 884
+        width: 150
+        height: 125
+      Text: Glad to hear that. But I'm just doing my duty.
+      Type: 0
+      NodeType: 2
+      Parent: 5
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 30
+      Size:
+        serializedVersion: 2
+        x: 504
+        y: 744
+        width: 150
+        height: 125
+      Text: So you murder people without questions because your bosses tell you to?
+        I can't live with someone like that. Please go.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 26000000
+    - ID: 38
+      Size:
+        serializedVersion: 2
+        x: 502
+        y: 889
+        width: 150
+        height: 125
+      Text: I understand. Not everyone can handle things like that. Farewell.
+      Type: 0
+      NodeType: 2
+      Parent: 30
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 46
+      Size:
+        serializedVersion: 2
+        x: 762
+        y: 364
+        width: 150
+        height: 125
+      Text: No, not at all. I work with a very well trained team and only take out
+        individuals inside our country. It is surprisingly safe.
+      Type: 1
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 2f00000030000000
+    - ID: 47
+      Size:
+        serializedVersion: 2
+        x: 682
+        y: 517
+        width: 150
+        height: 125
+      Text: Wow, that sounds really cool. You must be a really good person if your
+        team members rely so much on one another. Will you move in?
+      Type: 2
+      NodeType: 1
+      Parent: 46
+      Trigger: 0
+      TriggerText: 
+      Connections: 31000000
+    - ID: 48
+      Size:
+        serializedVersion: 2
+        x: 902
+        y: 518
+        width: 150
+        height: 125
+      Text: You don't even leave them a chance to fight for their life in 1 on 1 hand-to-hand
+        combat? I hate cowards. Get lost!
+      Type: 2
+      NodeType: 1
+      Parent: 46
+      Trigger: 0
+      TriggerText: 
+      Connections: 32000000
+    - ID: 49
+      Size:
+        serializedVersion: 2
+        x: 686
+        y: 662
+        width: 150
+        height: 125
+      Text: Yes. Teamwork is the most important aspect of my life.
+      Type: 0
+      NodeType: 2
+      Parent: 47
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 50
+      Size:
+        serializedVersion: 2
+        x: 901
+        y: 663
+        width: 150
+        height: 125
+      Text: You do not understand the nature of combat. But that's okay. Many don't.
+      Type: 0
+      NodeType: 2
+      Parent: 48
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 51
+      Size:
+        serializedVersion: 2
+        x: 1222
+        y: 215
+        width: 150
+        height: 125
+      Text: ' How well does your job pay?'
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 34000000
+    - ID: 52
+      Size:
+        serializedVersion: 2
+        x: 1222
+        y: 363
+        width: 150
+        height: 125
+      Text: I could tell you, but then I would have to kill you. Just kidding :)
+      Type: 1
+      NodeType: 1
+      Parent: 51
+      Trigger: 0
+      TriggerText: 
+      Connections: 3500000036000000
+    - ID: 53
+      Size:
+        serializedVersion: 2
+        x: 1109
+        y: 515
+        width: 150
+        height: 125
+      Text: A man with a sense of humor. Excellent. Do you want do move in?
+      Type: 2
+      NodeType: 1
+      Parent: 52
+      Trigger: 0
+      TriggerText: 
+      Connections: 37000000
+    - ID: 54
+      Size:
+        serializedVersion: 2
+        x: 1328
+        y: 522
+        width: 150
+        height: 125
+      Text: I don't want to die. Please leave me alone :(
+      Type: 2
+      NodeType: 1
+      Parent: 52
+      Trigger: 0
+      TriggerText: 
+      Connections: 38000000
+    - ID: 55
+      Size:
+        serializedVersion: 2
+        x: 1109
+        y: 667
+        width: 150
+        height: 125
+      Text: Sure. I'm glad we have the same kind of humor. This should be fun.
+      Type: 0
+      NodeType: 2
+      Parent: 53
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 56
+      Size:
+        serializedVersion: 2
+        x: 1337
+        y: 671
+        width: 150
+        height: 125
+      Text: I'm an assassin not an arsonist, but I respect your choice. Forgive me,
+        I will leave you now.
+      Type: 0
+      NodeType: 2
+      Parent: 54
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 57
+      Size:
+        serializedVersion: 2
+        x: 495
+        y: 170
+        width: 150
+        height: 125
+      Text: I'm a cleaner.
+      Type: 1
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 3a000000
+    - ID: 58
+      Size:
+        serializedVersion: 2
+        x: 305
+        y: 309
+        width: 150
+        height: 125
+      Text: Oh so you tidying people's places?
+      Type: 2
+      NodeType: 1
+      Parent: 57
+      Trigger: 0
+      TriggerText: 
+      Connections: 3b000000
+    - ID: 59
+      Size:
+        serializedVersion: 2
+        x: 501
+        y: 309
+        width: 150
+        height: 125
+      Text: Not exactly. I clean people.
+      Type: 1
+      NodeType: 1
+      Parent: 58
+      Trigger: 0
+      TriggerText: 
+      Connections: 3c000000
+    - ID: 60
+      Size:
+        serializedVersion: 2
+        x: 303
+        y: 447
+        width: 150
+        height: 125
+      Text: So you work in a hospital?
+      Type: 2
+      NodeType: 1
+      Parent: 59
+      Trigger: 0
+      TriggerText: 
+      Connections: 3d000000
+    - ID: 61
+      Size:
+        serializedVersion: 2
+        x: 501
+        y: 450
+        width: 150
+        height: 125
+      Text: I clean them more thoroughly than that. They're basically gone when I'm
+        done with them.
+      Type: 1
+      NodeType: 1
+      Parent: 60
+      Trigger: 0
+      TriggerText: 
+      Connections: 3e000000
+    - ID: 62
+      Size:
+        serializedVersion: 2
+        x: 295
+        y: 586
+        width: 150
+        height: 125
+      Text: '...'
+      Type: 2
+      NodeType: 1
+      Parent: 61
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+  CurrentSet: 0
+  TabList:
+  - angelique
+--- !u!4 &703330532
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450302520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 0
-  m_VerticalFit: 0
---- !u!114 &1484310061 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8962895938457823610, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 208863432}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1518435130 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6486854750906522816, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 208863432}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1518435135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518435130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 1
---- !u!114 &1518435136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518435130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 0
-  m_VerticalFit: 0
+  m_GameObject: {fileID: 703330530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1525780202
 GameObject:
   m_ObjectHideFlags: 0
@@ -2906,46 +3199,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1728127682 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8405202402821010374, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 208863432}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1728127684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728127682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 0
-  m_VerticalFit: 0
---- !u!114 &1728127687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728127682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
