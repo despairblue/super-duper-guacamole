@@ -678,7 +678,7 @@ GameObject:
   - component: {fileID: 323346974}
   - component: {fileID: 323346973}
   m_Layer: 0
-  m_Name: Dialogues
+  m_Name: Angie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 29
+  - CurrentId: 30
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -733,8 +733,8 @@ MonoBehaviour:
     - ID: 2
       Size:
         serializedVersion: 2
-        x: 266
-        y: 210
+        x: 267
+        y: 406
         width: 150
         height: 125
       Text: So, how many cats do you have exactly?
@@ -747,8 +747,8 @@ MonoBehaviour:
     - ID: 3
       Size:
         serializedVersion: 2
-        x: 266
-        y: 359
+        x: 269
+        y: 227
         width: 150
         height: 125
       Text: Will you be moving in by yourself? Well, apart from the cats of I guess.
@@ -765,8 +765,9 @@ MonoBehaviour:
         y: 60
         width: 150
         height: 125
-      Text: Never more than a couple of glasses an evening. This helps me writing.
-        I'm almost finished with my next Book.
+      Text: "Never more than a couple of glasses an evening. This helps me writing.
+        I'm almost finished with my next Book. Also Oh, no. I just drink a si. I read
+        that it\u2019s good for your heart. I want to live a long and healthy life. "
       Type: 1
       NodeType: 1
       Parent: 1
@@ -825,22 +826,22 @@ MonoBehaviour:
     - ID: 8
       Size:
         serializedVersion: 2
-        x: 778
-        y: 203
+        x: 785
+        y: 208
         width: 150
         height: 125
       Text: Oh not at all. I never fell asleep on the floor.
-      Type: 0
-      NodeType: 2
+      Type: 1
+      NodeType: 1
       Parent: 7
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 1d000000
     - ID: 9
       Size:
         serializedVersion: 2
-        x: 438
-        y: 210
+        x: 441
+        y: 502
         width: 150
         height: 125
       Text: Oh, I think 4. I can never be really sure. Sometimes they bring friends
@@ -854,8 +855,8 @@ MonoBehaviour:
     - ID: 10
       Size:
         serializedVersion: 2
-        x: 440
-        y: 358
+        x: 439
+        y: 308
         width: 150
         height: 125
       Text: Oh, of course. I'm not very good with people.
@@ -869,7 +870,7 @@ MonoBehaviour:
       Size:
         serializedVersion: 2
         x: 608
-        y: 359
+        y: 348
         width: 150
         height: 125
       Text: Do you have contact with other people? Like ever?
@@ -878,22 +879,7 @@ MonoBehaviour:
       Parent: 10
       Trigger: 0
       TriggerText: 
-      Connections: 0c000000
-    - ID: 12
-      Size:
-        serializedVersion: 2
-        x: 780
-        y: 360
-        width: 150
-        height: 125
-      Text: Oh no. I could never let anyone into the house, let alone into my life.
-        I life for my cats and writing books.
-      Type: 0
-      NodeType: 2
-      Parent: 11
-      Trigger: 0
-      TriggerText: 
-      Connections: 
+      Connections: 11000000
     - ID: 13
       Size:
         serializedVersion: 2
@@ -925,8 +911,8 @@ MonoBehaviour:
     - ID: 15
       Size:
         serializedVersion: 2
-        x: 942
-        y: 501
+        x: 1122
+        y: 498
         width: 150
         height: 125
       Text: How often do you clean?
@@ -953,8 +939,8 @@ MonoBehaviour:
     - ID: 17
       Size:
         serializedVersion: 2
-        x: 1103
-        y: 67
+        x: 1120
+        y: 353
         width: 150
         height: 125
       Text: Oh no. I could never let anyone into the house, let alone into my life.
@@ -982,8 +968,8 @@ MonoBehaviour:
     - ID: 19
       Size:
         serializedVersion: 2
-        x: 1102
-        y: 639
+        x: 1138
+        y: 645
         width: 150
         height: 125
       Text: I don't understand. The cats just come to me, I don't get them.
@@ -996,8 +982,8 @@ MonoBehaviour:
     - ID: 20
       Size:
         serializedVersion: 2
-        x: 1102
-        y: 501
+        x: 1360
+        y: 486
         width: 150
         height: 125
       Text: That's the beauty with cats, the are so clean they even clean up after
@@ -1025,8 +1011,8 @@ MonoBehaviour:
     - ID: 22
       Size:
         serializedVersion: 2
-        x: 1425
-        y: 68
+        x: 1426
+        y: 71
         width: 150
         height: 125
       Text: Well that's up to my publisher I think.
@@ -1120,6 +1106,20 @@ MonoBehaviour:
       Parent: 27
       Trigger: 0
       TriggerText: 
+      Connections: 
+    - ID: 29
+      Size:
+        serializedVersion: 2
+        x: 957
+        y: 204
+        width: 150
+        height: 125
+      Text: Functioning alcoholic? Could be worse. Make youreself at home.
+      Type: 2
+      NodeType: 2
+      Parent: 8
+      Trigger: 1
+      TriggerText: in
       Connections: 
   CurrentSet: 0
   TabList:
