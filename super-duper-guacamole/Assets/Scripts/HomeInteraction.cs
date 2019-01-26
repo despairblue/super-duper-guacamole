@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class HomeInteraction : MonoBehaviour
 {
     public PersonRepository repo;
-    public swipable intercatioN;
     public Image personImage;
     public Text personText;
 
