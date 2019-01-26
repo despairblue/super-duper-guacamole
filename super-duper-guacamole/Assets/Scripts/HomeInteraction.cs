@@ -31,9 +31,14 @@ public class HomeInteraction : MonoBehaviour
     }
 
     public void displayInfo() {
-        personText.transform.position = new Vector3(personText.transform.position.x, -1.9f, personText.transform.position.z);
-        infoText.gameObject.SetActive(true);
-        infoText.text = currentPerson.InfoText;
+        if (infoText.gameObject.activeSelf) {
+            loadNormalView();
+        }
+        else { 
+            personText.transform.position = new Vector3(personText.transform.position.x, -1.9f, personText.transform.position.z);
+            infoText.gameObject.SetActive(true);
+            infoText.text = currentPerson.InfoText;
+        }
     }
 
     private void loadNormalView()
