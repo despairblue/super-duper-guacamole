@@ -26,6 +26,14 @@ public class Dialog : MonoBehaviour
 
     public Text AnswerBox;
 
+    public Image TopProfilePic;
+    public Image MessageProfilePic;
+
+    public Canvas ScrollViewContent;
+
+    public Canvas HouseMessageBox;
+    public Canvas HumansMessageBox;
+
     // Start is called before the first frame update
     void hideButtons() {
         answer1Button.gameObject.SetActive(false);
@@ -36,9 +44,16 @@ public class Dialog : MonoBehaviour
     void Start()
     {
         string matchName = PlayerPrefs.GetString("name");
-        Debug.Log(matchName);
+
+        Sprite profilePic = Resources.Load<Sprite>("Sprites/PB" + matchName);
+
+        TopProfilePic.sprite = profilePic;
+        MessageProfilePic.sprite = profilePic;
+
         currentState = State.Start;
-        npc.SetTree("Tenant 1");
+
+
+        npc.SetTree(matchName);
 
         AnswerBox.transform.parent.gameObject.SetActive(false);
 
@@ -49,8 +64,13 @@ public class Dialog : MonoBehaviour
         answer1Button.onClick.AddListener(delegate {chooseMessage(0); });
         answer2Button.onClick.AddListener(delegate {chooseMessage(2); });
         answer3Button.onClick.AddListener(delegate {chooseMessage(1); });
-        moveMessageIn();
+
         DisplayChoices();
+        moveMessageIn();
+    }
+
+    public void houseReply(string message) {
+        
     }
 
     public void DisplayChoices()
