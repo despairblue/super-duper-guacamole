@@ -112,6 +112,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &20577632 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4892829783775603039, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 208863432}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &84496786 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 145276247191035938, guid: affb44b7d6fc601458284a3ddbf2f2f0,
@@ -656,15 +668,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 7
+  - CurrentId: 13
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 247
-        y: 302
+        x: 173
+        y: 311
         width: 150
         height: 125
       Text: What do you want to ask?
@@ -677,8 +689,8 @@ MonoBehaviour:
     - ID: 1
       Size:
         serializedVersion: 2
-        x: 659
-        y: 236
+        x: 521
+        y: 137
         width: 150
         height: 125
       Text: What kind of events do you manage?
@@ -699,16 +711,16 @@ MonoBehaviour:
         compete against one another to measure their strength and determination. I
         just love watching dogs unleash their potential and engage in combat. '
       Type: 0
-      NodeType: 2
+      NodeType: 1
       Parent: 1
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 09000000
     - ID: 3
       Size:
         serializedVersion: 2
-        x: 623
-        y: 448
+        x: 457
+        y: 339
         width: 150
         height: 125
       Text: How often do you play with your dog?
@@ -727,16 +739,16 @@ MonoBehaviour:
         height: 125
       Text: 'I take at least 2 hours a day to spend with my dog. I really love her. '
       Type: 0
-      NodeType: 2
+      NodeType: 1
       Parent: 3
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 09000000
     - ID: 5
       Size:
         serializedVersion: 2
-        x: 390
-        y: 563
+        x: 457
+        y: 519
         width: 150
         height: 125
       Text: Are you single? Do you have a girlfriend or family that might move in
@@ -757,8 +769,50 @@ MonoBehaviour:
       Text: "I am single. I have tried romantic dating apps recently, but they all
         suck. I haven\u2019t been able to meet a good woman with those. "
       Type: 0
-      NodeType: 2
+      NodeType: 1
       Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1054
+        y: 392
+        width: 150
+        height: 125
+      Text: Do you want this tenant to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b0000000c000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1293
+        y: 243
+        width: 150
+        height: 125
+      Text: yes
+      Type: 2
+      NodeType: 2
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 1284
+        y: 477
+        width: 150
+        height: 125
+      Text: no
+      Type: 2
+      NodeType: 2
+      Parent: 9
       Trigger: 0
       TriggerText: 
       Connections: 
@@ -914,6 +968,7 @@ MonoBehaviour:
   Answer1: {fileID: 1484310061}
   Answer2: {fileID: 929815961}
   Answer3: {fileID: 236486567}
+  AnswerBox: {fileID: 20577632}
 --- !u!114 &929815961 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3735162604581749438, guid: affb44b7d6fc601458284a3ddbf2f2f0,

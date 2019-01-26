@@ -9,14 +9,23 @@ public class swipable : EventTrigger
 {
     private int dragMargin = 300;
     private Vector2 startPos;
+    private Vector2 dragStartPos;
+    public Transform canvasTransform;
     void Start()
     {
+        canvasTransform = transform.parent;
         startPos = transform.position;
+    }
+
+    public override void OnBeginDrag(PointerEventData data) {
+        Debug.Log("Start Drag");
+        dragStartPos = data.position;
     }
 
     public override void OnDrag(PointerEventData data)
     {
-        transform.position = data.position;
+        Debug.Log(data.position - dragStartPos);
+        transform.localPosition = data.position - dragStartPos;
     }
 
     public override void OnEndDrag(PointerEventData data)
