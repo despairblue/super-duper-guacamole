@@ -362,7 +362,7 @@ PrefabInstance:
     - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -447,12 +447,12 @@ PrefabInstance:
     - target: {fileID: 4265642206290646973, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4593635468550751651, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -623,6 +623,30 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: A3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1697389007, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.29992676
+      objectReference: {fileID: 0}
+    - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
@@ -795,7 +819,8 @@ MonoBehaviour:
         y: 115
         width: 150
         height: 125
-      Text: yes
+      Text: Wow, I am really love watching fights. That sounds amazing, please move
+        in.
       Type: 2
       NodeType: 2
       Parent: 9
@@ -809,7 +834,8 @@ MonoBehaviour:
         y: 273
         width: 150
         height: 125
-      Text: no
+      Text: 'That''s really disgusting. You are a terrible person and I feel sorry
+        for your dog. I will tell the police about this. '
       Type: 2
       NodeType: 2
       Parent: 9
@@ -819,11 +845,11 @@ MonoBehaviour:
     - ID: 13
       Size:
         serializedVersion: 2
-        x: 998
-        y: 445
+        x: 1087
+        y: 443
         width: 150
         height: 125
-      Text: 
+      Text: Do you want this tenant to move in?
       Type: 1
       NodeType: 1
       Parent: 4
@@ -833,11 +859,12 @@ MonoBehaviour:
     - ID: 14
       Size:
         serializedVersion: 2
-        x: 1227
-        y: 568
+        x: 1272
+        y: 556
         width: 150
         height: 125
-      Text: 
+      Text: Sounds like you would leave your dog alone with me most of the time. I'm
+        not a dogsitter. Please find another place.
       Type: 2
       NodeType: 2
       Parent: 13
@@ -847,11 +874,12 @@ MonoBehaviour:
     - ID: 15
       Size:
         serializedVersion: 2
-        x: 1167
-        y: 421
+        x: 1297
+        y: 410
         width: 150
         height: 125
-      Text: 
+      Text: Ooh, I would love to see you play with your dog. And she could keep me
+        company when you're out. Want to move in?
       Type: 2
       NodeType: 2
       Parent: 13
@@ -865,7 +893,7 @@ MonoBehaviour:
         y: 686
         width: 150
         height: 125
-      Text: 
+      Text: Do you want this tenant to move in?
       Type: 1
       NodeType: 1
       Parent: 6
@@ -875,11 +903,12 @@ MonoBehaviour:
     - ID: 17
       Size:
         serializedVersion: 2
-        x: 1062
-        y: 607
+        x: 1101
+        y: 640
         width: 150
         height: 125
-      Text: 
+      Text: Sounds like we will be able to spend a lot of quality time together. Wanna
+        move in?
       Type: 2
       NodeType: 2
       Parent: 16
@@ -889,11 +918,12 @@ MonoBehaviour:
     - ID: 18
       Size:
         serializedVersion: 2
-        x: 1065
-        y: 770
+        x: 1104
+        y: 794
         width: 150
         height: 125
-      Text: 
+      Text: If no one else wants you, why would I take you? Please don't talk to me
+        anymore.
       Type: 2
       NodeType: 2
       Parent: 16
@@ -925,7 +955,7 @@ MonoBehaviour:
         y: 137
         width: 150
         height: 125
-      Text: What kind of events do you manage?
+      Text: Do you drink a lot of alcohol?
       Type: 2
       NodeType: 1
       Parent: 0
@@ -939,9 +969,9 @@ MonoBehaviour:
         y: 236
         width: 150
         height: 125
-      Text: 'I often host tournaments at home in which dog owners can let their dogs
-        compete against one another to measure their strength and determination. I
-        just love watching dogs unleash their potential and engage in combat. '
+      Text: "Oh, no. I just drink a single glass of wine each day while I read. I
+        read that it\u2019s good for your heart. I want to live a long and healthy
+        life. "
       Type: 0
       NodeType: 1
       Parent: 1
@@ -955,7 +985,7 @@ MonoBehaviour:
         y: 339
         width: 150
         height: 125
-      Text: How often do you play with your dog?
+      Text: What kinds of books do you write?
       Type: 2
       NodeType: 1
       Parent: 0
@@ -969,7 +999,9 @@ MonoBehaviour:
         y: 448
         width: 150
         height: 125
-      Text: 'I take at least 2 hours a day to spend with my dog. I really love her. '
+      Text: "Oh, I don\u2019t write books anymore.  I used to be a writer for a video
+        game company, Electronic Arts. I wrote stories for their games and could retire
+        from the royalties I earned working for them. "
       Type: 0
       NodeType: 1
       Parent: 3
@@ -983,8 +1015,7 @@ MonoBehaviour:
         y: 519
         width: 150
         height: 125
-      Text: Are you single? Do you have a girlfriend or family that might move in
-        together with you?
+      Text: Are you single or will other people move in with you?
       Type: 2
       NodeType: 1
       Parent: 0
@@ -998,8 +1029,8 @@ MonoBehaviour:
         y: 686
         width: 150
         height: 125
-      Text: "I am single. I have tried romantic dating apps recently, but they all
-        suck. I haven\u2019t been able to meet a good woman with those. "
+      Text: "I have been going on a lot of dates, but I haven\u2019t been able to
+        find a man who could keep up with me. "
       Type: 0
       NodeType: 1
       Parent: 5
@@ -1027,7 +1058,8 @@ MonoBehaviour:
         y: 115
         width: 150
         height: 125
-      Text: yes
+      Text: Oh, I didn't know that. Maybe I should start doing that as well. Want
+        to move in with me?
       Type: 2
       NodeType: 2
       Parent: 9
@@ -1041,7 +1073,8 @@ MonoBehaviour:
         y: 273
         width: 150
         height: 125
-      Text: no
+      Text: That sounds like a lie that an alcoholic would tell. No thank you. Please
+        go somewhere else.
       Type: 2
       NodeType: 2
       Parent: 9
@@ -1055,7 +1088,7 @@ MonoBehaviour:
         y: 445
         width: 150
         height: 125
-      Text: 
+      Text: Do you want this tenant to move in?
       Type: 1
       NodeType: 1
       Parent: 4
@@ -1065,11 +1098,12 @@ MonoBehaviour:
     - ID: 14
       Size:
         serializedVersion: 2
-        x: 1227
-        y: 568
+        x: 1286
+        y: 566
         width: 150
         height: 125
-      Text: 
+      Text: I hate EA. They ruined my favourite game studio. Sorry. I would just feel
+        angry every time I look at you. You can't move in.
       Type: 2
       NodeType: 2
       Parent: 13
@@ -1079,11 +1113,12 @@ MonoBehaviour:
     - ID: 15
       Size:
         serializedVersion: 2
-        x: 1167
-        y: 421
+        x: 1323
+        y: 425
         width: 150
         height: 125
-      Text: 
+      Text: 'Wow, that sounds cool. You can tell me all about it and we can play the
+        games you worked on when you move in. Please do move in with me. '
       Type: 2
       NodeType: 2
       Parent: 13
@@ -1097,7 +1132,7 @@ MonoBehaviour:
         y: 686
         width: 150
         height: 125
-      Text: 
+      Text: Do you want this tenant to move in?
       Type: 1
       NodeType: 1
       Parent: 6
@@ -1111,7 +1146,8 @@ MonoBehaviour:
         y: 607
         width: 150
         height: 125
-      Text: 
+      Text: 'Sounds like fun. I would like to see all the guys that you meet. Please
+        move in. '
       Type: 2
       NodeType: 2
       Parent: 16
@@ -1125,14 +1161,15 @@ MonoBehaviour:
         y: 770
         width: 150
         height: 125
-      Text: 
+      Text: Sounds like no one likes to spend a lot of time with you. I trust the
+        majority's judgement. Please leave me alone.
       Type: 2
       NodeType: 2
       Parent: 16
       Trigger: 0
       TriggerText: 
       Connections: 
-  CurrentSet: 0
+  CurrentSet: 1
   TabList:
   - Tenant 1
   - Tenant 2
@@ -1280,6 +1317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4201183c4edbece6dafeeb59c732a84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   npc: {fileID: 323346973}
   ChatBoxHouse: {fileID: 2075249706}
   Answer1: {fileID: 1484310061}
