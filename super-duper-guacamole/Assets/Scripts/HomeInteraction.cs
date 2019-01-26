@@ -9,7 +9,9 @@ public class HomeInteraction : MonoBehaviour
     public PersonRepository repo;
 
     public Image personImage;
-    public Text text;
+    public Text personText;
+
+    public Text infoText;
 
     private Person currentPerson;
 
@@ -24,7 +26,22 @@ public class HomeInteraction : MonoBehaviour
 
     public void dislikePerson()
     {
+        loadNormalView();
         loadNextPerson();
+    }
+
+    public void displayInfo() {
+        personText.transform.position = new Vector3(personText.transform.position.x, -1.9f, personText.transform.position.z);
+        infoText.gameObject.SetActive(true);
+        infoText.text = currentPerson.InfoText;
+    }
+
+    private void loadNormalView()
+    {
+        if (infoText.gameObject.activeSelf) {
+            infoText.gameObject.SetActive(false);
+            personText.transform.position = new Vector3(personText.transform.position.x, -2.7f, personText.transform.position.z);
+        }
     }
 
     private void loadMessage() {
@@ -39,7 +56,7 @@ public class HomeInteraction : MonoBehaviour
         {
             currentPerson = person;
             personImage.sprite = person.PersonImage;
-            text.text = person.PersonName;
+            personText.text = person.PersonName;
         }
     }
 }

@@ -9,7 +9,8 @@ public class Person : MonoBehaviour
     public Sprite PersonImage;
     [SerializeField]
     public string PersonName;
-
+    public string InfoText;
+    //-341,74
     public void MarkObject() {
         DontDestroyOnLoad(gameObject);
     }

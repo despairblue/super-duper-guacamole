@@ -400,6 +400,11 @@ PrefabInstance:
       propertyPath: PersonName
       value: Jerry
       objectReference: {fileID: 0}
+    - target: {fileID: 4464528381046834197, guid: e9eea96bd6f6cf940989b5ea5d65143c,
+        type: 3}
+      propertyPath: InfoText
+      value: Bro dude you know right Whatsapp Chicken Cool Dude Dog Fight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
 --- !u!1 &1525780202
@@ -488,6 +493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PersonImage: {fileID: 21300000, guid: 9ff3bdb951b85a744b75d315a9e25e53, type: 3}
   PersonName: Angelique
+  InfoText: 
 --- !u!1 &2074788032
 GameObject:
   m_ObjectHideFlags: 0
