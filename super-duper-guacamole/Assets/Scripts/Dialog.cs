@@ -5,7 +5,15 @@ using UnityEngine.UI;
 
 public class Dialog : MonoBehaviour
 {
-
+    public enum State
+    {
+        Start,
+        Choices,
+        Choose,
+        Decision,
+        End
+    }
+    public State currentState;
     public Dialogues npc;
     public Text ChatBoxHouse;
     private string lastHouseMessage;
@@ -21,6 +29,7 @@ public class Dialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentState = State.Start;
         npc.SetTree("Tenant 1");
 
         answer1Button = Answer1.GetComponentInParent<Button>();
@@ -38,36 +47,36 @@ public class Dialog : MonoBehaviour
 
     public void DisplayChoices()
     {
+        currentState = State.Choices;
         ChatBoxHouse.text = lastHouseMessage;
         string[] choices = npc.GetChoices();
+        
+        Answer1.text = choices[0];
+        Answer2.text = choices[1];
+        Answer3.text = choices[2];
+    }
 
-        answer1Button.gameObject.SetActive(true);
-        answer2Button.gameObject.SetActive(true);
-        answer3Button.gameObject.SetActive(true);
-        
-        switch (choices.Length) {
-        case 3: 
-            Answer1.text = choices[0];
-            Answer2.text = choices[1];
-            Answer3.text = choices[2];
-            break;
-        case 2:
-            Answer1.text = choices[0];
-            Answer2.text = choices[1];
-            Answer3.gameObject.SetActive(false);
-            break;
-        default:
-            answer1Button.gameObject.SetActive(false);
-            answer2Button.gameObject.SetActive(false);
-            answer3Button.gameObject.SetActive(false);
-            break;
-        }
-        
+    public void DisplayDecisions() {
+        currentState = State.Decision;
+        string dialogue = npc.GetCurrentDialogue();
+        AnswerBox.text = dialogue;
+        string[] choices = npc.GetChoices();
+        Debug.Log(choices.Length);
+        answer3Button.gameObject.SetActive(false);
+        Answer1.text = choices[0];
+        Answer2.text = choices[1];
+    }
+
+    public void End() {
+        currentState = State.End;
+        answer1Button.gameObject.SetActive(false);
+        answer2Button.gameObject.SetActive(false);
+        answer3Button.gameObject.SetActive(false);
     }
 
     private void chooseMessage(int i) {
         string[] choices = npc.GetChoices();
-        Debug.Log(choices.Length);
+
         if (i >= choices.Length) {
             Debug.LogError("Choice is out of Bounds");
             return;
@@ -80,16 +89,15 @@ public class Dialog : MonoBehaviour
         AnswerBox.text = npc.GetCurrentDialogue();
         npc.Next();
 
-        // answer1Button.gameObject.SetActive(false);
-        // answer2Button.gameObject.SetActive(false);
-        answer3Button.gameObject.SetActive(false);
-
-        DisplayChoices();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        switch (currentState) {
+            case State.Choices: 
+                DisplayDecisions();
+                break;
+            case State.Decision:
+                End();
+                break;
+            default:
+                break;
+        }
     }
 }
