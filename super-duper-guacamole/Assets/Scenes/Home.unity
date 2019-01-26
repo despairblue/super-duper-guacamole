@@ -384,6 +384,11 @@ PrefabInstance:
       propertyPath: currentPerson
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5500454944710539987, guid: e9eea96bd6f6cf940989b5ea5d65143c,
+        type: 3}
+      propertyPath: House
+      value: 
+      objectReference: {fileID: 1488700098}
     - target: {fileID: 4972079528893698313, guid: e9eea96bd6f6cf940989b5ea5d65143c,
         type: 3}
       propertyPath: persons.Array.size
@@ -445,6 +450,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cd40966fd36af47988d0a0b466b7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1488700097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1488700099}
+  - component: {fileID: 1488700098}
+  m_Layer: 0
+  m_Name: House
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1488700098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488700097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2cd40966fd36af47988d0a0b466b7d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PersonImage: {fileID: 21300000, guid: d5eca78f299fca345b63364bc74a3423, type: 3}
+  PersonName: House (you)
+  InfoText: This is you. You want to find somebody to move in.
+--- !u!4 &1488700099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488700097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7582245, y: -0.2698293, z: 0.15332031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1525780202
 GameObject:
   m_ObjectHideFlags: 0

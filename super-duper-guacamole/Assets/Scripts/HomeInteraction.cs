@@ -9,14 +9,38 @@ public class HomeInteraction : MonoBehaviour
     public PersonRepository repo;
     public Image personImage;
     public Text personText;
+    public Person House;
+
+    public GameObject Like;
+    public GameObject Dislike;
 
     public Text infoText;
 
+    private bool HouseSelected = false;
     private Person currentPerson;
+    
 
     public void Start()
     {
         loadNextPerson();       
+    }
+
+    public void displayHouse() {
+        if (!HouseSelected)
+        {
+            setPerson(House);
+            Debug.Log(currentPerson.PersonName);
+            loadNormalView();
+            displayInfo();
+            disableLiking();
+            HouseSelected = true;
+        }
+        else {
+            setPerson(currentPerson);
+            loadNormalView();
+            enableLiking();
+            HouseSelected = false;
+        }
     }
 
 
@@ -57,11 +81,26 @@ public class HomeInteraction : MonoBehaviour
     private void loadNextPerson()
     {
         Person person = repo.getPerson();
+        setPerson(person);
+        currentPerson = person;
+    }
+
+    private void setPerson(Person person) {
         if (person != null)
         {
-            currentPerson = person;
             personImage.sprite = person.PersonImage;
             personText.text = person.PersonName;
         }
+    }
+
+    private void disableLiking() {
+        Like.gameObject.SetActive(false);
+        Dislike.gameObject.SetActive(false);
+    }
+
+    private void enableLiking()
+    {
+        Like.gameObject.SetActive(true);
+        Dislike.gameObject.SetActive(true);
     }
 }
