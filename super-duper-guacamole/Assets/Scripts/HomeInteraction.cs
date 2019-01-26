@@ -31,7 +31,7 @@ public class HomeInteraction : MonoBehaviour
             setPerson(House);
             Debug.Log(currentPerson.PersonName);
             loadNormalView();
-            displayInfo();
+            displayInfo(House);
             disableLiking();
             HouseSelected = true;
         }
@@ -55,13 +55,17 @@ public class HomeInteraction : MonoBehaviour
     }
 
     public void displayInfo() {
+        displayInfo(currentPerson);
+    }
+
+    public void displayInfo(Person displayablePerson) {
         if (infoText.gameObject.activeSelf) {
             loadNormalView();
         }
         else { 
             personText.transform.position = new Vector3(personText.transform.position.x, -1.9f, personText.transform.position.z);
             infoText.gameObject.SetActive(true);
-            infoText.text = currentPerson.InfoText;
+            infoText.text = displayablePerson.InfoText;
         }
     }
 
