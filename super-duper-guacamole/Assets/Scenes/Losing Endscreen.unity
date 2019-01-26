@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138331297}
   - component: {fileID: 138331301}
+  - component: {fileID: 138331302}
   - component: {fileID: 138331300}
   - component: {fileID: 138331299}
   - component: {fileID: 138331298}
@@ -207,8 +208,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: likePerson
+      - m_Target: {fileID: 138331302}
+        m_MethodName: restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -257,6 +258,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138331296}
   m_CullTransparentMesh: 0
+--- !u!114 &138331302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138331296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53c77147bea4f543bbd8f768005a6ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &157265867
 GameObject:
   m_ObjectHideFlags: 0
