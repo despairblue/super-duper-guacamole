@@ -173,7 +173,7 @@ MonoBehaviour:
       Parent: -1
       Trigger: 0
       TriggerText: 
-      Connections: 0300000004000000030000000400000003000000040000001c000000
+      Connections: 03000000040000001c000000
     - ID: 3
       Size:
         serializedVersion: 2
