@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 30
+  - CurrentId: 31
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -733,8 +733,8 @@ MonoBehaviour:
     - ID: 2
       Size:
         serializedVersion: 2
-        x: 267
-        y: 406
+        x: 236
+        y: 410
         width: 150
         height: 125
       Text: So, how many cats do you have exactly?
@@ -766,14 +766,14 @@ MonoBehaviour:
         width: 150
         height: 125
       Text: "Never more than a couple of glasses an evening. This helps me writing.
-        I'm almost finished with my next Book. Also Oh, no. I just drink a si. I read
-        that it\u2019s good for your heart. I want to live a long and healthy life. "
+        I also read that it\u2019s good for your heart. I want to live a long and
+        healthy life."
       Type: 1
       NodeType: 1
       Parent: 1
       Trigger: 0
       TriggerText: 
-      Connections: 0500000007000000
+      Connections: 05000000070000001e000000
     - ID: 5
       Size:
         serializedVersion: 2
@@ -840,8 +840,8 @@ MonoBehaviour:
     - ID: 9
       Size:
         serializedVersion: 2
-        x: 441
-        y: 502
+        x: 256
+        y: 570
         width: 150
         height: 125
       Text: Oh, I think 4. I can never be really sure. Sometimes they bring friends
@@ -856,7 +856,7 @@ MonoBehaviour:
       Size:
         serializedVersion: 2
         x: 439
-        y: 308
+        y: 340
         width: 150
         height: 125
       Text: Oh, of course. I'm not very good with people.
@@ -1118,6 +1118,21 @@ MonoBehaviour:
       Type: 2
       NodeType: 2
       Parent: 8
+      Trigger: 1
+      TriggerText: in
+      Connections: 
+    - ID: 30
+      Size:
+        serializedVersion: 2
+        x: 440
+        y: 199
+        width: 150
+        height: 125
+      Text: Oh, I didn't know that. Maybe I should start doing that as well. Want
+        to move in with me?
+      Type: 2
+      NodeType: 2
+      Parent: 4
       Trigger: 1
       TriggerText: in
       Connections: 
