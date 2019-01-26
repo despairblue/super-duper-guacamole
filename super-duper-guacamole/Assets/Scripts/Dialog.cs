@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DigitalRuby.Tween;
+using TMPro;
 
 public class Dialog : MonoBehaviour
 {
@@ -47,7 +48,7 @@ public class Dialog : MonoBehaviour
         Sprite profilePic = Resources.Load<Sprite>("Sprites/PB" + matchName);
 
         TopProfilePic.sprite = profilePic;
-        // TopProfilePic.GetComponentInChildren<TextMeshProGUI>().text = matchName;
+        TopProfilePic.GetComponentInChildren<TextMeshProUGUI>().text = matchName;
         // TODO!!!
 
         currentState = State.Start;

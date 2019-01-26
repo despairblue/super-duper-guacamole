@@ -112,6 +112,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &101889186 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8235557159371489559, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1362466740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &504516041
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +236,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &596687835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1395350997870101973, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1362466740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1342281450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6695204004717276689, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1362466740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1362466740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -459,6 +495,21 @@ PrefabInstance:
       propertyPath: TopProfilePic
       value: 
       objectReference: {fileID: 1362466742}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: answer1Button
+      value: 
+      objectReference: {fileID: 1342281450}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: answer2Button
+      value: 
+      objectReference: {fileID: 596687835}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: answer3Button
+      value: 
+      objectReference: {fileID: 101889186}
     - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2017,13 +2068,102 @@ MonoBehaviour:
       Trigger: 0
       TriggerText: 
       Connections: 
-  CurrentSet: 4
+  - CurrentId: 6
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 688
+        y: 178
+        width: 150
+        height: 125
+      Text: Hello!
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 1111
+        y: 193
+        width: 150
+        height: 125
+      Text: can i move in?
+      Type: 1
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 0200000003000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 1391
+        y: 124
+        width: 150
+        height: 125
+      Text: yes
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 05000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 1372
+        y: 311
+        width: 150
+        height: 125
+      Text: no
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 1613
+        y: 298
+        width: 150
+        height: 125
+      Text: :(
+      Type: 0
+      NodeType: 2
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 1602
+        y: 120
+        width: 150
+        height: 125
+      Text: :)
+      Type: 0
+      NodeType: 2
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 5
   TabList:
   - Jerry
   - Angelique
   - Carl
   - Robert
   - Gerard
+  - TEST
 --- !u!4 &1887275116
 Transform:
   m_ObjectHideFlags: 0
