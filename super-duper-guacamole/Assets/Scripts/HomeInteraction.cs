@@ -15,6 +15,7 @@ public class HomeInteraction : MonoBehaviour
     public GameObject Dislike;
 
     public Text infoText;
+    public Button infoButton;
 
     private bool HouseSelected = false;
     private Person currentPerson;
@@ -72,12 +73,14 @@ public class HomeInteraction : MonoBehaviour
             personText.transform.position = new Vector3(personText.transform.position.x, 3.7f, personText.transform.position.z);
             infoText.gameObject.SetActive(true);
             infoText.text = displayablePerson.InfoText;
+            infoButton.gameObject.SetActive(false);
         }
     }
 
     private void loadNormalView()
     {
         if (infoText.gameObject.activeSelf) {
+            infoButton.gameObject.SetActive(true);
             infoText.gameObject.SetActive(false);
             personText.transform.position = new Vector3(personText.transform.position.x, 3f, personText.transform.position.z);
         }
