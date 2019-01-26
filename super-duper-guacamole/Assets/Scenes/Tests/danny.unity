@@ -710,7 +710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 45
+  - CurrentId: 47
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -981,8 +981,8 @@ MonoBehaviour:
     - ID: 19
       Size:
         serializedVersion: 2
-        x: 1137
-        y: 726
+        x: 1133
+        y: 747
         width: 150
         height: 125
       Text: I don't understand. The cats just come to me, I don't get them.
@@ -1010,8 +1010,8 @@ MonoBehaviour:
     - ID: 21
       Size:
         serializedVersion: 2
-        x: 1260
-        y: 72
+        x: 1726
+        y: 230
         width: 150
         height: 125
       Text: How much money do you make writing books?
@@ -1024,8 +1024,8 @@ MonoBehaviour:
     - ID: 22
       Size:
         serializedVersion: 2
-        x: 1426
-        y: 71
+        x: 1911
+        y: 236
         width: 150
         height: 125
       Text: Well that's up to my publisher I think.
@@ -1038,8 +1038,8 @@ MonoBehaviour:
     - ID: 23
       Size:
         serializedVersion: 2
-        x: 1585
-        y: 68
+        x: 1725
+        y: 375
         width: 150
         height: 125
       Text: Oh you have a publisher?
@@ -1052,8 +1052,8 @@ MonoBehaviour:
     - ID: 24
       Size:
         serializedVersion: 2
-        x: 1745
-        y: 68
+        x: 1905
+        y: 376
         width: 150
         height: 125
       Text: Oh no. I look for one when my book is done.
@@ -1066,8 +1066,8 @@ MonoBehaviour:
     - ID: 25
       Size:
         serializedVersion: 2
-        x: 1905
-        y: 68
+        x: 1721
+        y: 526
         width: 150
         height: 125
       Text: And you're almost done?
@@ -1080,8 +1080,8 @@ MonoBehaviour:
     - ID: 26
       Size:
         serializedVersion: 2
-        x: 2065
-        y: 68
+        x: 1900
+        y: 532
         width: 150
         height: 125
       Text: But of course. I've been working on it for 30 years already. It's almost
@@ -1095,8 +1095,8 @@ MonoBehaviour:
     - ID: 27
       Size:
         serializedVersion: 2
-        x: 2067
-        y: 218
+        x: 1721
+        y: 669
         width: 150
         height: 125
       Text: 30 years? Have you ever finished any book?
@@ -1109,17 +1109,17 @@ MonoBehaviour:
     - ID: 28
       Size:
         serializedVersion: 2
-        x: 2067
-        y: 360
+        x: 1898
+        y: 676
         width: 150
         height: 125
       Text: This will be my first.
       Type: 0
-      NodeType: 2
+      NodeType: 1
       Parent: 27
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 2d000000
     - ID: 29
       Size:
         serializedVersion: 2
@@ -1348,6 +1348,34 @@ MonoBehaviour:
       Trigger: 0
       TriggerText: 
       Connections: 1200000002000000
+    - ID: 45
+      Size:
+        serializedVersion: 2
+        x: 1716
+        y: 815
+        width: 150
+        height: 125
+      Text: I think I keep looking for people who can pay the rent.
+      Type: 1
+      NodeType: 1
+      Parent: 28
+      Trigger: 0
+      TriggerText: 
+      Connections: 2e000000
+    - ID: 46
+      Size:
+        serializedVersion: 2
+        x: 1899
+        y: 819
+        width: 150
+        height: 125
+      Text: Such a pity.
+      Type: 2
+      NodeType: 2
+      Parent: 45
+      Trigger: 1
+      TriggerText: out
+      Connections: 
   CurrentSet: 0
   TabList:
   - angelique
