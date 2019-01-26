@@ -58,7 +58,6 @@ public class swipable : EventTrigger
 
             Vector2 currentPos = transform.position;
             Vector2 endPos = startPos;
-            // currentPos.z = endPos.z = 0.0f;
 
             // completion defaults to null if not passed in
             TweenFactory.Tween("MoveCircle", currentPos, endPos, 0.15f, TweenScaleFunctions.CubicEaseIn, updatePos);

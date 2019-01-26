@@ -28,7 +28,7 @@ public class HomeInteraction : MonoBehaviour
     }
 
     private void loadMessage() {
-        PlayerPrefs.SetString("name", currentPerson.name);
+        PlayerPrefs.SetString("name", currentPerson.PersonName);
         SceneManager.LoadScene("Messaging");
     }
 
