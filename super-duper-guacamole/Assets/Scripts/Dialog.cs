@@ -16,7 +16,6 @@ public class Dialog : MonoBehaviour
     }
     public State currentState;
     public Dialogues npc;
-    public Text ChatBoxHouse;
     public Text Answer1;
     private Button answer1Button;
     public Text Answer2;
@@ -24,15 +23,13 @@ public class Dialog : MonoBehaviour
     public Text Answer3;
     private Button answer3Button;
 
-    public Text AnswerBox;
-
     public Image TopProfilePic;
-    public Image MessageProfilePic;
 
-    public Canvas ScrollViewContent;
+    public RectTransform ScrollViewContent;
+    public Scrollbar ScrollBar;
 
-    public Canvas HouseMessageBox;
-    public Canvas HumansMessageBox;
+    public RectTransform HouseMessageBox;
+    public RectTransform HumansMessageBox;
 
     // Start is called before the first frame update
     void hideButtons() {
@@ -48,14 +45,13 @@ public class Dialog : MonoBehaviour
         Sprite profilePic = Resources.Load<Sprite>("Sprites/PB" + matchName);
 
         TopProfilePic.sprite = profilePic;
-        MessageProfilePic.sprite = profilePic;
+        // TopProfilePic.GetComponentInChildren<TextMeshProGUI>().text = matchName;
+        // TODO!!!
 
         currentState = State.Start;
 
 
         npc.SetTree(matchName);
-
-        AnswerBox.transform.parent.gameObject.SetActive(false);
 
         answer1Button = Answer1.GetComponentInParent<Button>();
         answer2Button = Answer2.GetComponentInParent<Button>();
@@ -66,17 +62,31 @@ public class Dialog : MonoBehaviour
         answer3Button.onClick.AddListener(delegate {chooseMessage(1); });
 
         DisplayChoices();
-        moveMessageIn();
+        moveInChoiceButtons();
+    }
+
+    public void reply(RectTransform newMessage, string message) {
+        newMessage.SetParent(ScrollViewContent, false);
+        newMessage.GetComponentInChildren<Text>().text = message;
+        newMessage.localScale = new Vector3(1, 1, 1);
+        ScrollBar.value = 1;
+        // moveInMessage(newMessage);
     }
 
     public void houseReply(string message) {
-        
+        RectTransform newMessage = (RectTransform) Instantiate(HouseMessageBox, new Vector2(0, 0), ScrollViewContent.rotation);
+        reply(newMessage, message);
+    }
+
+    public void humanReply(string message) {
+        RectTransform newMessage = (RectTransform) Instantiate(HumansMessageBox, new Vector2(0, 0), ScrollViewContent.rotation);
+        reply(newMessage, message);
     }
 
     public void DisplayChoices()
     {
         currentState = State.Choices;
-        ChatBoxHouse.text = npc.GetCurrentDialogue();;
+        humanReply(npc.GetCurrentDialogue());
         string[] choices = npc.GetChoices();
         
         Answer1.text = choices[0];
@@ -86,10 +96,10 @@ public class Dialog : MonoBehaviour
 
     public void DisplayDecisions() {
         currentState = State.Decision;
-        string dialogue = npc.GetCurrentDialogue();
         npc.Next();
 
-        AnswerBox.text = dialogue + "\n\n" + npc.GetCurrentDialogue();
+        humanReply(npc.GetCurrentDialogue());
+
         string[] choices = npc.GetChoices();
         answer2Button.gameObject.SetActive(false);
         Answer1.text = choices[0];
@@ -105,11 +115,21 @@ public class Dialog : MonoBehaviour
         
     }
 
-    public void moveMessageIn() {
+    public void moveInMessage(RectTransform message) {
+        System.Action<ITween<Vector2>> updatePos = (t) =>
+            {
+                message.position = t.CurrentValue;
+            };
+        Vector2 startPos = new Vector2(-500, message.transform.position.y);
+        Vector2 endPos = message.transform.position;
+
+        TweenFactory.Tween("MoveInMessage", startPos, endPos, 0.4f, TweenScaleFunctions.QuinticEaseOut, updatePos);
+    }
+
+    public void moveInChoiceButtons() {
         foreach(Button btn in new List<Button>{answer1Button, answer2Button, answer3Button}) {
             System.Action<ITween<Vector2>> updatePos = (t) =>
             {
-                // Debug.Log(t.CurrentValue);
                 btn.transform.position = t.CurrentValue;
             };
             Vector2 currentPos = btn.transform.position;
@@ -122,7 +142,6 @@ public class Dialog : MonoBehaviour
 
 
     private void chooseMessage(int i) {
-        AnswerBox.transform.parent.gameObject.SetActive(true);
         string[] choices = npc.GetChoices();
 
         if (i >= choices.Length) {
@@ -130,10 +149,10 @@ public class Dialog : MonoBehaviour
             return;
         }
         string choice = choices[i];
-        npc.NextChoice(choice);
-        ChatBoxHouse.text = choice;
+        houseReply(choice);
 
-        AnswerBox.text = npc.GetCurrentDialogue();
+        npc.NextChoice(choice);
+        humanReply(npc.GetCurrentDialogue());
 
         switch (currentState) {
             case State.Choices: 
