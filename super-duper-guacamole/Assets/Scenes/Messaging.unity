@@ -112,7 +112,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &411519063
+--- !u!1 &140169418
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,51 +120,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 411519064}
-  - component: {fileID: 411519065}
+  - component: {fileID: 140169420}
+  - component: {fileID: 140169419}
   m_Layer: 0
-  m_Name: Carl
+  m_Name: Jerry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &411519064
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411519063}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &411519065
+--- !u!114 &140169419
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411519063}
+  m_GameObject: {fileID: 140169418}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 35
+  - CurrentId: 55
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 31
-        y: 113
+        x: 804
+        y: 349
         width: 150
         height: 125
       Text: What do you want to ask?
@@ -173,103 +159,218 @@ MonoBehaviour:
       Parent: -1
       Trigger: 0
       TriggerText: 
-      Connections: 0300000004000000030000000400000003000000040000001c000000
+      Connections: 010000000200000003000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 1113
+        y: 170
+        width: 150
+        height: 125
+      Text: What kind of events do you manage?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 1073
+        y: 428
+        width: 150
+        height: 125
+      Text: Do you plan to get more dogs?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 05000000
     - ID: 3
       Size:
         serializedVersion: 2
-        x: 587
-        y: 218
+        x: 905
+        y: 674
         width: 150
         height: 125
-      Text: How is it like to work as a doctor? Do you get confronted with a lot of
-        suffering and death?
+      Text: How did you get  your scar?
       Type: 2
       NodeType: 1
-      Parent: 1
+      Parent: 0
       Trigger: 0
       TriggerText: 
       Connections: 06000000
     - ID: 4
       Size:
         serializedVersion: 2
-        x: 596
-        y: 366
+        x: 1407
+        y: 156
         width: 150
         height: 125
-      Text: Do you want more children?
-      Type: 2
+      Text: I often host tournaments at home in which dog owners can let their dogs
+        compete against one another to measure their strength and determination. I
+        just love watching dogs unleash their potential and engage in combat.
+      Type: 0
       NodeType: 1
       Parent: 1
       Trigger: 0
       TriggerText: 
-      Connections: 07000000
+      Connections: 08000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 1333
+        y: 431
+        width: 150
+        height: 125
+      Text: No! This is the best dog ever. There can never  be another dog like her.
+      Type: 0
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
     - ID: 6
       Size:
         serializedVersion: 2
-        x: 809
-        y: 219
+        x: 902
+        y: 836
         width: 150
         height: 125
-      Text: "Oh no, not at all. I have my own practice and help people who I have
-        known for decades. I wouldn\u2019t want it any other way. "
+      Text: I was trying to protect my dear Erin when she was attacked by some asshole
+        owner's dog.
       Type: 0
       NodeType: 1
       Parent: 3
       Trigger: 0
       TriggerText: 
-      Connections: 0e000000
-    - ID: 7
+      Connections: 26000000
+    - ID: 8
       Size:
         serializedVersion: 2
-        x: 806
-        y: 368
+        x: 1608
+        y: 154
         width: 150
         height: 125
-      Text: Oh, god no! We have enough on our hands with the two kids we have.
-      Type: 0
+      Text: Do you want Jerry to move in.
+      Type: 1
       NodeType: 1
       Parent: 4
       Trigger: 0
       TriggerText: 
-      Connections: 13000000
+      Connections: 090000000a000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1866
+        y: 36
+        width: 150
+        height: 125
+      Text: Wow, I am really love watching fights. That sounds amazing, please move
+        in.
+      Type: 2
+      NodeType: 1
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1867
+        y: 201
+        width: 150
+        height: 125
+      Text: That's really disgusting. You are a terrible person and I feel sorry for
+        your dog. I will tell the police about this.
+      Type: 2
+      NodeType: 1
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 0c000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 2089
+        y: 54
+        width: 150
+        height: 125
+      Text: Nice! I think we're gonna have a lot of fun together.
+      Type: 0
+      NodeType: 2
+      Parent: 9
+      Trigger: 1
+      TriggerText: lose
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 2093
+        y: 202
+        width: 150
+        height: 125
+      Text: My dog loves me and I love her. You just don't understand our connection!
+      Type: 0
+      NodeType: 2
+      Parent: 10
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 1543
+        y: 422
+        width: 150
+        height: 125
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e0000000f000000
     - ID: 14
       Size:
         serializedVersion: 2
-        x: 1092
-        y: 240
+        x: 1764
+        y: 386
         width: 150
         height: 125
-      Text: Do you want Carl to move in?
-      Type: 1
+      Text: How does the dog react to strangers?
+      Type: 2
       NodeType: 1
-      Parent: 6
+      Parent: 13
       Trigger: 0
       TriggerText: 
-      Connections: 0f00000010000000
+      Connections: 10000000
     - ID: 15
       Size:
         serializedVersion: 2
-        x: 1356
-        y: 369
+        x: 1767
+        y: 554
         width: 150
         height: 125
-      Text: Wow, that sounds amazing. You seem to be a very well balanced person.
+      Text: How did your dog get the scars?
       Type: 2
       NodeType: 1
-      Parent: 14
+      Parent: 13
       Trigger: 0
       TriggerText: 
       Connections: 11000000
     - ID: 16
       Size:
         serializedVersion: 2
-        x: 1347
-        y: 513
+        x: 1980
+        y: 380
         width: 150
         height: 125
-      Text: So you do not help the poor and disadvantaged by working a super stressful
-        job at a public hospital for a low wage? What a terrible person you are. Begone.
-      Type: 2
+      Text: She protects me fram dangerous indicusuals and follows my every command
+        to the letter.
+      Type: 0
       NodeType: 1
       Parent: 14
       Trigger: 0
@@ -278,98 +379,112 @@ MonoBehaviour:
     - ID: 17
       Size:
         serializedVersion: 2
-        x: 1582
-        y: 367
+        x: 1985
+        y: 562
         width: 150
         height: 125
-      Text: Thank you. I'm looking forward to moving in.
+      Text: Some other owner's dog did not play by the rules and this viscious beast
+        hurt my beautiful princess.
       Type: 0
-      NodeType: 2
+      NodeType: 1
       Parent: 15
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 17000000
     - ID: 18
       Size:
         serializedVersion: 2
-        x: 1581
-        y: 513
+        x: 2198
+        y: 380
         width: 150
         height: 125
-      Text: And what are YOU doing to save mankind?
-      Type: 0
-      NodeType: 2
+      Text: Do you want Jerry to move in.
+      Type: 1
+      NodeType: 1
       Parent: 16
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 1300000014000000
     - ID: 19
       Size:
         serializedVersion: 2
-        x: 916
-        y: 607
+        x: 2456
+        y: 311
         width: 150
         height: 125
-      Text: What should you ask next?
-      Type: 1
+      Text: Oh, that's lovely. I would love a guard dog to protect me and the people
+        I shelter. Do you want to move in?
+      Type: 2
       NodeType: 1
-      Parent: 7
+      Parent: 18
       Trigger: 0
       TriggerText: 
-      Connections: 14000000
+      Connections: 15000000
     - ID: 20
       Size:
         serializedVersion: 2
-        x: 1199
-        y: 662
+        x: 2455
+        y: 462
         width: 150
         height: 125
-      Text: Are your kids a lot of work?
+      Text: Oh, no. That sounds like she would bark every time somoeone comes near
+        me. I don't like that. I want to be around people. You can't move in, sorry.
       Type: 2
       NodeType: 1
-      Parent: 19
+      Parent: 18
       Trigger: 0
       TriggerText: 
       Connections: 16000000
+    - ID: 21
+      Size:
+        serializedVersion: 2
+        x: 2674
+        y: 316
+        width: 150
+        height: 125
+      Text: Great! You will be well protected. I promise.
+      Type: 0
+      NodeType: 2
+      Parent: 19
+      Trigger: 1
+      TriggerText: lose
+      Connections: 
     - ID: 22
       Size:
         serializedVersion: 2
-        x: 1432
-        y: 702
+        x: 2673
+        y: 469
         width: 150
         height: 125
-      Text: Oh, you have no idea. Both of them are hyperactive, and my wife refuses
-        to let them take their medication. They are very active and need be kept busy
-        at all times. Otherwise their energy gets totally out of control and chaos
-        ensues.
+      Text: You hate dogs? You are a dog hater. A FUCKING DOG HATER!
       Type: 0
-      NodeType: 1
+      NodeType: 2
       Parent: 20
-      Trigger: 0
-      TriggerText: 
-      Connections: 17000000
+      Trigger: 1
+      TriggerText: out
+      Connections: 
     - ID: 23
       Size:
         serializedVersion: 2
-        x: 1636
-        y: 707
+        x: 2174
+        y: 576
         width: 150
         height: 125
-      Text: Do you want Carl to move in?
+      Text: What do you want to ask?
       Type: 1
       NodeType: 1
-      Parent: 22
+      Parent: 17
       Trigger: 0
       TriggerText: 
       Connections: 1800000019000000
     - ID: 24
       Size:
         serializedVersion: 2
-        x: 1491
-        y: 886
+        x: 2418
+        y: 631
         width: 150
         height: 125
-      Text: Sounds like a lively family. I think I would really enjoy that.
+      Text: What rules do you mean?
       Type: 2
       NodeType: 1
       Parent: 23
@@ -379,149 +494,421 @@ MonoBehaviour:
     - ID: 25
       Size:
         serializedVersion: 2
-        x: 1777
-        y: 870
+        x: 2175
+        y: 770
         width: 150
         height: 125
-      Text: Wow, you want to drug your children? That's terrible. You are a terrible
-        person. I don't want to have anything to do with you.
+      Text: Wow, that's terrible. Did she suffer any mental damage from that attack?
       Type: 2
       NodeType: 1
       Parent: 23
       Trigger: 0
       TriggerText: 
-      Connections: 1b000000
+      Connections: 20000000
     - ID: 26
       Size:
         serializedVersion: 2
-        x: 1487
-        y: 1053
+        x: 2641
+        y: 630
         width: 150
         height: 125
-      Text: You will never be bored with us. I promise.
+      Text: It's part of the rules that I can't talk about it. Let me move in and
+        you will find out :)
       Type: 0
-      NodeType: 2
+      NodeType: 1
       Parent: 24
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 1b000000
     - ID: 27
       Size:
         serializedVersion: 2
-        x: 1772
-        y: 1042
+        x: 2658
+        y: 810
         width: 150
         height: 125
-      Text: It's a medical procedure to help them!
-      Type: 0
-      NodeType: 2
-      Parent: 25
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 1
+      Parent: 26
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 1c0000001d000000
     - ID: 28
       Size:
         serializedVersion: 2
-        x: 577
-        y: 61
+        x: 2569
+        y: 966
         width: 150
         height: 125
-      Text: How is your marriage? Do you and your wife get along well?
+      Text: Wow, now I'm curious. Please move in.
       Type: 2
       NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 1d000000
-    - ID: 29
-      Size:
-        serializedVersion: 2
-        x: 815
-        y: 61
-        width: 150
-        height: 125
-      Text: 'Oh, yes. We love and support each other as much as we can. Although we
-        do sometimes disagree about how to best raise our children. '
-      Type: 0
-      NodeType: 1
-      Parent: 28
+      Parent: 27
       Trigger: 0
       TriggerText: 
       Connections: 1e000000
+    - ID: 29
+      Size:
+        serializedVersion: 2
+        x: 2767
+        y: 965
+        width: 150
+        height: 125
+      Text: That sounds fishy. No way. You can't move in.
+      Type: 2
+      NodeType: 1
+      Parent: 27
+      Trigger: 0
+      TriggerText: 
+      Connections: 1f000000
     - ID: 30
       Size:
         serializedVersion: 2
-        x: 1068
-        y: 64
+        x: 2570
+        y: 1118
         width: 150
         height: 125
-      Text: Do you want Carl to move in?
-      Type: 1
-      NodeType: 1
-      Parent: 29
-      Trigger: 0
-      TriggerText: 
-      Connections: 1f00000020000000
+      Text: All right! You're in for reall cool surprise.
+      Type: 0
+      NodeType: 2
+      Parent: 28
+      Trigger: 1
+      TriggerText: lose
+      Connections: 
     - ID: 31
       Size:
         serializedVersion: 2
-        x: 1335
-        y: 28
+        x: 2770
+        y: 1117
         width: 150
         height: 125
-      Text: Oh, that's lovely. I would love to be the home of a loving family.
-      Type: 2
-      NodeType: 1
-      Parent: 30
-      Trigger: 0
-      TriggerText: 
-      Connections: 21000000
+      Text: I will take my dog to shit on your lawn for the rest of  the year.
+      Type: 0
+      NodeType: 2
+      Parent: 29
+      Trigger: 1
+      TriggerText: out
+      Connections: 
     - ID: 32
       Size:
         serializedVersion: 2
-        x: 1331
-        y: 181
+        x: 2178
+        y: 934
         width: 150
         height: 125
-      Text: I don't like disagreements. You can't move in here unless you are in absolute
-        harmony.
-      Type: 2
+      Text: 'Her confidence and pride were hurt a little bit. But she is strong. I
+        have trained her well and she is just as amazing again as she was before. '
+      Type: 0
       NodeType: 1
-      Parent: 30
+      Parent: 25
       Trigger: 0
       TriggerText: 
-      Connections: 22000000
+      Connections: 21000000
     - ID: 33
       Size:
         serializedVersion: 2
-        x: 1538
-        y: 32
+        x: 2175
+        y: 1092
         width: 150
         height: 125
-      Text: Great. We will fill our new home with love.
-      Type: 0
-      NodeType: 2
-      Parent: 31
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 34
-      Size:
-        serializedVersion: 2
-        x: 1539
-        y: 183
-        width: 150
-        height: 125
-      Text: It's... normal to ... argue ... a little... :(
-      Type: 0
-      NodeType: 2
+      Text: Do you want Jerry to move in.
+      Type: 1
+      NodeType: 1
       Parent: 32
       Trigger: 0
       TriggerText: 
+      Connections: 2200000023000000
+    - ID: 34
+      Size:
+        serializedVersion: 2
+        x: 2006
+        y: 1291
+        width: 150
+        height: 125
+      Text: Wow, you must be a really loving owner. I hope you will treat me as well
+        as you treat your dog. Please move in.
+      Type: 2
+      NodeType: 1
+      Parent: 33
+      Trigger: 0
+      TriggerText: 
+      Connections: 24000000
+    - ID: 35
+      Size:
+        serializedVersion: 2
+        x: 2281
+        y: 1297
+        width: 150
+        height: 125
+      Text: Sorry, no. A traumatized dog could really cause damage to my furniture.
+      Type: 2
+      NodeType: 1
+      Parent: 33
+      Trigger: 0
+      TriggerText: 
+      Connections: 25000000
+    - ID: 36
+      Size:
+        serializedVersion: 2
+        x: 2009
+        y: 1458
+        width: 150
+        height: 125
+      Text: I will treat you with the same respect that I show to everyone
+      Type: 0
+      NodeType: 2
+      Parent: 34
+      Trigger: 1
+      TriggerText: lose
+      Connections: 
+    - ID: 37
+      Size:
+        serializedVersion: 2
+        x: 2282
+        y: 1469
+        width: 150
+        height: 125
+      Text: You are a soulless monster! She needs the opportunity to heal.
+      Type: 0
+      NodeType: 2
+      Parent: 35
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 38
+      Size:
+        serializedVersion: 2
+        x: 910
+        y: 1038
+        width: 150
+        height: 125
+      Text: What do you want to say?
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 2700000028000000
+    - ID: 39
+      Size:
+        serializedVersion: 2
+        x: 760
+        y: 1197
+        width: 150
+        height: 125
+      Text: Wow, you're a real hero. Risking your life for your dog.
+      Type: 2
+      NodeType: 1
+      Parent: 38
+      Trigger: 0
+      TriggerText: 
+      Connections: 29000000
+    - ID: 40
+      Size:
+        serializedVersion: 2
+        x: 1087
+        y: 1207
+        width: 150
+        height: 125
+      Text: Why did the other dog attack Erin?
+      Type: 2
+      NodeType: 1
+      Parent: 38
+      Trigger: 0
+      TriggerText: 
+      Connections: 31000000
+    - ID: 41
+      Size:
+        serializedVersion: 2
+        x: 748
+        y: 1373
+        width: 150
+        height: 125
+      Text: Well, I do everything for those I love.
+      Type: 0
+      NodeType: 1
+      Parent: 39
+      Trigger: 0
+      TriggerText: 
+      Connections: 2c000000
+    - ID: 44
+      Size:
+        serializedVersion: 2
+        x: 748
+        y: 1535
+        width: 150
+        height: 125
+      Text: Do you want Jerry to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 41
+      Trigger: 0
+      TriggerText: 
+      Connections: 2d0000002e000000
+    - ID: 45
+      Size:
+        serializedVersion: 2
+        x: 624
+        y: 1719
+        width: 150
+        height: 125
+      Text: You are amazing. I would be honored to shelter you two. Want to move in?
+      Type: 2
+      NodeType: 1
+      Parent: 44
+      Trigger: 0
+      TriggerText: 
+      Connections: 2f000000
+    - ID: 46
+      Size:
+        serializedVersion: 2
+        x: 869
+        y: 1727
+        width: 150
+        height: 125
+      Text: Sounds like you will die soon and not be able to pay rent. Sorry, you
+        gotta go.
+      Type: 2
+      NodeType: 1
+      Parent: 44
+      Trigger: 0
+      TriggerText: 
+      Connections: 30000000
+    - ID: 47
+      Size:
+        serializedVersion: 2
+        x: 628
+        y: 1857
+        width: 150
+        height: 125
+      Text: That's right. You should feel honored.
+      Type: 0
+      NodeType: 2
+      Parent: 45
+      Trigger: 1
+      TriggerText: lose
+      Connections: 
+    - ID: 48
+      Size:
+        serializedVersion: 2
+        x: 881
+        y: 1866
+        width: 150
+        height: 125
+      Text: This is how the world treats its heroes. But that's okay. I'm used to
+        it.
+      Type: 0
+      NodeType: 2
+      Parent: 46
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 49
+      Size:
+        serializedVersion: 2
+        x: 1100
+        y: 1370
+        width: 150
+        height: 125
+      Text: Some people just don't train their dogs properly and turn them into savage
+        beasts.
+      Type: 0
+      NodeType: 1
+      Parent: 40
+      Trigger: 0
+      TriggerText: 
+      Connections: 32000000
+    - ID: 50
+      Size:
+        serializedVersion: 2
+        x: 1305
+        y: 1379
+        width: 150
+        height: 125
+      Text: Do you want Jerry to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 49
+      Trigger: 0
+      TriggerText: 
+      Connections: 3300000034000000
+    - ID: 51
+      Size:
+        serializedVersion: 2
+        x: 1522
+        y: 1291
+        width: 150
+        height: 125
+      Text: Yes, it takes a responsible person to raise a dog properly. You are such
+        a person. Please move in.
+      Type: 2
+      NodeType: 1
+      Parent: 50
+      Trigger: 0
+      TriggerText: 
+      Connections: 35000000
+    - ID: 52
+      Size:
+        serializedVersion: 2
+        x: 1527
+        y: 1450
+        width: 150
+        height: 125
+      Text: You don't seem to be very good at protecting those you love. Sorry, I
+        need more than that. You can't move in.
+      Type: 2
+      NodeType: 1
+      Parent: 50
+      Trigger: 0
+      TriggerText: 
+      Connections: 36000000
+    - ID: 53
+      Size:
+        serializedVersion: 2
+        x: 1734
+        y: 1299
+        width: 150
+        height: 125
+      Text: That's right. I won't disappoint you.
+      Type: 0
+      NodeType: 2
+      Parent: 51
+      Trigger: 1
+      TriggerText: lose
+      Connections: 
+    - ID: 54
+      Size:
+        serializedVersion: 2
+        x: 1722
+        y: 1452
+        width: 150
+        height: 125
+      Text: I risked my life for her! You think you will find someone else who would
+        to that? Good luck with that.
+      Type: 0
+      NodeType: 2
+      Parent: 52
+      Trigger: 1
+      TriggerText: out
       Connections: 
   CurrentSet: 0
   TabList:
-  - Carl
+  - Jerry
+--- !u!4 &140169420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140169418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &504516041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,7 +1429,417 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1094428723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1094428725}
+  - component: {fileID: 1094428724}
+  m_Layer: 0
+  m_Name: Carl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1094428724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094428723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 35
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 31
+        y: 113
+        width: 150
+        height: 125
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0300000004000000030000000400000003000000040000001c000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 587
+        y: 218
+        width: 150
+        height: 125
+      Text: How is it like to work as a doctor? Do you get confronted with a lot of
+        suffering and death?
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 596
+        y: 366
+        width: 150
+        height: 125
+      Text: Do you want more children?
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 809
+        y: 219
+        width: 150
+        height: 125
+      Text: "Oh no, not at all. I have my own practice and help people who I have
+        known for decades. I wouldn\u2019t want it any other way. "
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 834
+        y: 381
+        width: 150
+        height: 125
+      Text: Oh, god no! We have enough on our hands with the two kids we have.
+      Type: 0
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 13000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 1092
+        y: 240
+        width: 150
+        height: 125
+      Text: Do you want Carl to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f00000010000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1356
+        y: 369
+        width: 150
+        height: 125
+      Text: Wow, that sounds amazing. You seem to be a very well balanced person.
+      Type: 2
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 11000000
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 1347
+        y: 513
+        width: 150
+        height: 125
+      Text: So you do not help the poor and disadvantaged by working a super stressful
+        job at a public hospital for a low wage? What a terrible person you are. Begone.
+      Type: 2
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 12000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 1582
+        y: 367
+        width: 150
+        height: 125
+      Text: Thank you. I'm looking forward to moving in.
+      Type: 0
+      NodeType: 2
+      Parent: 15
+      Trigger: 1
+      TriggerText: lose
+      Connections: 
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 1581
+        y: 513
+        width: 150
+        height: 125
+      Text: And what are YOU doing to save mankind?
+      Type: 0
+      NodeType: 2
+      Parent: 16
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 916
+        y: 607
+        width: 150
+        height: 125
+      Text: What should you ask next?
+      Type: 1
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 1199
+        y: 662
+        width: 150
+        height: 125
+      Text: Are your kids a lot of work?
+      Type: 2
+      NodeType: 1
+      Parent: 19
+      Trigger: 0
+      TriggerText: 
+      Connections: 16000000
+    - ID: 22
+      Size:
+        serializedVersion: 2
+        x: 1432
+        y: 702
+        width: 150
+        height: 125
+      Text: Oh, you have no idea. Both of them are hyperactive, and my wife refuses
+        to let them take their medication. They are very active and need be kept busy
+        at all times. Otherwise their energy gets totally out of control and chaos
+        ensues.
+      Type: 0
+      NodeType: 1
+      Parent: 20
+      Trigger: 0
+      TriggerText: 
+      Connections: 17000000
+    - ID: 23
+      Size:
+        serializedVersion: 2
+        x: 1636
+        y: 707
+        width: 150
+        height: 125
+      Text: Do you want Carl to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 22
+      Trigger: 0
+      TriggerText: 
+      Connections: 1800000019000000
+    - ID: 24
+      Size:
+        serializedVersion: 2
+        x: 1491
+        y: 886
+        width: 150
+        height: 125
+      Text: Sounds like a lively family. I think I would really enjoy that.
+      Type: 2
+      NodeType: 1
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
+      Connections: 1a000000
+    - ID: 25
+      Size:
+        serializedVersion: 2
+        x: 1781
+        y: 894
+        width: 150
+        height: 125
+      Text: Wow, you want to drug your children? That's terrible. You are a terrible
+        person. I don't want to have anything to do with you.
+      Type: 2
+      NodeType: 1
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
+      Connections: 1b000000
+    - ID: 26
+      Size:
+        serializedVersion: 2
+        x: 1487
+        y: 1053
+        width: 150
+        height: 125
+      Text: You will never be bored with us. I promise.
+      Type: 0
+      NodeType: 2
+      Parent: 24
+      Trigger: 1
+      TriggerText: lose
+      Connections: 
+    - ID: 27
+      Size:
+        serializedVersion: 2
+        x: 1781
+        y: 1049
+        width: 150
+        height: 125
+      Text: It's a medical procedure to help them!
+      Type: 0
+      NodeType: 2
+      Parent: 25
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 28
+      Size:
+        serializedVersion: 2
+        x: 577
+        y: 61
+        width: 150
+        height: 125
+      Text: How is your marriage? Do you and your wife get along well?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 1d000000
+    - ID: 29
+      Size:
+        serializedVersion: 2
+        x: 815
+        y: 61
+        width: 150
+        height: 125
+      Text: 'Oh, yes. We love and support each other as much as we can. Although we
+        do sometimes disagree about how to best raise our children. '
+      Type: 0
+      NodeType: 1
+      Parent: 28
+      Trigger: 0
+      TriggerText: 
+      Connections: 1e000000
+    - ID: 30
+      Size:
+        serializedVersion: 2
+        x: 1068
+        y: 64
+        width: 150
+        height: 125
+      Text: Do you want Carl to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 29
+      Trigger: 0
+      TriggerText: 
+      Connections: 1f00000020000000
+    - ID: 31
+      Size:
+        serializedVersion: 2
+        x: 1335
+        y: 28
+        width: 150
+        height: 125
+      Text: Oh, that's lovely. I would love to be the home of a loving family.
+      Type: 2
+      NodeType: 1
+      Parent: 30
+      Trigger: 0
+      TriggerText: 
+      Connections: 21000000
+    - ID: 32
+      Size:
+        serializedVersion: 2
+        x: 1331
+        y: 181
+        width: 150
+        height: 125
+      Text: I don't like disagreements. You can't move in here unless you are in absolute
+        harmony.
+      Type: 2
+      NodeType: 1
+      Parent: 30
+      Trigger: 0
+      TriggerText: 
+      Connections: 22000000
+    - ID: 33
+      Size:
+        serializedVersion: 2
+        x: 1538
+        y: 32
+        width: 150
+        height: 125
+      Text: Great. We will fill our new home with love.
+      Type: 0
+      NodeType: 2
+      Parent: 31
+      Trigger: 1
+      TriggerText: lose
+      Connections: 
+    - ID: 34
+      Size:
+        serializedVersion: 2
+        x: 1539
+        y: 183
+        width: 150
+        height: 125
+      Text: It's... normal to ... argue ... a little... :(
+      Type: 0
+      NodeType: 2
+      Parent: 32
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - Carl
+--- !u!4 &1094428725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094428723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1362466740
 PrefabInstance:
@@ -1298,7 +2095,7 @@ PrefabInstance:
         type: 3}
       propertyPath: carl
       value: 
-      objectReference: {fileID: 411519065}
+      objectReference: {fileID: 0}
     - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1555,7 +2352,7 @@ MonoBehaviour:
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1525780202
+--- !u!1 &1430861939
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1563,74 +2360,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1525780205}
-  - component: {fileID: 1525780204}
-  - component: {fileID: 1525780203}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1525780203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525780202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1525780204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525780202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1525780205
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525780202}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1585410505
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1585410507}
-  - component: {fileID: 1585410506}
+  - component: {fileID: 1430861941}
+  - component: {fileID: 1430861940}
   m_Layer: 0
   m_Name: Robert
   m_TagString: Untagged
@@ -1638,13 +2369,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1585410506
+--- !u!114 &1430861940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585410505}
+  m_GameObject: {fileID: 1430861939}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
@@ -1781,8 +2512,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 6
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 9
       Size:
@@ -1796,8 +2527,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 7
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 10
       Size:
@@ -1869,8 +2600,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 12
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 15
       Size:
@@ -1883,8 +2614,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 13
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 16
       Size:
@@ -1955,8 +2686,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 18
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 21
       Size:
@@ -1969,25 +2700,91 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 19
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
   CurrentSet: 0
   TabList:
   - Robert
---- !u!4 &1585410507
+--- !u!4 &1430861941
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585410505}
+  m_GameObject: {fileID: 1430861939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1525780202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1525780205}
+  - component: {fileID: 1525780204}
+  - component: {fileID: 1525780203}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1525780203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525780202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1525780204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525780202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1525780205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525780202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1607053878
 GameObject:
@@ -2673,801 +3470,4 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1860151010
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1860151012}
-  - component: {fileID: 1860151011}
-  m_Layer: 0
-  m_Name: Jerry
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1860151011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860151010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Set:
-  - CurrentId: 55
-    NewWindowOpen: 0
-    FirstWindow: 0
-    Windows:
-    - ID: 0
-      Size:
-        serializedVersion: 2
-        x: 804
-        y: 349
-        width: 150
-        height: 125
-      Text: What do you want to ask?
-      Type: 1
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 010000000200000003000000
-    - ID: 1
-      Size:
-        serializedVersion: 2
-        x: 1113
-        y: 170
-        width: 150
-        height: 125
-      Text: What kind of events do you manage?
-      Type: 2
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 04000000
-    - ID: 2
-      Size:
-        serializedVersion: 2
-        x: 1073
-        y: 428
-        width: 150
-        height: 125
-      Text: Do you plan to get more dogs?
-      Type: 2
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 05000000
-    - ID: 3
-      Size:
-        serializedVersion: 2
-        x: 905
-        y: 674
-        width: 150
-        height: 125
-      Text: How did you get  your scar?
-      Type: 2
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 06000000
-    - ID: 4
-      Size:
-        serializedVersion: 2
-        x: 1407
-        y: 156
-        width: 150
-        height: 125
-      Text: I often host tournaments at home in which dog owners can let their dogs
-        compete against one another to measure their strength and determination. I
-        just love watching dogs unleash their potential and engage in combat.
-      Type: 0
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 08000000
-    - ID: 5
-      Size:
-        serializedVersion: 2
-        x: 1333
-        y: 431
-        width: 150
-        height: 125
-      Text: No! This is the best dog ever. There can never  be another dog like her.
-      Type: 0
-      NodeType: 1
-      Parent: 2
-      Trigger: 0
-      TriggerText: 
-      Connections: 0d000000
-    - ID: 6
-      Size:
-        serializedVersion: 2
-        x: 902
-        y: 836
-        width: 150
-        height: 125
-      Text: I was trying to protect my dear Erin when she was attacked by some asshole
-        owner's dog.
-      Type: 0
-      NodeType: 1
-      Parent: 3
-      Trigger: 0
-      TriggerText: 
-      Connections: 26000000
-    - ID: 8
-      Size:
-        serializedVersion: 2
-        x: 1608
-        y: 154
-        width: 150
-        height: 125
-      Text: Do you want Jerry to move in.
-      Type: 1
-      NodeType: 1
-      Parent: 4
-      Trigger: 0
-      TriggerText: 
-      Connections: 090000000a000000
-    - ID: 9
-      Size:
-        serializedVersion: 2
-        x: 1866
-        y: 36
-        width: 150
-        height: 125
-      Text: Wow, I am really love watching fights. That sounds amazing, please move
-        in.
-      Type: 2
-      NodeType: 1
-      Parent: 8
-      Trigger: 0
-      TriggerText: 
-      Connections: 0b000000
-    - ID: 10
-      Size:
-        serializedVersion: 2
-        x: 1867
-        y: 201
-        width: 150
-        height: 125
-      Text: That's really disgusting. You are a terrible person and I feel sorry for
-        your dog. I will tell the police about this.
-      Type: 2
-      NodeType: 1
-      Parent: 8
-      Trigger: 0
-      TriggerText: 
-      Connections: 0c000000
-    - ID: 11
-      Size:
-        serializedVersion: 2
-        x: 2089
-        y: 54
-        width: 150
-        height: 125
-      Text: Nice! I think we're gonna have a lot of fun together.
-      Type: 0
-      NodeType: 2
-      Parent: 9
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 12
-      Size:
-        serializedVersion: 2
-        x: 2092
-        y: 210
-        width: 150
-        height: 125
-      Text: My dog loves me and I love her. You just don't understand our connection!
-      Type: 0
-      NodeType: 2
-      Parent: 10
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 13
-      Size:
-        serializedVersion: 2
-        x: 1543
-        y: 422
-        width: 150
-        height: 125
-      Text: What do you want to ask?
-      Type: 1
-      NodeType: 1
-      Parent: 5
-      Trigger: 0
-      TriggerText: 
-      Connections: 0e0000000f000000
-    - ID: 14
-      Size:
-        serializedVersion: 2
-        x: 1764
-        y: 386
-        width: 150
-        height: 125
-      Text: How does the dog react to strangers?
-      Type: 2
-      NodeType: 1
-      Parent: 13
-      Trigger: 0
-      TriggerText: 
-      Connections: 10000000
-    - ID: 15
-      Size:
-        serializedVersion: 2
-        x: 1767
-        y: 554
-        width: 150
-        height: 125
-      Text: How did your dog get the scars?
-      Type: 2
-      NodeType: 1
-      Parent: 13
-      Trigger: 0
-      TriggerText: 
-      Connections: 11000000
-    - ID: 16
-      Size:
-        serializedVersion: 2
-        x: 1980
-        y: 380
-        width: 150
-        height: 125
-      Text: She protects me fram dangerous indicusuals and follows my every command
-        to the letter.
-      Type: 0
-      NodeType: 1
-      Parent: 14
-      Trigger: 0
-      TriggerText: 
-      Connections: 12000000
-    - ID: 17
-      Size:
-        serializedVersion: 2
-        x: 1985
-        y: 562
-        width: 150
-        height: 125
-      Text: Some other owner's dog did not play by the rules and this viscious beast
-        hurt my beautiful princess.
-      Type: 0
-      NodeType: 1
-      Parent: 15
-      Trigger: 0
-      TriggerText: 
-      Connections: 17000000
-    - ID: 18
-      Size:
-        serializedVersion: 2
-        x: 2198
-        y: 380
-        width: 150
-        height: 125
-      Text: Do you want Jerry to move in.
-      Type: 1
-      NodeType: 1
-      Parent: 16
-      Trigger: 0
-      TriggerText: 
-      Connections: 1300000014000000
-    - ID: 19
-      Size:
-        serializedVersion: 2
-        x: 2456
-        y: 311
-        width: 150
-        height: 125
-      Text: Oh, that's lovely. I would love a guard dog to protect me and the people
-        I shelter. Do you want to move in?
-      Type: 2
-      NodeType: 1
-      Parent: 18
-      Trigger: 0
-      TriggerText: 
-      Connections: 15000000
-    - ID: 20
-      Size:
-        serializedVersion: 2
-        x: 2455
-        y: 462
-        width: 150
-        height: 125
-      Text: Oh, no. That sounds like she would bark every time somoeone comes near
-        me. I don't like that. I want to be around people. You can't move in, sorry.
-      Type: 2
-      NodeType: 1
-      Parent: 18
-      Trigger: 0
-      TriggerText: 
-      Connections: 16000000
-    - ID: 21
-      Size:
-        serializedVersion: 2
-        x: 2674
-        y: 316
-        width: 150
-        height: 125
-      Text: Great! You will be well protected. I promise.
-      Type: 0
-      NodeType: 2
-      Parent: 19
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 22
-      Size:
-        serializedVersion: 2
-        x: 2673
-        y: 469
-        width: 150
-        height: 125
-      Text: You hate dogs? You are a dog hater. A FUCKING DOG HATER!
-      Type: 0
-      NodeType: 2
-      Parent: 20
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 23
-      Size:
-        serializedVersion: 2
-        x: 2174
-        y: 576
-        width: 150
-        height: 125
-      Text: What do you want to ask?
-      Type: 1
-      NodeType: 1
-      Parent: 17
-      Trigger: 0
-      TriggerText: 
-      Connections: 1800000019000000
-    - ID: 24
-      Size:
-        serializedVersion: 2
-        x: 2418
-        y: 631
-        width: 150
-        height: 125
-      Text: What rules do you mean?
-      Type: 2
-      NodeType: 1
-      Parent: 23
-      Trigger: 0
-      TriggerText: 
-      Connections: 1a000000
-    - ID: 25
-      Size:
-        serializedVersion: 2
-        x: 2175
-        y: 770
-        width: 150
-        height: 125
-      Text: Wow, that's terrible. Did she suffer any mental damage from that attack?
-      Type: 2
-      NodeType: 1
-      Parent: 23
-      Trigger: 0
-      TriggerText: 
-      Connections: 20000000
-    - ID: 26
-      Size:
-        serializedVersion: 2
-        x: 2641
-        y: 630
-        width: 150
-        height: 125
-      Text: It's part of the rules that I can't talk about it. Let me move in and
-        you will find out :)
-      Type: 0
-      NodeType: 1
-      Parent: 24
-      Trigger: 0
-      TriggerText: 
-      Connections: 1b000000
-    - ID: 27
-      Size:
-        serializedVersion: 2
-        x: 2658
-        y: 810
-        width: 150
-        height: 125
-      Text: What do you want to ask?
-      Type: 1
-      NodeType: 1
-      Parent: 26
-      Trigger: 0
-      TriggerText: 
-      Connections: 1c0000001d000000
-    - ID: 28
-      Size:
-        serializedVersion: 2
-        x: 2569
-        y: 966
-        width: 150
-        height: 125
-      Text: Wow, now I'm curious. Please move in.
-      Type: 2
-      NodeType: 1
-      Parent: 27
-      Trigger: 0
-      TriggerText: 
-      Connections: 1e000000
-    - ID: 29
-      Size:
-        serializedVersion: 2
-        x: 2767
-        y: 965
-        width: 150
-        height: 125
-      Text: That sounds fishy. No way. You can't move in.
-      Type: 2
-      NodeType: 1
-      Parent: 27
-      Trigger: 0
-      TriggerText: 
-      Connections: 1f000000
-    - ID: 30
-      Size:
-        serializedVersion: 2
-        x: 2570
-        y: 1118
-        width: 150
-        height: 125
-      Text: All right! You're in for reall cool surprise.
-      Type: 0
-      NodeType: 2
-      Parent: 28
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 31
-      Size:
-        serializedVersion: 2
-        x: 2770
-        y: 1117
-        width: 150
-        height: 125
-      Text: I will take my dog to shit on your lawn for the rest of  the year.
-      Type: 0
-      NodeType: 2
-      Parent: 29
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 32
-      Size:
-        serializedVersion: 2
-        x: 2178
-        y: 934
-        width: 150
-        height: 125
-      Text: 'Her confidence and pride were hurt a little bit. But she is strong. I
-        have trained her well and she is just as amazing again as she was before. '
-      Type: 0
-      NodeType: 1
-      Parent: 25
-      Trigger: 0
-      TriggerText: 
-      Connections: 21000000
-    - ID: 33
-      Size:
-        serializedVersion: 2
-        x: 2175
-        y: 1092
-        width: 150
-        height: 125
-      Text: Do you want Jerry to move in.
-      Type: 1
-      NodeType: 1
-      Parent: 32
-      Trigger: 0
-      TriggerText: 
-      Connections: 2200000023000000
-    - ID: 34
-      Size:
-        serializedVersion: 2
-        x: 2006
-        y: 1291
-        width: 150
-        height: 125
-      Text: Wow, you must be a really loving owner. I hope you will treat me as well
-        as you treat your dog. Please move in.
-      Type: 2
-      NodeType: 1
-      Parent: 33
-      Trigger: 0
-      TriggerText: 
-      Connections: 24000000
-    - ID: 35
-      Size:
-        serializedVersion: 2
-        x: 2281
-        y: 1297
-        width: 150
-        height: 125
-      Text: Sorry, no. A traumatized dog could really cause damage to my furniture.
-      Type: 2
-      NodeType: 1
-      Parent: 33
-      Trigger: 0
-      TriggerText: 
-      Connections: 25000000
-    - ID: 36
-      Size:
-        serializedVersion: 2
-        x: 2009
-        y: 1458
-        width: 150
-        height: 125
-      Text: I will treat you with the same respect that I show to everyone
-      Type: 0
-      NodeType: 2
-      Parent: 34
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 37
-      Size:
-        serializedVersion: 2
-        x: 2282
-        y: 1469
-        width: 150
-        height: 125
-      Text: You are a soulless monster! She needs the opportunity to heal.
-      Type: 0
-      NodeType: 2
-      Parent: 35
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 38
-      Size:
-        serializedVersion: 2
-        x: 910
-        y: 1038
-        width: 150
-        height: 125
-      Text: What do you want to say?
-      Type: 1
-      NodeType: 1
-      Parent: 6
-      Trigger: 0
-      TriggerText: 
-      Connections: 2700000028000000
-    - ID: 39
-      Size:
-        serializedVersion: 2
-        x: 760
-        y: 1197
-        width: 150
-        height: 125
-      Text: Wow, you're a real hero. Risking your life for your dog.
-      Type: 2
-      NodeType: 1
-      Parent: 38
-      Trigger: 0
-      TriggerText: 
-      Connections: 29000000
-    - ID: 40
-      Size:
-        serializedVersion: 2
-        x: 1087
-        y: 1207
-        width: 150
-        height: 125
-      Text: Why did the other dog attack Erin?
-      Type: 2
-      NodeType: 1
-      Parent: 38
-      Trigger: 0
-      TriggerText: 
-      Connections: 31000000
-    - ID: 41
-      Size:
-        serializedVersion: 2
-        x: 748
-        y: 1373
-        width: 150
-        height: 125
-      Text: Well, I do everything for those I love.
-      Type: 0
-      NodeType: 1
-      Parent: 39
-      Trigger: 0
-      TriggerText: 
-      Connections: 2c000000
-    - ID: 44
-      Size:
-        serializedVersion: 2
-        x: 748
-        y: 1535
-        width: 150
-        height: 125
-      Text: Do you want Jerry to move in?
-      Type: 1
-      NodeType: 1
-      Parent: 41
-      Trigger: 0
-      TriggerText: 
-      Connections: 2d0000002e000000
-    - ID: 45
-      Size:
-        serializedVersion: 2
-        x: 624
-        y: 1719
-        width: 150
-        height: 125
-      Text: You are amazing. I would be honored to shelter you two. Want to move in?
-      Type: 2
-      NodeType: 1
-      Parent: 44
-      Trigger: 0
-      TriggerText: 
-      Connections: 2f000000
-    - ID: 46
-      Size:
-        serializedVersion: 2
-        x: 869
-        y: 1727
-        width: 150
-        height: 125
-      Text: Sounds like you will die soon and not be able to pay rent. Sorry, you
-        gotta go.
-      Type: 2
-      NodeType: 1
-      Parent: 44
-      Trigger: 0
-      TriggerText: 
-      Connections: 30000000
-    - ID: 47
-      Size:
-        serializedVersion: 2
-        x: 628
-        y: 1857
-        width: 150
-        height: 125
-      Text: That's right. You should feel honored.
-      Type: 0
-      NodeType: 2
-      Parent: 45
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 48
-      Size:
-        serializedVersion: 2
-        x: 881
-        y: 1866
-        width: 150
-        height: 125
-      Text: This is how the world treats its heroes. But that's okay. I'm used to
-        it.
-      Type: 0
-      NodeType: 2
-      Parent: 46
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 49
-      Size:
-        serializedVersion: 2
-        x: 1100
-        y: 1370
-        width: 150
-        height: 125
-      Text: Some people just don't train their dogs properly and turn them into savage
-        beasts.
-      Type: 0
-      NodeType: 1
-      Parent: 40
-      Trigger: 0
-      TriggerText: 
-      Connections: 32000000
-    - ID: 50
-      Size:
-        serializedVersion: 2
-        x: 1305
-        y: 1379
-        width: 150
-        height: 125
-      Text: Do you want Jerry to move in?
-      Type: 1
-      NodeType: 1
-      Parent: 49
-      Trigger: 0
-      TriggerText: 
-      Connections: 3300000034000000
-    - ID: 51
-      Size:
-        serializedVersion: 2
-        x: 1457
-        y: 1040
-        width: 150
-        height: 125
-      Text: Yes, it takes a responsible person to raise a dog properly. You are such
-        a person. Please move in.
-      Type: 2
-      NodeType: 1
-      Parent: 50
-      Trigger: 0
-      TriggerText: 
-      Connections: 35000000
-    - ID: 52
-      Size:
-        serializedVersion: 2
-        x: 1527
-        y: 1450
-        width: 150
-        height: 125
-      Text: You don't seem to be very good at protecting those you love. Sorry, I
-        need more than that. You can't move in.
-      Type: 2
-      NodeType: 1
-      Parent: 50
-      Trigger: 0
-      TriggerText: 
-      Connections: 36000000
-    - ID: 53
-      Size:
-        serializedVersion: 2
-        x: 1734
-        y: 1299
-        width: 150
-        height: 125
-      Text: That's right. I won't disappoint you.
-      Type: 0
-      NodeType: 2
-      Parent: 51
-      Trigger: 1
-      TriggerText: in
-      Connections: 
-    - ID: 54
-      Size:
-        serializedVersion: 2
-        x: 1722
-        y: 1452
-        width: 150
-        height: 125
-      Text: I risked my life for her! You think you will find someone else who would
-        to that? Good luck with that.
-      Type: 0
-      NodeType: 2
-      Parent: 52
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-  CurrentSet: 0
-  TabList:
-  - Jerry
---- !u!4 &1860151012
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860151010}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
