@@ -112,7 +112,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &140169418
+--- !u!1 &504516041
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,8 +120,897 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 140169420}
-  - component: {fileID: 140169419}
+  - component: {fileID: 504516042}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &504516042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504516041}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 4.8
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.06, y: -0.16, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &606065730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 606065732}
+  - component: {fileID: 606065731}
+  m_Layer: 0
+  m_Name: Gerard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &606065731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606065730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 63
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 760
+        y: 68
+        width: 150
+        height: 125
+      Text: I am looking for a place to sleep from time to time. Don't need much more
+        than that.
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 010000000300000033000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 304
+        y: 167
+        width: 150
+        height: 125
+      Text: What exactly is it that you do for a living?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 39000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 757
+        y: 221
+        width: 150
+        height: 125
+      Text: Is your job dangerous?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 2e000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 499
+        y: 592
+        width: 150
+        height: 125
+      Text: ' I am sent out to assassinate individuals that the government deems dangerous.'
+      Type: 1
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 050000001e000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 296
+        y: 730
+        width: 150
+        height: 125
+      Text: Wow, you make the world a better place. You are a hero. It would be my
+        honor to provide you shelter.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 299
+        y: 884
+        width: 150
+        height: 125
+      Text: Glad to hear that. But I'm just doing my duty.
+      Type: 0
+      NodeType: 2
+      Parent: 5
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 30
+      Size:
+        serializedVersion: 2
+        x: 504
+        y: 744
+        width: 150
+        height: 125
+      Text: So you murder people without questions because your bosses tell you to?
+        I can't live with someone like that. Please go.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 26000000
+    - ID: 38
+      Size:
+        serializedVersion: 2
+        x: 502
+        y: 889
+        width: 150
+        height: 125
+      Text: I understand. Not everyone can handle things like that. Farewell.
+      Type: 0
+      NodeType: 2
+      Parent: 30
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 46
+      Size:
+        serializedVersion: 2
+        x: 762
+        y: 364
+        width: 150
+        height: 125
+      Text: No, not at all. I work with a very well trained team and only take out
+        individuals inside our country. It is surprisingly safe.
+      Type: 1
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 2f00000030000000
+    - ID: 47
+      Size:
+        serializedVersion: 2
+        x: 682
+        y: 517
+        width: 150
+        height: 125
+      Text: Wow, that sounds really cool. You must be a really good person if your
+        team members rely so much on one another. Will you move in?
+      Type: 2
+      NodeType: 1
+      Parent: 46
+      Trigger: 0
+      TriggerText: 
+      Connections: 31000000
+    - ID: 48
+      Size:
+        serializedVersion: 2
+        x: 902
+        y: 518
+        width: 150
+        height: 125
+      Text: You don't even leave them a chance to fight for their life in 1 on 1 hand-to-hand
+        combat? I hate cowards. Get lost!
+      Type: 2
+      NodeType: 1
+      Parent: 46
+      Trigger: 0
+      TriggerText: 
+      Connections: 32000000
+    - ID: 49
+      Size:
+        serializedVersion: 2
+        x: 686
+        y: 662
+        width: 150
+        height: 125
+      Text: Yes. Teamwork is the most important aspect of my life.
+      Type: 0
+      NodeType: 2
+      Parent: 47
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 50
+      Size:
+        serializedVersion: 2
+        x: 901
+        y: 663
+        width: 150
+        height: 125
+      Text: You do not understand the nature of combat. But that's okay. Many don't.
+      Type: 0
+      NodeType: 2
+      Parent: 48
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 51
+      Size:
+        serializedVersion: 2
+        x: 1222
+        y: 215
+        width: 150
+        height: 125
+      Text: ' How well does your job pay?'
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 34000000
+    - ID: 52
+      Size:
+        serializedVersion: 2
+        x: 1222
+        y: 363
+        width: 150
+        height: 125
+      Text: I could tell you, but then I would have to kill you. Just kidding :)
+      Type: 1
+      NodeType: 1
+      Parent: 51
+      Trigger: 0
+      TriggerText: 
+      Connections: 3500000036000000
+    - ID: 53
+      Size:
+        serializedVersion: 2
+        x: 1109
+        y: 515
+        width: 150
+        height: 125
+      Text: A man with a sense of humor. Excellent. Do you want do move in?
+      Type: 2
+      NodeType: 1
+      Parent: 52
+      Trigger: 0
+      TriggerText: 
+      Connections: 37000000
+    - ID: 54
+      Size:
+        serializedVersion: 2
+        x: 1328
+        y: 522
+        width: 150
+        height: 125
+      Text: I don't want to die. Please leave me alone :(
+      Type: 2
+      NodeType: 1
+      Parent: 52
+      Trigger: 0
+      TriggerText: 
+      Connections: 38000000
+    - ID: 55
+      Size:
+        serializedVersion: 2
+        x: 1109
+        y: 667
+        width: 150
+        height: 125
+      Text: Sure. I'm glad we have the same kind of humor. This should be fun.
+      Type: 0
+      NodeType: 2
+      Parent: 53
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 56
+      Size:
+        serializedVersion: 2
+        x: 1337
+        y: 671
+        width: 150
+        height: 125
+      Text: I'm an assassin not an arsonist, but I respect your choice. Forgive me,
+        I will leave you now.
+      Type: 0
+      NodeType: 2
+      Parent: 54
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 57
+      Size:
+        serializedVersion: 2
+        x: 495
+        y: 170
+        width: 150
+        height: 125
+      Text: I'm a cleaner.
+      Type: 1
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 3a000000
+    - ID: 58
+      Size:
+        serializedVersion: 2
+        x: 305
+        y: 309
+        width: 150
+        height: 125
+      Text: Oh so you're tidying peoples' places?
+      Type: 2
+      NodeType: 1
+      Parent: 57
+      Trigger: 0
+      TriggerText: 
+      Connections: 3b000000
+    - ID: 59
+      Size:
+        serializedVersion: 2
+        x: 501
+        y: 309
+        width: 150
+        height: 125
+      Text: Not exactly. I clean people.
+      Type: 1
+      NodeType: 1
+      Parent: 58
+      Trigger: 0
+      TriggerText: 
+      Connections: 3c000000
+    - ID: 60
+      Size:
+        serializedVersion: 2
+        x: 303
+        y: 447
+        width: 150
+        height: 125
+      Text: So you work in a hospital?
+      Type: 2
+      NodeType: 1
+      Parent: 59
+      Trigger: 0
+      TriggerText: 
+      Connections: 3d000000
+    - ID: 61
+      Size:
+        serializedVersion: 2
+        x: 501
+        y: 450
+        width: 150
+        height: 125
+      Text: I clean them more thoroughly than that. They're basically gone when I'm
+        done with them.
+      Type: 1
+      NodeType: 1
+      Parent: 60
+      Trigger: 0
+      TriggerText: 
+      Connections: 3e000000
+    - ID: 62
+      Size:
+        serializedVersion: 2
+        x: 295
+        y: 586
+        width: 150
+        height: 125
+      Text: '...'
+      Type: 2
+      NodeType: 1
+      Parent: 61
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+  CurrentSet: 0
+  TabList:
+  - angelique
+--- !u!4 &606065732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606065730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &901484117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 901484119}
+  - component: {fileID: 901484118}
+  m_Layer: 0
+  m_Name: Robert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &901484118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901484117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 22
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 245
+        y: 150
+        width: 150
+        height: 125
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 010000000200000003000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 522
+        y: 88
+        width: 150
+        height: 125
+      Text: Do you play a lot of video games?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 521
+        y: 253
+        width: 150
+        height: 125
+      Text: How is it like to work on video games? Is it fun and exciting?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 0a000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 520
+        y: 421
+        width: 150
+        height: 125
+      Text: Where do you want to work when you are done with your studies?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 10000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 765
+        y: 86
+        width: 150
+        height: 125
+      Text: "Well, since I became a Game Programming student, I haven\u2019t had the
+        time to play a whole lot. I mostly play League of Legends or Overwatch with
+        my friends for a few short rounds when I have the time."
+      Type: 0
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 05000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 983
+        y: 88
+        width: 150
+        height: 125
+      Text: Do you want Robert  to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 0600000007000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 1216
+        y: 58
+        width: 150
+        height: 125
+      Text: That sounds amazing. I Love watching other people play. I will watch all
+        of your matches.
+      Type: 2
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 08000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 1215
+        y: 227
+        width: 150
+        height: 125
+      Text: Those games suck. Get better taste or get lost.
+      Type: 2
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1465
+        y: 59
+        width: 150
+        height: 125
+      Text: You'll get a lot to watch then!
+      Type: 0
+      NodeType: 2
+      Parent: 6
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1465
+        y: 225
+        width: 150
+        height: 125
+      Text: You don't know anything about video games if you think so. Your opinion
+        does not matter.
+      Type: 0
+      NodeType: 2
+      Parent: 7
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 763
+        y: 252
+        width: 150
+        height: 125
+      Text: It kind of is. I just hate working with game designers. They are all stupid
+        and think they know everything when they are actually pretty useless. Other
+        than dealing with those guys, I love it!
+      Type: 0
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 998
+        y: 269
+        width: 150
+        height: 125
+      Text: Do you want Robert  to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0c0000000d000000
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 1290
+        y: 398
+        width: 150
+        height: 125
+      Text: Game Designers are people too. We can't be together until you understand
+        this.
+      Type: 2
+      NodeType: 1
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 1284
+        y: 565
+        width: 150
+        height: 125
+      Text: 'I completely understand. Game Designers suck. Let''s hate them together. '
+      Type: 2
+      NodeType: 1
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 1499
+        y: 396
+        width: 150
+        height: 125
+      Text: You are a very irrational creature.
+      Type: 0
+      NodeType: 2
+      Parent: 12
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1491
+        y: 564
+        width: 150
+        height: 125
+      Text: Cool! Let's make a plan to kill them all :)
+      Type: 0
+      NodeType: 2
+      Parent: 13
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 695
+        y: 588
+        width: 150
+        height: 125
+      Text: I want to work at either Riot or Blizzard.
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 11000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 702
+        y: 738
+        width: 150
+        height: 125
+      Text: Do you want Robert  to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 1200000013000000
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 620
+        y: 888
+        width: 150
+        height: 125
+      Text: Wow, that's cool. Then you will be able to tell me in advance which classes
+        will be buffed. Please move in.
+      Type: 2
+      NodeType: 1
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 863
+        y: 895
+        width: 150
+        height: 125
+      Text: Lol sucks and Diablo Immortal makes me sad. You can't be here, sorry.
+      Type: 2
+      NodeType: 1
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 15000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 615
+        y: 1051
+        width: 150
+        height: 125
+      Text: Sorry. I will probably have to sign an NDA. But we can still have fun
+        :)
+      Type: 0
+      NodeType: 2
+      Parent: 18
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 21
+      Size:
+        serializedVersion: 2
+        x: 867
+        y: 1051
+        width: 150
+        height: 125
+      Text: Do you not have a phone?
+      Type: 0
+      NodeType: 2
+      Parent: 19
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - Robert
+--- !u!4 &901484119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901484117}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &944402950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 944402952}
+  - component: {fileID: 944402951}
   m_Layer: 0
   m_Name: Jerry
   m_TagString: Untagged
@@ -129,13 +1018,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &140169419
+--- !u!114 &944402951
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140169418}
+  m_GameObject: {fileID: 944402950}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
@@ -895,543 +1784,532 @@ MonoBehaviour:
   CurrentSet: 0
   TabList:
   - Jerry
---- !u!4 &140169420
+--- !u!4 &944402952
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140169418}
+  m_GameObject: {fileID: 944402950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &504516041
-GameObject:
+--- !u!1001 &1362466740
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 504516042}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &504516042
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504516041}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &519420028
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 519420032}
-  - component: {fileID: 519420031}
-  - component: {fileID: 519420029}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
---- !u!20 &519420031
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 4.8
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 0
-  m_HDR: 1
-  m_AllowMSAA: 0
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 0
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &519420032
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -0.16, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &703330530
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 703330532}
-  - component: {fileID: 703330531}
-  m_Layer: 0
-  m_Name: Gerard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &703330531
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1448381359, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_Name
+      value: Messaging
+      objectReference: {fileID: 0}
+    - target: {fileID: 145276247191035938, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 759
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 67.9661
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 809
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 379.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -33.98305
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 57.966103
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 753.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 61.35593
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736692398453418346, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494976028085248987, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494976028085248987, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494976028085248987, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 376.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494976028085248987, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.677965
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494976028085248987, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 61.35593
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: Answer3
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: MessageProfilePic
+      value: 
+      objectReference: {fileID: 1362466741}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: TopProfilePic
+      value: 
+      objectReference: {fileID: 1362466742}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: answer1Button
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: answer2Button
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: answer3Button
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: carl
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.29992676
+      objectReference: {fileID: 0}
+    - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942620484270746861, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 299831468754707414, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 299831468754707414, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521016844495030077, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521016844495030077, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654511967182377838, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654511967182377838, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099994102620620709, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099994102620620709, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527040657813754119, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000048010215
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527040657813754119, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 759
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380549084940774717, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380549084940774717, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380549084940774717, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380549084940774717, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380549084940774717, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418258736510310441, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418258736510310441, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418258736510310441, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418258736510310441, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418258736510310441, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+--- !u!114 &1362466741 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 588547647200390576, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1362466740}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703330530}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Set:
-  - CurrentId: 63
-    NewWindowOpen: 0
-    FirstWindow: 0
-    Windows:
-    - ID: 0
-      Size:
-        serializedVersion: 2
-        x: 760
-        y: 68
-        width: 150
-        height: 125
-      Text: I am looking for a place to sleep from time to time. Don't need much more
-        than that.
-      Type: 1
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 010000000300000033000000
-    - ID: 1
-      Size:
-        serializedVersion: 2
-        x: 304
-        y: 167
-        width: 150
-        height: 125
-      Text: What exactly is it that you do for a living?
-      Type: 2
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 39000000
-    - ID: 3
-      Size:
-        serializedVersion: 2
-        x: 757
-        y: 221
-        width: 150
-        height: 125
-      Text: Is your job dangerous?
-      Type: 2
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 2e000000
-    - ID: 4
-      Size:
-        serializedVersion: 2
-        x: 499
-        y: 592
-        width: 150
-        height: 125
-      Text: ' I am sent out to assassinate individuals that the government deems as
-        dangerous.'
-      Type: 1
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 050000001e000000
-    - ID: 5
-      Size:
-        serializedVersion: 2
-        x: 296
-        y: 730
-        width: 150
-        height: 125
-      Text: Wow, you make the world a better place. You are a hero. It would be my
-        honor to provide you shelter.
-      Type: 2
-      NodeType: 1
-      Parent: 4
-      Trigger: 0
-      TriggerText: 
-      Connections: 06000000
-    - ID: 6
-      Size:
-        serializedVersion: 2
-        x: 299
-        y: 884
-        width: 150
-        height: 125
-      Text: Glad to hear that. But I'm just doing my duty.
-      Type: 0
-      NodeType: 2
-      Parent: 5
-      Trigger: 1
-      TriggerText: win
-      Connections: 
-    - ID: 30
-      Size:
-        serializedVersion: 2
-        x: 504
-        y: 744
-        width: 150
-        height: 125
-      Text: So you murder people without questions because your bosses tell you to?
-        I can't live with someone like that. Please go.
-      Type: 2
-      NodeType: 1
-      Parent: 4
-      Trigger: 0
-      TriggerText: 
-      Connections: 26000000
-    - ID: 38
-      Size:
-        serializedVersion: 2
-        x: 502
-        y: 889
-        width: 150
-        height: 125
-      Text: I understand. Not everyone can handle things like that. Farewell.
-      Type: 0
-      NodeType: 2
-      Parent: 30
-      Trigger: 1
-      TriggerText: out
-      Connections: 
-    - ID: 46
-      Size:
-        serializedVersion: 2
-        x: 762
-        y: 364
-        width: 150
-        height: 125
-      Text: No, not at all. I work with a very well trained team and only take out
-        individuals inside our country. It is surprisingly safe.
-      Type: 1
-      NodeType: 1
-      Parent: 3
-      Trigger: 0
-      TriggerText: 
-      Connections: 2f00000030000000
-    - ID: 47
-      Size:
-        serializedVersion: 2
-        x: 682
-        y: 517
-        width: 150
-        height: 125
-      Text: Wow, that sounds really cool. You must be a really good person if your
-        team members rely so much on one another. Will you move in?
-      Type: 2
-      NodeType: 1
-      Parent: 46
-      Trigger: 0
-      TriggerText: 
-      Connections: 31000000
-    - ID: 48
-      Size:
-        serializedVersion: 2
-        x: 902
-        y: 518
-        width: 150
-        height: 125
-      Text: You don't even leave them a chance to fight for their life in 1 on 1 hand-to-hand
-        combat? I hate cowards. Get lost!
-      Type: 2
-      NodeType: 1
-      Parent: 46
-      Trigger: 0
-      TriggerText: 
-      Connections: 32000000
-    - ID: 49
-      Size:
-        serializedVersion: 2
-        x: 686
-        y: 662
-        width: 150
-        height: 125
-      Text: Yes. Teamwork is the most important aspect of my life.
-      Type: 0
-      NodeType: 2
-      Parent: 47
-      Trigger: 1
-      TriggerText: win
-      Connections: 
-    - ID: 50
-      Size:
-        serializedVersion: 2
-        x: 901
-        y: 663
-        width: 150
-        height: 125
-      Text: You do not understand the nature of combat. But that's okay. Many don't.
-      Type: 0
-      NodeType: 2
-      Parent: 48
-      Trigger: 1
-      TriggerText: out
-      Connections: 
-    - ID: 51
-      Size:
-        serializedVersion: 2
-        x: 1222
-        y: 215
-        width: 150
-        height: 125
-      Text: ' How well does your job pay?'
-      Type: 2
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 34000000
-    - ID: 52
-      Size:
-        serializedVersion: 2
-        x: 1222
-        y: 363
-        width: 150
-        height: 125
-      Text: I could tell you, but then I would have to kill you. Just kidding :)
-      Type: 1
-      NodeType: 1
-      Parent: 51
-      Trigger: 0
-      TriggerText: 
-      Connections: 3500000036000000
-    - ID: 53
-      Size:
-        serializedVersion: 2
-        x: 1109
-        y: 515
-        width: 150
-        height: 125
-      Text: A man with a sense of humor. Excellent. Do you want do move in?
-      Type: 2
-      NodeType: 1
-      Parent: 52
-      Trigger: 0
-      TriggerText: 
-      Connections: 37000000
-    - ID: 54
-      Size:
-        serializedVersion: 2
-        x: 1328
-        y: 522
-        width: 150
-        height: 125
-      Text: I don't want to die. Please leave me alone :(
-      Type: 2
-      NodeType: 1
-      Parent: 52
-      Trigger: 0
-      TriggerText: 
-      Connections: 38000000
-    - ID: 55
-      Size:
-        serializedVersion: 2
-        x: 1109
-        y: 667
-        width: 150
-        height: 125
-      Text: Sure. I'm glad we have the same kind of humor. This should be fun.
-      Type: 0
-      NodeType: 2
-      Parent: 53
-      Trigger: 1
-      TriggerText: win
-      Connections: 
-    - ID: 56
-      Size:
-        serializedVersion: 2
-        x: 1337
-        y: 671
-        width: 150
-        height: 125
-      Text: I'm an assassin not an arsonist, but I respect your choice. Forgive me,
-        I will leave you now.
-      Type: 0
-      NodeType: 2
-      Parent: 54
-      Trigger: 1
-      TriggerText: out
-      Connections: 
-    - ID: 57
-      Size:
-        serializedVersion: 2
-        x: 495
-        y: 170
-        width: 150
-        height: 125
-      Text: I'm a cleaner.
-      Type: 1
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 3a000000
-    - ID: 58
-      Size:
-        serializedVersion: 2
-        x: 305
-        y: 309
-        width: 150
-        height: 125
-      Text: Oh so you tidying people's places?
-      Type: 2
-      NodeType: 1
-      Parent: 57
-      Trigger: 0
-      TriggerText: 
-      Connections: 3b000000
-    - ID: 59
-      Size:
-        serializedVersion: 2
-        x: 501
-        y: 309
-        width: 150
-        height: 125
-      Text: Not exactly. I clean people.
-      Type: 1
-      NodeType: 1
-      Parent: 58
-      Trigger: 0
-      TriggerText: 
-      Connections: 3c000000
-    - ID: 60
-      Size:
-        serializedVersion: 2
-        x: 303
-        y: 447
-        width: 150
-        height: 125
-      Text: So you work in a hospital?
-      Type: 2
-      NodeType: 1
-      Parent: 59
-      Trigger: 0
-      TriggerText: 
-      Connections: 3d000000
-    - ID: 61
-      Size:
-        serializedVersion: 2
-        x: 501
-        y: 450
-        width: 150
-        height: 125
-      Text: I clean them more thoroughly than that. They're basically gone when I'm
-        done with them.
-      Type: 1
-      NodeType: 1
-      Parent: 60
-      Trigger: 0
-      TriggerText: 
-      Connections: 3e000000
-    - ID: 62
-      Size:
-        serializedVersion: 2
-        x: 295
-        y: 586
-        width: 150
-        height: 125
-      Text: '...'
-      Type: 2
-      NodeType: 1
-      Parent: 61
-      Trigger: 0
-      TriggerText: 
-      Connections: 04000000
-  CurrentSet: 0
-  TabList:
-  - angelique
---- !u!4 &703330532
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!114 &1362466742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9211012473447470637, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1362466740}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 703330530}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1094428723
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1508883431
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1439,8 +2317,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1094428725}
-  - component: {fileID: 1094428724}
+  - component: {fileID: 1508883433}
+  - component: {fileID: 1508883432}
   m_Layer: 0
   m_Name: Carl
   m_TagString: Untagged
@@ -1448,13 +2326,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1094428724
+--- !u!114 &1508883432
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094428723}
+  m_GameObject: {fileID: 1508883431}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
@@ -1827,898 +2705,19 @@ MonoBehaviour:
   CurrentSet: 0
   TabList:
   - Carl
---- !u!4 &1094428725
+--- !u!4 &1508883433
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094428723}
+  m_GameObject: {fileID: 1508883431}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1362466740
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1448381359, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_Name
-      value: Messaging
-      objectReference: {fileID: 0}
-    - target: {fileID: 145276247191035938, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 759
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 67.9661
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 809
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 379.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -33.98305
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 57.966103
-      objectReference: {fileID: 0}
-    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 753.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 61.35593
-      objectReference: {fileID: 0}
-    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 8736692398453418346, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3494976028085248987, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3494976028085248987, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3494976028085248987, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 376.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3494976028085248987, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -30.677965
-      objectReference: {fileID: 0}
-    - target: {fileID: 3494976028085248987, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 61.35593
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: npc
-      value: 
-      objectReference: {fileID: 1607053879}
-    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: Answer3
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: MessageProfilePic
-      value: 
-      objectReference: {fileID: 1362466741}
-    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: TopProfilePic
-      value: 
-      objectReference: {fileID: 1362466742}
-    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: answer1Button
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: answer2Button
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: answer3Button
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: carl
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.29992676
-      objectReference: {fileID: 0}
-    - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7942620484270746861, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 299831468754707414, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 299831468754707414, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1521016844495030077, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1521016844495030077, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654511967182377838, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654511967182377838, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4099994102620620709, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4099994102620620709, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5527040657813754119, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.0000048010215
-      objectReference: {fileID: 0}
-    - target: {fileID: 5527040657813754119, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 759
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1087173447835614355, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 487019517226129334, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2380549084940774717, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2380549084940774717, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2380549084940774717, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2380549084940774717, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2380549084940774717, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418258736510310441, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418258736510310441, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418258736510310441, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418258736510310441, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418258736510310441, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
---- !u!114 &1362466741 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 588547647200390576, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1362466740}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1362466742 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9211012473447470637, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1362466740}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1430861939
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1430861941}
-  - component: {fileID: 1430861940}
-  m_Layer: 0
-  m_Name: Robert
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1430861940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430861939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Set:
-  - CurrentId: 22
-    NewWindowOpen: 0
-    FirstWindow: 0
-    Windows:
-    - ID: 0
-      Size:
-        serializedVersion: 2
-        x: 245
-        y: 150
-        width: 150
-        height: 125
-      Text: What do you want to ask?
-      Type: 1
-      NodeType: 0
-      Parent: -1
-      Trigger: 0
-      TriggerText: 
-      Connections: 010000000200000003000000
-    - ID: 1
-      Size:
-        serializedVersion: 2
-        x: 522
-        y: 88
-        width: 150
-        height: 125
-      Text: Do you play a lot of video games?
-      Type: 2
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 04000000
-    - ID: 2
-      Size:
-        serializedVersion: 2
-        x: 521
-        y: 253
-        width: 150
-        height: 125
-      Text: How is it like to work on video games? Is it fun and exciting?
-      Type: 2
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 0a000000
-    - ID: 3
-      Size:
-        serializedVersion: 2
-        x: 520
-        y: 421
-        width: 150
-        height: 125
-      Text: Where do you want to work when you are done with your studies?
-      Type: 2
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 10000000
-    - ID: 4
-      Size:
-        serializedVersion: 2
-        x: 765
-        y: 86
-        width: 150
-        height: 125
-      Text: "Well, since I became a Game Programming student, I haven\u2019t had the
-        time to play a whole lot. I mostly play League of Legends or Overwatch with
-        my friends for a few short rounds when I have the time."
-      Type: 0
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 05000000
-    - ID: 5
-      Size:
-        serializedVersion: 2
-        x: 983
-        y: 88
-        width: 150
-        height: 125
-      Text: Do you want Robert  to move in?
-      Type: 1
-      NodeType: 1
-      Parent: 4
-      Trigger: 0
-      TriggerText: 
-      Connections: 0600000007000000
-    - ID: 6
-      Size:
-        serializedVersion: 2
-        x: 1216
-        y: 58
-        width: 150
-        height: 125
-      Text: That sounds amazing. I Love watching other people play. I will watch all
-        of your matches.
-      Type: 2
-      NodeType: 1
-      Parent: 5
-      Trigger: 0
-      TriggerText: 
-      Connections: 08000000
-    - ID: 7
-      Size:
-        serializedVersion: 2
-        x: 1215
-        y: 227
-        width: 150
-        height: 125
-      Text: Those games suck. Get better taste or get lost.
-      Type: 2
-      NodeType: 1
-      Parent: 5
-      Trigger: 0
-      TriggerText: 
-      Connections: 09000000
-    - ID: 8
-      Size:
-        serializedVersion: 2
-        x: 1465
-        y: 59
-        width: 150
-        height: 125
-      Text: You'll get a lot to watch then!
-      Type: 0
-      NodeType: 2
-      Parent: 6
-      Trigger: 1
-      TriggerText: win
-      Connections: 
-    - ID: 9
-      Size:
-        serializedVersion: 2
-        x: 1465
-        y: 225
-        width: 150
-        height: 125
-      Text: You don't know anything about video games if you think so. Your opinion
-        does not matter.
-      Type: 0
-      NodeType: 2
-      Parent: 7
-      Trigger: 1
-      TriggerText: out
-      Connections: 
-    - ID: 10
-      Size:
-        serializedVersion: 2
-        x: 763
-        y: 252
-        width: 150
-        height: 125
-      Text: It kind of is. I just hate working with game designers. They are all stupid
-        and think they know everything when they are actually pretty useless. Other
-        than dealing with those guys, I love it!
-      Type: 0
-      NodeType: 1
-      Parent: 2
-      Trigger: 0
-      TriggerText: 
-      Connections: 0b000000
-    - ID: 11
-      Size:
-        serializedVersion: 2
-        x: 998
-        y: 269
-        width: 150
-        height: 125
-      Text: Do you want Robert  to move in?
-      Type: 1
-      NodeType: 1
-      Parent: 10
-      Trigger: 0
-      TriggerText: 
-      Connections: 0c0000000d000000
-    - ID: 12
-      Size:
-        serializedVersion: 2
-        x: 1290
-        y: 398
-        width: 150
-        height: 125
-      Text: Game Designers are people too. We can't be together until you understand
-        this.
-      Type: 2
-      NodeType: 1
-      Parent: 11
-      Trigger: 0
-      TriggerText: 
-      Connections: 0e000000
-    - ID: 13
-      Size:
-        serializedVersion: 2
-        x: 1284
-        y: 565
-        width: 150
-        height: 125
-      Text: 'I completely understand. Game Designers suck. Let''s hate them together. '
-      Type: 2
-      NodeType: 1
-      Parent: 11
-      Trigger: 0
-      TriggerText: 
-      Connections: 0f000000
-    - ID: 14
-      Size:
-        serializedVersion: 2
-        x: 1499
-        y: 396
-        width: 150
-        height: 125
-      Text: Cool! Let's make a plan to kill them all :)
-      Type: 0
-      NodeType: 2
-      Parent: 12
-      Trigger: 1
-      TriggerText: win
-      Connections: 
-    - ID: 15
-      Size:
-        serializedVersion: 2
-        x: 1491
-        y: 564
-        width: 150
-        height: 125
-      Text: You are a very irrational creature.
-      Type: 0
-      NodeType: 2
-      Parent: 13
-      Trigger: 1
-      TriggerText: out
-      Connections: 
-    - ID: 16
-      Size:
-        serializedVersion: 2
-        x: 695
-        y: 588
-        width: 150
-        height: 125
-      Text: I want to work at either Riot or Blizzard.
-      Type: 0
-      NodeType: 1
-      Parent: 3
-      Trigger: 0
-      TriggerText: 
-      Connections: 11000000
-    - ID: 17
-      Size:
-        serializedVersion: 2
-        x: 702
-        y: 738
-        width: 150
-        height: 125
-      Text: Do you want Robert  to move in?
-      Type: 1
-      NodeType: 1
-      Parent: 16
-      Trigger: 0
-      TriggerText: 
-      Connections: 1200000013000000
-    - ID: 18
-      Size:
-        serializedVersion: 2
-        x: 620
-        y: 888
-        width: 150
-        height: 125
-      Text: Wow, that's cool. Then you will be able to tell me in advance which classes
-        will be buffed. Please move in.
-      Type: 2
-      NodeType: 1
-      Parent: 17
-      Trigger: 0
-      TriggerText: 
-      Connections: 14000000
-    - ID: 19
-      Size:
-        serializedVersion: 2
-        x: 863
-        y: 895
-        width: 150
-        height: 125
-      Text: Lol sucks and Diablo Immortal makes me sad. You can't be here, sorry.
-      Type: 2
-      NodeType: 1
-      Parent: 17
-      Trigger: 0
-      TriggerText: 
-      Connections: 15000000
-    - ID: 20
-      Size:
-        serializedVersion: 2
-        x: 615
-        y: 1051
-        width: 150
-        height: 125
-      Text: Sorry. I will probably have to sign an NDA. But we can still have fun
-        :)
-      Type: 0
-      NodeType: 2
-      Parent: 18
-      Trigger: 1
-      TriggerText: win
-      Connections: 
-    - ID: 21
-      Size:
-        serializedVersion: 2
-        x: 867
-        y: 1051
-        width: 150
-        height: 125
-      Text: Do you not have a phone?
-      Type: 0
-      NodeType: 2
-      Parent: 19
-      Trigger: 1
-      TriggerText: out
-      Connections: 
-  CurrentSet: 0
-  TabList:
-  - Robert
---- !u!4 &1430861941
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430861939}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1525780202
 GameObject:
@@ -2786,7 +2785,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1607053878
+--- !u!1 &1775347146
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2794,8 +2793,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1607053880}
-  - component: {fileID: 1607053879}
+  - component: {fileID: 1775347148}
+  - component: {fileID: 1775347147}
   m_Layer: 0
   m_Name: Angelique
   m_TagString: Untagged
@@ -2803,20 +2802,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1607053879
+--- !u!114 &1775347147
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607053878}
+  m_GameObject: {fileID: 1775347146}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 45
+  - CurrentId: 47
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -3058,8 +3057,8 @@ MonoBehaviour:
     - ID: 17
       Size:
         serializedVersion: 2
-        x: 1141
-        y: 407
+        x: 1136
+        y: 471
         width: 150
         height: 125
       Text: Oh no. I could never let anyone into the house, let alone into my life.
@@ -3087,8 +3086,8 @@ MonoBehaviour:
     - ID: 19
       Size:
         serializedVersion: 2
-        x: 1137
-        y: 726
+        x: 1133
+        y: 747
         width: 150
         height: 125
       Text: I don't understand. The cats just come to me, I don't get them.
@@ -3101,8 +3100,8 @@ MonoBehaviour:
     - ID: 20
       Size:
         serializedVersion: 2
-        x: 1138
-        y: 571
+        x: 1135
+        y: 600
         width: 150
         height: 125
       Text: That's the beauty with cats, they are so clean they even clean up after
@@ -3116,8 +3115,8 @@ MonoBehaviour:
     - ID: 21
       Size:
         serializedVersion: 2
-        x: 1260
-        y: 72
+        x: 1726
+        y: 230
         width: 150
         height: 125
       Text: How much money do you make writing books?
@@ -3130,8 +3129,8 @@ MonoBehaviour:
     - ID: 22
       Size:
         serializedVersion: 2
-        x: 1426
-        y: 71
+        x: 1911
+        y: 236
         width: 150
         height: 125
       Text: Well that's up to my publisher I think.
@@ -3144,8 +3143,8 @@ MonoBehaviour:
     - ID: 23
       Size:
         serializedVersion: 2
-        x: 1585
-        y: 68
+        x: 1725
+        y: 375
         width: 150
         height: 125
       Text: Oh you have a publisher?
@@ -3158,8 +3157,8 @@ MonoBehaviour:
     - ID: 24
       Size:
         serializedVersion: 2
-        x: 1745
-        y: 68
+        x: 1905
+        y: 376
         width: 150
         height: 125
       Text: Oh no. I look for one when my book is done.
@@ -3172,8 +3171,8 @@ MonoBehaviour:
     - ID: 25
       Size:
         serializedVersion: 2
-        x: 1905
-        y: 68
+        x: 1721
+        y: 526
         width: 150
         height: 125
       Text: And you're almost done?
@@ -3186,8 +3185,8 @@ MonoBehaviour:
     - ID: 26
       Size:
         serializedVersion: 2
-        x: 2065
-        y: 68
+        x: 1900
+        y: 532
         width: 150
         height: 125
       Text: But of course. I've been working on it for 30 years already. It's almost
@@ -3201,8 +3200,8 @@ MonoBehaviour:
     - ID: 27
       Size:
         serializedVersion: 2
-        x: 2067
-        y: 218
+        x: 1721
+        y: 669
         width: 150
         height: 125
       Text: 30 years? Have you ever finished any book?
@@ -3215,17 +3214,17 @@ MonoBehaviour:
     - ID: 28
       Size:
         serializedVersion: 2
-        x: 2067
-        y: 360
+        x: 1898
+        y: 676
         width: 150
         height: 125
       Text: This will be my first.
       Type: 0
-      NodeType: 2
+      NodeType: 1
       Parent: 27
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 2d000000
     - ID: 29
       Size:
         serializedVersion: 2
@@ -3237,8 +3236,8 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 8
-      Trigger: 1
-      TriggerText: in
+      Trigger: 0
+      TriggerText: 
       Connections: 25000000
     - ID: 30
       Size:
@@ -3252,8 +3251,8 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 4
-      Trigger: 1
-      TriggerText: in
+      Trigger: 0
+      TriggerText: 
       Connections: 26000000
     - ID: 31
       Size:
@@ -3266,8 +3265,8 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 8
-      Trigger: 1
-      TriggerText: out
+      Trigger: 0
+      TriggerText: 
       Connections: 24000000
     - ID: 32
       Size:
@@ -3300,11 +3299,11 @@ MonoBehaviour:
     - ID: 34
       Size:
         serializedVersion: 2
-        x: 1349
-        y: 864
+        x: 1498
+        y: 868
         width: 150
         height: 125
-      Text: 
+      Text: Such a pity.
       Type: 0
       NodeType: 2
       Parent: 33
@@ -3314,11 +3313,11 @@ MonoBehaviour:
     - ID: 35
       Size:
         serializedVersion: 2
-        x: 1343
-        y: 734
+        x: 1500
+        y: 731
         width: 150
         height: 125
-      Text: 
+      Text: We're going to have a fabulous time.
       Type: 0
       NodeType: 2
       Parent: 32
@@ -3328,44 +3327,44 @@ MonoBehaviour:
     - ID: 36
       Size:
         serializedVersion: 2
-        x: 974
-        y: 338
+        x: 1144
+        y: 336
         width: 150
         height: 125
-      Text: 
+      Text: Such a pity.
       Type: 0
       NodeType: 2
       Parent: 31
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 37
       Size:
         serializedVersion: 2
-        x: 983
-        y: 203
+        x: 1144
+        y: 208
         width: 150
         height: 125
-      Text: 
+      Text: That's very kind of you.
       Type: 0
       NodeType: 2
       Parent: 29
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 38
       Size:
         serializedVersion: 2
-        x: 634
-        y: 348
+        x: 779
+        y: 362
         width: 150
         height: 125
-      Text: 
+      Text: Meow.
       Type: 0
       NodeType: 2
       Parent: 30
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 39
       Size:
@@ -3380,22 +3379,22 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 20
-      Trigger: 1
-      TriggerText: out
+      Trigger: 0
+      TriggerText: 
       Connections: 28000000
     - ID: 40
       Size:
         serializedVersion: 2
-        x: 1332
-        y: 574
+        x: 1514
+        y: 569
         width: 150
         height: 125
-      Text: 
+      Text: Such a pity.
       Type: 0
       NodeType: 2
       Parent: 39
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 41
       Size:
@@ -3408,22 +3407,22 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 20
-      Trigger: 1
-      TriggerText: in
+      Trigger: 0
+      TriggerText: 
       Connections: 2a000000
     - ID: 42
       Size:
         serializedVersion: 2
-        x: 1359
-        y: 427
+        x: 1512
+        y: 432
         width: 150
         height: 125
-      Text: 
+      Text: Meow.
       Type: 0
       NodeType: 2
       Parent: 41
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 43
       Size:
@@ -3454,20 +3453,48 @@ MonoBehaviour:
       Trigger: 0
       TriggerText: 
       Connections: 1200000002000000
+    - ID: 45
+      Size:
+        serializedVersion: 2
+        x: 1716
+        y: 815
+        width: 150
+        height: 125
+      Text: I think I keep looking for people who can pay the rent.
+      Type: 1
+      NodeType: 1
+      Parent: 28
+      Trigger: 0
+      TriggerText: 
+      Connections: 2e000000
+    - ID: 46
+      Size:
+        serializedVersion: 2
+        x: 1899
+        y: 819
+        width: 150
+        height: 125
+      Text: Such a pity.
+      Type: 2
+      NodeType: 2
+      Parent: 45
+      Trigger: 1
+      TriggerText: out
+      Connections: 
   CurrentSet: 0
   TabList:
-  - Angelique
---- !u!4 &1607053880
+  - angelique
+--- !u!4 &1775347148
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1607053878}
+  m_GameObject: {fileID: 1775347146}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

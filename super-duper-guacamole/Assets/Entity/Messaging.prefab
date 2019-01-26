@@ -129,6 +129,7 @@ MonoBehaviour:
   responseButton: {fileID: 5254639267771982687, guid: 00d27125b158b167d95c423711409a4a,
     type: 3}
   scrollRect: {fileID: 2818757584442123716}
+  carl: {fileID: 0}
 --- !u!1 &1697389006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,7 +1541,7 @@ MonoBehaviour:
   m_MovementType: 1
   m_Elasticity: 0.1
   m_Inertia: 1
-  m_DecelerationRate: 0.135
+  m_DecelerationRate: 0.27
   m_ScrollSensitivity: 10
   m_Viewport: {fileID: 3999337611487837842}
   m_HorizontalScrollbar: {fileID: 322952891413731838}

@@ -59,7 +59,7 @@ public class Dialog : MonoBehaviour
             int next = npc.Next();
             if (next > 0) {
                 chosen = false;
-                DisplayChoices();
+                StartCoroutine(DisplayChoices());
             }
             else if (next == -1) {
                 End();
@@ -88,7 +88,7 @@ public class Dialog : MonoBehaviour
         newMessage.GetComponentInChildren<Text>().text = message;
         newMessage.localScale = new Vector3(1, 1, 1);
         
-        System.Action<ITween<float>> updatePos = (t) =>
+        System.Action<ITween<float>> updateAlpha = (t) =>
             {
                 newMessage.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
             };
@@ -100,10 +100,12 @@ public class Dialog : MonoBehaviour
                     
                 };
                 continueDialog();
+                scrollRect.verticalNormalizedPosition = 0;
             };
         
         currentState = State.Waiting;
-        TweenFactory.Tween("Reply", 0, 1, Mathf.Clamp(Mathf.Sqrt(message.Length), 0.1f, 1.5f), TweenScaleFunctions.QuinticEaseOut, updatePos, finishTween);
+        TweenFactory.Tween("Reply", 0, 1, 1f, TweenScaleFunctions.QuinticEaseOut, updateAlpha, finishTween);
+        
     }
     public void houseReply(string message) {
         RectTransform newMessage = (RectTransform) Instantiate(HouseMessageBox, new Vector2(0, 0), ScrollViewContent.rotation);
@@ -115,9 +117,10 @@ public class Dialog : MonoBehaviour
         reply(newMessage, message);
     }
 
-    public void DisplayChoices()
+    public IEnumerator DisplayChoices()
     {
         currentState = State.Choice;
+        yield return new WaitForSeconds(0.8f);
 
         string[] choices = npc.GetChoices();
 
@@ -130,19 +133,17 @@ public class Dialog : MonoBehaviour
             button.transform.localScale = new Vector3(1, 1, 1);
             button.onClick.AddListener(() => chooseMessage(choice));
             button.GetComponentInChildren<Text>().text = choice;
+            buttons.Add(button);
+            button.GetComponent<CanvasGroup>().alpha = 0;
             
             System.Action<ITween<float>> setAlpha = (t) =>
             {
-                button.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
+                if (button != null) {
+                    button.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
+                }
             };
-            System.Action<ITween<float>> finish = (t) =>
-            {
-                button.interactable = true;
-            };
-            button.interactable = false;
-            TweenFactory.Tween("FadeIn" + choice, 0f, 1f, 0.7f, TweenScaleFunctions.QuinticEaseOut, setAlpha, finish);
-
-            buttons.Add(button);
+            yield return new WaitForSeconds(0.1f);
+            TweenFactory.Tween("FadeIn" + choice, 0, 1f, 1f, TweenScaleFunctions.QuinticEaseOut, setAlpha);
         }
     }
 
@@ -163,20 +164,6 @@ public class Dialog : MonoBehaviour
             default:
                 Debug.LogError("Unknown trigger: " + trigger);
                 break;
-        }
-    }
-
-    public void moveInChoiceButtons() {
-        foreach(Button btn in buttons) {
-            System.Action<ITween<Vector2>> updatePos = (t) =>
-            {
-                btn.transform.position = t.CurrentValue;
-            };
-            Vector2 currentPos = btn.transform.position;
-            Vector2 endPos = new Vector2(0, currentPos.y);
-
-            // completion defaults to null if not passed in
-            TweenFactory.Tween("Move" + btn.gameObject.name, currentPos, endPos, 0.4f, TweenScaleFunctions.QuinticEaseOut, updatePos);
         }
     }
 
