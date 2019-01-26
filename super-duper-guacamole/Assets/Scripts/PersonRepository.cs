@@ -12,7 +12,7 @@ public class PersonRepository : MonoBehaviour
     
 
     public Person getPerson() {
-        if (i < persons.Length - 1) {
+        if (i < persons.Length) {
             Person result = persons[i];
             i++;
             return result;
@@ -22,8 +22,9 @@ public class PersonRepository : MonoBehaviour
             return null;
         }
         else {
-            i = 0;
-            return persons[i];
+            Person result = persons[0];
+            i = 1;
+            return result;
         }
        
     }
