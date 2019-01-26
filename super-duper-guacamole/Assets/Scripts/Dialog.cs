@@ -122,42 +122,47 @@ public class Dialog : MonoBehaviour
         string[] choices = npc.GetChoices();
 
         buttons = new List<Button> {};
-
-        HashSet<string> usedChoices = new HashSet<string>();
+        
 
         foreach (string choice in choices) {
-            if (!usedChoices.Contains(choice)) {
-                usedChoices.Add(choice);
-                Button button = (Button) Instantiate(responseButton, new Vector2(0, 0), ScrollViewContent.rotation);
-                button.transform.SetParent(ScrollViewContent, false);
-                button.transform.localScale = new Vector3(1, 1, 1);
-                button.onClick.AddListener(() => chooseMessage(choice));
-                button.GetComponentInChildren<Text>().text = choice;
-                
-                System.Action<ITween<float>> setAlpha = (t) =>
-                {
-                    button.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
-                };
-                System.Action<ITween<float>> finish = (t) =>
-                {
-                    button.interactable = true;
-                };
-                button.interactable = false;
-                TweenFactory.Tween("FadeIn" + choice, 0f, 1f, 0.7f, TweenScaleFunctions.QuinticEaseOut, setAlpha, finish);
+            Button button = (Button) Instantiate(responseButton, new Vector2(0, 0), ScrollViewContent.rotation);
+            button.transform.SetParent(ScrollViewContent, false);
+            button.transform.localScale = new Vector3(1, 1, 1);
+            button.onClick.AddListener(() => chooseMessage(choice));
+            button.GetComponentInChildren<Text>().text = choice;
+            
+            System.Action<ITween<float>> setAlpha = (t) =>
+            {
+                button.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
+            };
+            System.Action<ITween<float>> finish = (t) =>
+            {
+                button.interactable = true;
+            };
+            button.interactable = false;
+            TweenFactory.Tween("FadeIn" + choice, 0f, 1f, 0.7f, TweenScaleFunctions.QuinticEaseOut, setAlpha, finish);
 
-                buttons.Add(button);
-            }
+            buttons.Add(button);
         }
     }
 
     public void End() {
         Debug.Log("FINISHED WITH: " + npc.GetTrigger());
         currentState = State.End;
-        if (npc.GetTrigger() == TRIGGER_WIN) {
-            StartCoroutine(loadScene("Winning Endscreen"));
-        } 
-        else {
-            StartCoroutine(loadScene("Home"));
+        string trigger = npc.GetTrigger();
+        switch (trigger) {
+            case TRIGGER_WIN:
+                StartCoroutine(loadScene("Winning Endscreen"));
+                break;
+            case TRIGGER_LOSE:
+                StartCoroutine(loadScene("Losing Endscreen"));
+                break;
+            case TRIGGER_OUT:
+                StartCoroutine(loadScene("Home"));
+                break;
+            default:
+                Debug.LogError("Unknown trigger: " + trigger);
+                break;
         }
     }
 

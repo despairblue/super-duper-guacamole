@@ -710,7 +710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 45
+  - CurrentId: 47
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -952,8 +952,8 @@ MonoBehaviour:
     - ID: 17
       Size:
         serializedVersion: 2
-        x: 1141
-        y: 407
+        x: 1136
+        y: 471
         width: 150
         height: 125
       Text: Oh no. I could never let anyone into the house, let alone into my life.
@@ -981,8 +981,8 @@ MonoBehaviour:
     - ID: 19
       Size:
         serializedVersion: 2
-        x: 1137
-        y: 726
+        x: 1133
+        y: 747
         width: 150
         height: 125
       Text: I don't understand. The cats just come to me, I don't get them.
@@ -995,8 +995,8 @@ MonoBehaviour:
     - ID: 20
       Size:
         serializedVersion: 2
-        x: 1138
-        y: 571
+        x: 1135
+        y: 600
         width: 150
         height: 125
       Text: That's the beauty with cats, they are so clean they even clean up after
@@ -1010,8 +1010,8 @@ MonoBehaviour:
     - ID: 21
       Size:
         serializedVersion: 2
-        x: 1260
-        y: 72
+        x: 1726
+        y: 230
         width: 150
         height: 125
       Text: How much money do you make writing books?
@@ -1024,8 +1024,8 @@ MonoBehaviour:
     - ID: 22
       Size:
         serializedVersion: 2
-        x: 1426
-        y: 71
+        x: 1911
+        y: 236
         width: 150
         height: 125
       Text: Well that's up to my publisher I think.
@@ -1038,8 +1038,8 @@ MonoBehaviour:
     - ID: 23
       Size:
         serializedVersion: 2
-        x: 1585
-        y: 68
+        x: 1725
+        y: 375
         width: 150
         height: 125
       Text: Oh you have a publisher?
@@ -1052,8 +1052,8 @@ MonoBehaviour:
     - ID: 24
       Size:
         serializedVersion: 2
-        x: 1745
-        y: 68
+        x: 1905
+        y: 376
         width: 150
         height: 125
       Text: Oh no. I look for one when my book is done.
@@ -1066,8 +1066,8 @@ MonoBehaviour:
     - ID: 25
       Size:
         serializedVersion: 2
-        x: 1905
-        y: 68
+        x: 1721
+        y: 526
         width: 150
         height: 125
       Text: And you're almost done?
@@ -1080,8 +1080,8 @@ MonoBehaviour:
     - ID: 26
       Size:
         serializedVersion: 2
-        x: 2065
-        y: 68
+        x: 1900
+        y: 532
         width: 150
         height: 125
       Text: But of course. I've been working on it for 30 years already. It's almost
@@ -1095,8 +1095,8 @@ MonoBehaviour:
     - ID: 27
       Size:
         serializedVersion: 2
-        x: 2067
-        y: 218
+        x: 1721
+        y: 669
         width: 150
         height: 125
       Text: 30 years? Have you ever finished any book?
@@ -1109,17 +1109,17 @@ MonoBehaviour:
     - ID: 28
       Size:
         serializedVersion: 2
-        x: 2067
-        y: 360
+        x: 1898
+        y: 676
         width: 150
         height: 125
       Text: This will be my first.
       Type: 0
-      NodeType: 2
+      NodeType: 1
       Parent: 27
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 2d000000
     - ID: 29
       Size:
         serializedVersion: 2
@@ -1131,8 +1131,8 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 8
-      Trigger: 1
-      TriggerText: in
+      Trigger: 0
+      TriggerText: 
       Connections: 25000000
     - ID: 30
       Size:
@@ -1146,8 +1146,8 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 4
-      Trigger: 1
-      TriggerText: in
+      Trigger: 0
+      TriggerText: 
       Connections: 26000000
     - ID: 31
       Size:
@@ -1160,8 +1160,8 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 8
-      Trigger: 1
-      TriggerText: out
+      Trigger: 0
+      TriggerText: 
       Connections: 24000000
     - ID: 32
       Size:
@@ -1194,11 +1194,11 @@ MonoBehaviour:
     - ID: 34
       Size:
         serializedVersion: 2
-        x: 1349
-        y: 864
+        x: 1498
+        y: 868
         width: 150
         height: 125
-      Text: 
+      Text: Such a pity.
       Type: 0
       NodeType: 2
       Parent: 33
@@ -1208,11 +1208,11 @@ MonoBehaviour:
     - ID: 35
       Size:
         serializedVersion: 2
-        x: 1343
-        y: 734
+        x: 1500
+        y: 731
         width: 150
         height: 125
-      Text: 
+      Text: We're going to have a fabulous time.
       Type: 0
       NodeType: 2
       Parent: 32
@@ -1222,44 +1222,44 @@ MonoBehaviour:
     - ID: 36
       Size:
         serializedVersion: 2
-        x: 974
-        y: 338
+        x: 1144
+        y: 336
         width: 150
         height: 125
-      Text: 
+      Text: Such a pity.
       Type: 0
       NodeType: 2
       Parent: 31
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 37
       Size:
         serializedVersion: 2
-        x: 983
-        y: 203
+        x: 1144
+        y: 208
         width: 150
         height: 125
-      Text: 
+      Text: That's very kind of you.
       Type: 0
       NodeType: 2
       Parent: 29
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 38
       Size:
         serializedVersion: 2
-        x: 634
-        y: 348
+        x: 779
+        y: 362
         width: 150
         height: 125
-      Text: 
+      Text: Meow.
       Type: 0
       NodeType: 2
       Parent: 30
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 39
       Size:
@@ -1274,22 +1274,22 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 20
-      Trigger: 1
-      TriggerText: out
+      Trigger: 0
+      TriggerText: 
       Connections: 28000000
     - ID: 40
       Size:
         serializedVersion: 2
-        x: 1332
-        y: 574
+        x: 1514
+        y: 569
         width: 150
         height: 125
-      Text: 
+      Text: Such a pity.
       Type: 0
       NodeType: 2
       Parent: 39
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 41
       Size:
@@ -1302,22 +1302,22 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 20
-      Trigger: 1
-      TriggerText: in
+      Trigger: 0
+      TriggerText: 
       Connections: 2a000000
     - ID: 42
       Size:
         serializedVersion: 2
-        x: 1359
-        y: 427
+        x: 1512
+        y: 432
         width: 150
         height: 125
-      Text: 
+      Text: Meow.
       Type: 0
       NodeType: 2
       Parent: 41
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 43
       Size:
@@ -1348,6 +1348,34 @@ MonoBehaviour:
       Trigger: 0
       TriggerText: 
       Connections: 1200000002000000
+    - ID: 45
+      Size:
+        serializedVersion: 2
+        x: 1716
+        y: 815
+        width: 150
+        height: 125
+      Text: I think I keep looking for people who can pay the rent.
+      Type: 1
+      NodeType: 1
+      Parent: 28
+      Trigger: 0
+      TriggerText: 
+      Connections: 2e000000
+    - ID: 46
+      Size:
+        serializedVersion: 2
+        x: 1899
+        y: 819
+        width: 150
+        height: 125
+      Text: Such a pity.
+      Type: 2
+      NodeType: 2
+      Parent: 45
+      Trigger: 1
+      TriggerText: out
+      Connections: 
   CurrentSet: 0
   TabList:
   - angelique
@@ -1363,7 +1391,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &390273326
 GameObject:
@@ -2583,7 +2611,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &504516041
 GameObject:
@@ -2723,6 +2751,7 @@ MonoBehaviour:
   HumansMessageBox: {fileID: 0}
   responseButton: {fileID: 0}
   scrollRect: {fileID: 0}
+  carl: {fileID: 0}
 --- !u!1 &703330530
 GameObject:
   m_ObjectHideFlags: 0
