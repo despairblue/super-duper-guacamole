@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class HomeInteraction : MonoBehaviour
 {
     public PersonRepository repo;
-
+    public swipable intercatioN;
     public Image personImage;
     public Text personText;
 
@@ -19,6 +19,7 @@ public class HomeInteraction : MonoBehaviour
     {
         loadNextPerson();       
     }
+
 
     public void likePerson() {
         loadMessage();

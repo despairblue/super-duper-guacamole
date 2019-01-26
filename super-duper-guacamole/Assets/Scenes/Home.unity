@@ -203,7 +203,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1448381359, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Homescreen
       objectReference: {fileID: 0}
     - target: {fileID: 1448381363, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -361,6 +361,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.08416748
+      objectReference: {fileID: 0}
+    - target: {fileID: 5704673866075935848, guid: e9eea96bd6f6cf940989b5ea5d65143c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000015258789
       objectReference: {fileID: 0}
     - target: {fileID: 844417111, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

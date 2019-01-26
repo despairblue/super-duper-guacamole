@@ -10,7 +10,9 @@ public class swipable : EventTrigger
     private int dragMargin = 300;
     private Vector2 startPos;
     private Vector2 dragStartPos;
+    private HomeInteraction dependency;
     public Transform canvasTransform;
+
     void Start()
     {
         canvasTransform = transform.parent;
@@ -39,15 +41,17 @@ public class swipable : EventTrigger
         else {
             moveBack();
         }
-        // transform.position = startPos;
+        transform.position = startPos;
     }
 
     public void swipeLeft() {
-        Debug.Log("SWIPE LEFT");
+        dependency = GameObject.Find("Homescreen").GetComponent<HomeInteraction>();
+        dependency.dislikePerson();
     }
 
     public void swipeRight() {
-        Debug.Log("SWIPE RIGHT");
+        dependency = GameObject.Find("Homescreen").GetComponent<HomeInteraction>();
+        dependency.likePerson();
     }
 
     private void moveBack() {

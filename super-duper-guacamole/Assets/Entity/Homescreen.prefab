@@ -400,6 +400,7 @@ GameObject:
   - component: {fileID: 1168779961}
   - component: {fileID: 1168779960}
   - component: {fileID: 1168779959}
+  - component: {fileID: 3823671773987103818}
   m_Layer: 5
   m_Name: Picture
   m_TagString: Untagged
@@ -506,6 +507,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &3823671773987103818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168779957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13ffac6066be5111a15d29708b5c9c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
+  delegates: []
+  canvasTransform: {fileID: 0}
 --- !u!1 &1448381359
 GameObject:
   m_ObjectHideFlags: 0
