@@ -178,11 +178,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Messaging
       objectReference: {fileID: 0}
-    - target: {fileID: 4892829783775603039, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_Text
-      value: A2
-      objectReference: {fileID: 0}
     - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -447,17 +442,26 @@ PrefabInstance:
     - target: {fileID: 4265642206290646973, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4593635468550751651, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1697389007, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8072900080415321703, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1992038602081099415, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -584,6 +588,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: A3
       objectReference: {fileID: 0}
+    - target: {fileID: 4892829783775603039, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_Text
+      value: A2
+      objectReference: {fileID: 0}
     - target: {fileID: 8962895938457823610, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_FontData.m_MaxSize
@@ -623,10 +632,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: A3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1697389007, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -692,7 +697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 19
+  - CurrentId: 0
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -1169,10 +1174,730 @@ MonoBehaviour:
       Trigger: 0
       TriggerText: 
       Connections: 
-  CurrentSet: 1
+  - CurrentId: 0
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 173
+        y: 311
+        width: 150
+        height: 125
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 010000000300000005000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 521
+        y: 137
+        width: 150
+        height: 125
+      Text: Do you drink a lot of alcohol?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 02000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 819
+        y: 236
+        width: 150
+        height: 125
+      Text: "Oh, no. I just drink a single glass of wine each day while I read. I
+        read that it\u2019s good for your heart. I want to live a long and healthy
+        life. "
+      Type: 0
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 457
+        y: 339
+        width: 150
+        height: 125
+      Text: What kinds of books do you write?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 783
+        y: 448
+        width: 150
+        height: 125
+      Text: "Oh, I don\u2019t write books anymore.  I used to be a writer for a video
+        game company, Electronic Arts. I wrote stories for their games and could retire
+        from the royalties I earned working for them. "
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 457
+        y: 519
+        width: 150
+        height: 125
+      Text: Are you single or will other people move in with you?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 726
+        y: 686
+        width: 150
+        height: 125
+      Text: "I have been going on a lot of dates, but I haven\u2019t been able to
+        find a man who could keep up with me. "
+      Type: 0
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 10000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1069
+        y: 236
+        width: 150
+        height: 125
+      Text: Do you want this tenant to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b0000000c000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1320
+        y: 115
+        width: 150
+        height: 125
+      Text: Oh, I didn't know that. Maybe I should start doing that as well. Want
+        to move in with me?
+      Type: 2
+      NodeType: 2
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 1324
+        y: 273
+        width: 150
+        height: 125
+      Text: That sounds like a lie that an alcoholic would tell. No thank you. Please
+        go somewhere else.
+      Type: 2
+      NodeType: 2
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 998
+        y: 445
+        width: 150
+        height: 125
+      Text: Do you want this tenant to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e0000000f000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 1286
+        y: 566
+        width: 150
+        height: 125
+      Text: I hate EA. They ruined my favourite game studio. Sorry. I would just feel
+        angry every time I look at you. You can't move in.
+      Type: 2
+      NodeType: 2
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1323
+        y: 425
+        width: 150
+        height: 125
+      Text: 'Wow, that sounds cool. You can tell me all about it and we can play the
+        games you worked on when you move in. Please do move in with me. '
+      Type: 2
+      NodeType: 2
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 886
+        y: 686
+        width: 150
+        height: 125
+      Text: Do you want this tenant to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 1100000012000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 1062
+        y: 607
+        width: 150
+        height: 125
+      Text: 'Sounds like fun. I would like to see all the guys that you meet. Please
+        move in. '
+      Type: 2
+      NodeType: 2
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 1065
+        y: 770
+        width: 150
+        height: 125
+      Text: Sounds like no one likes to spend a lot of time with you. I trust the
+        majority's judgement. Please leave me alone.
+      Type: 2
+      NodeType: 2
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 0
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 173
+        y: 311
+        width: 150
+        height: 125
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 010000000300000005000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 521
+        y: 137
+        width: 150
+        height: 125
+      Text: Do you drink a lot of alcohol?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 02000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 819
+        y: 236
+        width: 150
+        height: 125
+      Text: "Oh, no. I just drink a single glass of wine each day while I read. I
+        read that it\u2019s good for your heart. I want to live a long and healthy
+        life. "
+      Type: 0
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 457
+        y: 339
+        width: 150
+        height: 125
+      Text: What kinds of books do you write?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 783
+        y: 448
+        width: 150
+        height: 125
+      Text: "Oh, I don\u2019t write books anymore.  I used to be a writer for a video
+        game company, Electronic Arts. I wrote stories for their games and could retire
+        from the royalties I earned working for them. "
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 457
+        y: 519
+        width: 150
+        height: 125
+      Text: Are you single or will other people move in with you?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 726
+        y: 686
+        width: 150
+        height: 125
+      Text: "I have been going on a lot of dates, but I haven\u2019t been able to
+        find a man who could keep up with me. "
+      Type: 0
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 10000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1069
+        y: 236
+        width: 150
+        height: 125
+      Text: Do you want this tenant to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b0000000c000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1320
+        y: 115
+        width: 150
+        height: 125
+      Text: Oh, I didn't know that. Maybe I should start doing that as well. Want
+        to move in with me?
+      Type: 2
+      NodeType: 2
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 1324
+        y: 273
+        width: 150
+        height: 125
+      Text: That sounds like a lie that an alcoholic would tell. No thank you. Please
+        go somewhere else.
+      Type: 2
+      NodeType: 2
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 998
+        y: 445
+        width: 150
+        height: 125
+      Text: Do you want this tenant to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e0000000f000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 1286
+        y: 566
+        width: 150
+        height: 125
+      Text: I hate EA. They ruined my favourite game studio. Sorry. I would just feel
+        angry every time I look at you. You can't move in.
+      Type: 2
+      NodeType: 2
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1323
+        y: 425
+        width: 150
+        height: 125
+      Text: 'Wow, that sounds cool. You can tell me all about it and we can play the
+        games you worked on when you move in. Please do move in with me. '
+      Type: 2
+      NodeType: 2
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 886
+        y: 686
+        width: 150
+        height: 125
+      Text: Do you want this tenant to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 1100000012000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 1062
+        y: 607
+        width: 150
+        height: 125
+      Text: 'Sounds like fun. I would like to see all the guys that you meet. Please
+        move in. '
+      Type: 2
+      NodeType: 2
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 1065
+        y: 770
+        width: 150
+        height: 125
+      Text: Sounds like no one likes to spend a lot of time with you. I trust the
+        majority's judgement. Please leave me alone.
+      Type: 2
+      NodeType: 2
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 0
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 173
+        y: 311
+        width: 150
+        height: 125
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 010000000300000005000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 521
+        y: 137
+        width: 150
+        height: 125
+      Text: Do you drink a lot of alcohol?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 02000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 819
+        y: 236
+        width: 150
+        height: 125
+      Text: "Oh, no. I just drink a single glass of wine each day while I read. I
+        read that it\u2019s good for your heart. I want to live a long and healthy
+        life. "
+      Type: 0
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 457
+        y: 339
+        width: 150
+        height: 125
+      Text: What kinds of books do you write?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 783
+        y: 448
+        width: 150
+        height: 125
+      Text: "Oh, I don\u2019t write books anymore.  I used to be a writer for a video
+        game company, Electronic Arts. I wrote stories for their games and could retire
+        from the royalties I earned working for them. "
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 457
+        y: 519
+        width: 150
+        height: 125
+      Text: Are you single or will other people move in with you?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 726
+        y: 686
+        width: 150
+        height: 125
+      Text: "I have been going on a lot of dates, but I haven\u2019t been able to
+        find a man who could keep up with me. "
+      Type: 0
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 10000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1069
+        y: 236
+        width: 150
+        height: 125
+      Text: Do you want this tenant to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b0000000c000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1320
+        y: 115
+        width: 150
+        height: 125
+      Text: Oh, I didn't know that. Maybe I should start doing that as well. Want
+        to move in with me?
+      Type: 2
+      NodeType: 2
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 1324
+        y: 273
+        width: 150
+        height: 125
+      Text: That sounds like a lie that an alcoholic would tell. No thank you. Please
+        go somewhere else.
+      Type: 2
+      NodeType: 2
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 998
+        y: 445
+        width: 150
+        height: 125
+      Text: Do you want this tenant to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e0000000f000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 1286
+        y: 566
+        width: 150
+        height: 125
+      Text: I hate EA. They ruined my favourite game studio. Sorry. I would just feel
+        angry every time I look at you. You can't move in.
+      Type: 2
+      NodeType: 2
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1323
+        y: 425
+        width: 150
+        height: 125
+      Text: 'Wow, that sounds cool. You can tell me all about it and we can play the
+        games you worked on when you move in. Please do move in with me. '
+      Type: 2
+      NodeType: 2
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 886
+        y: 686
+        width: 150
+        height: 125
+      Text: Do you want this tenant to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 1100000012000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 1062
+        y: 607
+        width: 150
+        height: 125
+      Text: 'Sounds like fun. I would like to see all the guys that you meet. Please
+        move in. '
+      Type: 2
+      NodeType: 2
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 1065
+        y: 770
+        width: 150
+        height: 125
+      Text: Sounds like no one likes to spend a lot of time with you. I trust the
+        majority's judgement. Please leave me alone.
+      Type: 2
+      NodeType: 2
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 4
   TabList:
-  - Tenant 1
-  - Tenant 2
+  - Jerry
+  - Angelique
+  - Carl
+  - Robert
+  - Gerard
 --- !u!4 &323346974
 Transform:
   m_ObjectHideFlags: 0
