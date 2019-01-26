@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class Dialog : MonoBehaviour
 {
     public Dialogues npc;
+    public Text ChatBoxHouse;
+    public Text Answer1;
+    public Text Answer2;
+    public Text Answer3;
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +20,10 @@ public class Dialog : MonoBehaviour
 
     public void Display()
     {
-        var Info = GetComponentInChildren<TextMeshProUGUI>();
-        Info.text = npc.GetCurrentDialogue();
+        ChatBoxHouse.text = npc.GetCurrentDialogue();
+        Answer1.text = npc.GetChoices()[0];
+        Answer2.text = npc.GetChoices()[1];
+        Answer3.text = npc.GetChoices()[2];
     }
 
     // Update is called once per frame
