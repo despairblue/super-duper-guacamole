@@ -69,7 +69,7 @@ public class HomeInteraction : MonoBehaviour
             loadNormalView();
         }
         else { 
-            personText.transform.position = new Vector3(personText.transform.position.x, 3.8f, personText.transform.position.z);
+            personText.transform.position = new Vector3(personText.transform.position.x, 3.7f, personText.transform.position.z);
             infoText.gameObject.SetActive(true);
             infoText.text = displayablePerson.InfoText;
         }
