@@ -112,61 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &20577632 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4892829783775603039, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 208863432}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &84496786 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 145276247191035938, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 208863432}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &84496787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84496786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
-  m_VerticalFit: 2
---- !u!114 &84496788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84496786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 10
-    m_Right: 10
-    m_Top: 10
-    m_Bottom: 10
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 1
 --- !u!1001 &208863432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -352,7 +297,7 @@ PrefabInstance:
     - target: {fileID: 3653729546298152794, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -367,7 +312,7 @@ PrefabInstance:
     - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 77.9661
       objectReference: {fileID: 0}
     - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -377,7 +322,7 @@ PrefabInstance:
     - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 826.1017
       objectReference: {fileID: 0}
     - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -387,7 +332,7 @@ PrefabInstance:
     - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 57.966103
       objectReference: {fileID: 0}
     - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -397,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -407,17 +352,17 @@ PrefabInstance:
     - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 413.05084
       objectReference: {fileID: 0}
     - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.98305
       objectReference: {fileID: 0}
     - target: {fileID: 2758145066030228556, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -462,6 +407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1233819263780465317, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1992038602081099415, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
@@ -653,6 +603,71 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5527040657813754119, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654511967182377838, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654511967182377838, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099994102620620709, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099994102620620709, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
 --- !u!114 &236486567 stripped
@@ -697,7 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 31
+  - CurrentId: 45
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -719,8 +734,8 @@ MonoBehaviour:
     - ID: 1
       Size:
         serializedVersion: 2
-        x: 264
-        y: 60
+        x: 219
+        y: 52
         width: 150
         height: 125
       Text: How much do you usually drink?
@@ -733,8 +748,8 @@ MonoBehaviour:
     - ID: 2
       Size:
         serializedVersion: 2
-        x: 236
-        y: 410
+        x: 445
+        y: 835
         width: 150
         height: 125
       Text: So, how many cats do you have exactly?
@@ -747,8 +762,8 @@ MonoBehaviour:
     - ID: 3
       Size:
         serializedVersion: 2
-        x: 269
-        y: 227
+        x: 230
+        y: 359
         width: 150
         height: 125
       Text: Will you be moving in by yourself? Well, apart from the cats of I guess.
@@ -761,8 +776,8 @@ MonoBehaviour:
     - ID: 4
       Size:
         serializedVersion: 2
-        x: 441
-        y: 60
+        x: 404
+        y: 187
         width: 150
         height: 125
       Text: "Never more than a couple of glasses an evening. This helps me writing.
@@ -836,12 +851,12 @@ MonoBehaviour:
       Parent: 7
       Trigger: 0
       TriggerText: 
-      Connections: 1d000000
+      Connections: 1d0000001f000000
     - ID: 9
       Size:
         serializedVersion: 2
-        x: 256
-        y: 570
+        x: 502
+        y: 1020
         width: 150
         height: 125
       Text: Oh, I think 4. I can never be really sure. Sometimes they bring friends
@@ -851,12 +866,12 @@ MonoBehaviour:
       Parent: 2
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 12000000
     - ID: 10
       Size:
         serializedVersion: 2
-        x: 439
-        y: 340
+        x: 408
+        y: 574
         width: 150
         height: 125
       Text: Oh, of course. I'm not very good with people.
@@ -869,8 +884,8 @@ MonoBehaviour:
     - ID: 11
       Size:
         serializedVersion: 2
-        x: 608
-        y: 348
+        x: 610
+        y: 500
         width: 150
         height: 125
       Text: Do you have contact with other people? Like ever?
@@ -883,8 +898,8 @@ MonoBehaviour:
     - ID: 13
       Size:
         serializedVersion: 2
-        x: 609
-        y: 498
+        x: 591
+        y: 658
         width: 150
         height: 125
       Text: Do you have regular contact with your family?
@@ -897,8 +912,8 @@ MonoBehaviour:
     - ID: 14
       Size:
         serializedVersion: 2
-        x: 782
-        y: 501
+        x: 764
+        y: 654
         width: 150
         height: 125
       Text: Oh but sure, my cats are always there.
@@ -907,12 +922,12 @@ MonoBehaviour:
       Parent: 13
       Trigger: 0
       TriggerText: 
-      Connections: 0f00000012000000
+      Connections: 0f000000120000002b000000
     - ID: 15
       Size:
         serializedVersion: 2
-        x: 1122
-        y: 498
+        x: 948
+        y: 566
         width: 150
         height: 125
       Text: How often do you clean?
@@ -939,8 +954,8 @@ MonoBehaviour:
     - ID: 17
       Size:
         serializedVersion: 2
-        x: 1120
-        y: 353
+        x: 1141
+        y: 407
         width: 150
         height: 125
       Text: Oh no. I could never let anyone into the house, let alone into my life.
@@ -950,12 +965,12 @@ MonoBehaviour:
       Parent: 16
       Trigger: 0
       TriggerText: 
-      Connections: 0f00000015000000
+      Connections: 0f0000001500000012000000
     - ID: 18
       Size:
         serializedVersion: 2
-        x: 942
-        y: 639
+        x: 950
+        y: 728
         width: 150
         height: 125
       Text: How many cats do you want to have eventually?
@@ -968,37 +983,37 @@ MonoBehaviour:
     - ID: 19
       Size:
         serializedVersion: 2
-        x: 1138
-        y: 645
+        x: 1137
+        y: 726
         width: 150
         height: 125
       Text: I don't understand. The cats just come to me, I don't get them.
-      Type: 0
-      NodeType: 2
+      Type: 1
+      NodeType: 1
       Parent: 18
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 2000000021000000
     - ID: 20
       Size:
         serializedVersion: 2
-        x: 1360
-        y: 486
+        x: 1138
+        y: 571
         width: 150
         height: 125
-      Text: That's the beauty with cats, the are so clean they even clean up after
+      Text: That's the beauty with cats, they are so clean they even clean up after
         me.
-      Type: 0
-      NodeType: 2
+      Type: 1
+      NodeType: 1
       Parent: 15
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 2700000029000000
     - ID: 21
       Size:
         serializedVersion: 2
-        x: 1265
-        y: 68
+        x: 1260
+        y: 72
         width: 150
         height: 125
       Text: How much money do you make writing books?
@@ -1116,26 +1131,225 @@ MonoBehaviour:
         height: 125
       Text: Functioning alcoholic? Could be worse. Make youreself at home.
       Type: 2
-      NodeType: 2
+      NodeType: 1
       Parent: 8
       Trigger: 1
       TriggerText: in
-      Connections: 
+      Connections: 25000000
     - ID: 30
       Size:
         serializedVersion: 2
-        x: 440
-        y: 199
+        x: 610
+        y: 348
         width: 150
         height: 125
       Text: Oh, I didn't know that. Maybe I should start doing that as well. Want
         to move in with me?
       Type: 2
-      NodeType: 2
+      NodeType: 1
       Parent: 4
       Trigger: 1
       TriggerText: in
+      Connections: 26000000
+    - ID: 31
+      Size:
+        serializedVersion: 2
+        x: 957
+        y: 339
+        width: 150
+        height: 125
+      Text: "o_O \n...I think I keep looking."
+      Type: 2
+      NodeType: 1
+      Parent: 8
+      Trigger: 1
+      TriggerText: out
+      Connections: 24000000
+    - ID: 32
+      Size:
+        serializedVersion: 2
+        x: 1318
+        y: 734
+        width: 150
+        height: 125
+      Text: An unlimited supply of cats? Make yourself at home.
+      Type: 2
+      NodeType: 1
+      Parent: 19
+      Trigger: 1
+      TriggerText: in
+      Connections: 23000000
+    - ID: 33
+      Size:
+        serializedVersion: 2
+        x: 1320
+        y: 865
+        width: 150
+        height: 125
+      Text: You know, I'm not that much into cats. Be gone.
+      Type: 2
+      NodeType: 1
+      Parent: 19
+      Trigger: 1
+      TriggerText: out
+      Connections: 22000000
+    - ID: 34
+      Size:
+        serializedVersion: 2
+        x: 1349
+        y: 864
+        width: 150
+        height: 125
+      Text: 
+      Type: 0
+      NodeType: 2
+      Parent: 33
+      Trigger: 0
+      TriggerText: 
       Connections: 
+    - ID: 35
+      Size:
+        serializedVersion: 2
+        x: 1343
+        y: 734
+        width: 150
+        height: 125
+      Text: 
+      Type: 0
+      NodeType: 2
+      Parent: 32
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 36
+      Size:
+        serializedVersion: 2
+        x: 974
+        y: 338
+        width: 150
+        height: 125
+      Text: 
+      Type: 0
+      NodeType: 2
+      Parent: 31
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 37
+      Size:
+        serializedVersion: 2
+        x: 983
+        y: 203
+        width: 150
+        height: 125
+      Text: 
+      Type: 0
+      NodeType: 2
+      Parent: 29
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 38
+      Size:
+        serializedVersion: 2
+        x: 634
+        y: 348
+        width: 150
+        height: 125
+      Text: 
+      Type: 0
+      NodeType: 2
+      Parent: 30
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 39
+      Size:
+        serializedVersion: 2
+        x: 1318
+        y: 573
+        width: 150
+        height: 125
+      Text: So the cats basically run the household? Maybe I should talk to them then...I
+        don't think you can unfold your full potential her. I think I have to let
+        you go.
+      Type: 2
+      NodeType: 1
+      Parent: 20
+      Trigger: 1
+      TriggerText: out
+      Connections: 28000000
+    - ID: 40
+      Size:
+        serializedVersion: 2
+        x: 1332
+        y: 574
+        width: 150
+        height: 125
+      Text: 
+      Type: 0
+      NodeType: 2
+      Parent: 39
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 41
+      Size:
+        serializedVersion: 2
+        x: 1326
+        y: 429
+        width: 150
+        height: 125
+      Text: Oh, that's how cats work? Then be my guest. Make yourself at home.
+      Type: 2
+      NodeType: 1
+      Parent: 20
+      Trigger: 1
+      TriggerText: in
+      Connections: 2a000000
+    - ID: 42
+      Size:
+        serializedVersion: 2
+        x: 1359
+        y: 427
+        width: 150
+        height: 125
+      Text: 
+      Type: 0
+      NodeType: 2
+      Parent: 41
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 43
+      Size:
+        serializedVersion: 2
+        x: 960
+        y: 986
+        width: 150
+        height: 125
+      Text: Do your cats scratch furniture.
+      Type: 2
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 2c000000
+    - ID: 44
+      Size:
+        serializedVersion: 2
+        x: 745
+        y: 901
+        width: 150
+        height: 125
+      Text: Sometimes some do, but those are not my cats I think, and most of the
+        time it's also not my furniture.
+      Type: 1
+      NodeType: 1
+      Parent: 43
+      Trigger: 0
+      TriggerText: 
+      Connections: 1200000002000000
   CurrentSet: 0
   TabList:
   - angelique
@@ -2505,11 +2719,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   npc: {fileID: 0}
-  ChatBoxHouse: {fileID: 2075249706}
   Answer1: {fileID: 1484310061}
+  answer1Button: {fileID: 0}
   Answer2: {fileID: 929815961}
+  answer2Button: {fileID: 0}
   Answer3: {fileID: 236486567}
-  AnswerBox: {fileID: 20577632}
+  answer3Button: {fileID: 0}
+  TopProfilePic: {fileID: 0}
+  ScrollViewContent: {fileID: 0}
+  ScrollRect: {fileID: 0}
+  HouseMessageBox: {fileID: 0}
+  HumansMessageBox: {fileID: 0}
 --- !u!114 &929815961 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3735162604581749438, guid: affb44b7d6fc601458284a3ddbf2f2f0,
@@ -2729,15 +2949,3 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
---- !u!114 &2075249706 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2758145066030228556, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 208863432}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
