@@ -289,6 +289,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1697389006, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 272457278, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
@@ -329,10 +333,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -185.1
       objectReference: {fileID: 0}
-    - target: {fileID: 1697389006, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 844417112, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
       propertyPath: m_Color.r
       value: 0.9686275
@@ -344,18 +344,6 @@ PrefabInstance:
     - target: {fileID: 844417112, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
       propertyPath: m_Color.b
       value: 0.98823535
-      objectReference: {fileID: 0}
-    - target: {fileID: 844417111, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 844417111, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 844417111, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1031197789, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
       propertyPath: m_Color.r
@@ -373,6 +361,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.08416748
+      objectReference: {fileID: 0}
+    - target: {fileID: 5704673866075935848, guid: e9eea96bd6f6cf940989b5ea5d65143c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: 844417111, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 844417111, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 844417111, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5500454944710539987, guid: e9eea96bd6f6cf940989b5ea5d65143c,
         type: 3}
@@ -418,7 +423,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PersonImage
       value: 
-      objectReference: {fileID: 21300000, guid: 39ba6ef987e768142bc578df09f87a28,
+      objectReference: {fileID: 21300000, guid: 4a176f29c7f8b554b8e7b8071cfb6c1a,
         type: 3}
     - target: {fileID: 4464528381046834197, guid: e9eea96bd6f6cf940989b5ea5d65143c,
         type: 3}
@@ -430,11 +435,6 @@ PrefabInstance:
       propertyPath: InfoText
       value: Hi, I am Jerry and I am looking for a new home for myself and my beautiful
         Dog, Erin.
-      objectReference: {fileID: 0}
-    - target: {fileID: 5704673866075935848, guid: e9eea96bd6f6cf940989b5ea5d65143c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000015258789
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cd40966fd36af47988d0a0b466b7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PersonImage: {fileID: 21300000, guid: 9ff3bdb951b85a744b75d315a9e25e53, type: 3}
+  PersonImage: {fileID: 21300000, guid: d3e62372ed37aaa4dab0318460994c31, type: 3}
   PersonName: Angelique
   InfoText: 'I like spending cozy evenings at home, reading a good book with a glass
     of wine and petting my beautiful, cute little kitties. '
@@ -612,7 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cd40966fd36af47988d0a0b466b7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PersonImage: {fileID: 21300000, guid: ba88ef9809968c2449e4afff9538bf6d, type: 3}
+  PersonImage: {fileID: 21300000, guid: 130d0f98509f8664a8bf77c1ceedb1d6, type: 3}
   PersonName: Robert
   InfoText: "Hi, I\u2019m Robert. I\u2019m a Game Programming  student and I\u2019m
     looking for a new place to live. "
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cd40966fd36af47988d0a0b466b7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PersonImage: {fileID: 21300000, guid: 8bf271d32b9586842a3368dc308e3c14, type: 3}
+  PersonImage: {fileID: 21300000, guid: 86147651e4be9344c85bb2355c2d2001, type: 3}
   PersonName: Gerard
   InfoText: "I am looking for a place to sleep from time to time. Don\u2019t need
     much more than that. "
