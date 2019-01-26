@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1043407331666250519}
   - component: {fileID: 3355098555590468457}
   - component: {fileID: 2789197319926304349}
+  - component: {fileID: 7424112580141039712}
   m_Layer: 5
   m_Name: AnswerBox
   m_TagString: Untagged
@@ -75,6 +76,18 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!225 &7424112580141039712
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7644919794118471164}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1844786697045783114
 PrefabInstance:
   m_ObjectHideFlags: 0

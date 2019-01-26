@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Messaging.unity
     guid: 036cde708eb81d24a91acfadddae6c28
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: 9af22cb786943c2579b978bf8c95cd56
+  - enabled: 1
+    path: Assets/Scenes/Winning Endscreen.unity
+    guid: 2bef7c73296a50e408d1081d688d78b0
   m_configObjects: {}

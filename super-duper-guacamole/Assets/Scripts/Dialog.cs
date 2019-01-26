@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using DigitalRuby.Tween;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class Dialog : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class Dialog : MonoBehaviour
     public enum State
     {
         Human,
+        Waiting,
         Choice,
         End
     }
@@ -31,6 +34,8 @@ public class Dialog : MonoBehaviour
     private List<Button> buttons;
     public ScrollRect scrollRect;
 
+    bool chosen = true;
+
     // Start is called before the first frame update
     void deleteButtons() {
         foreach(Button btn in buttons) {
@@ -45,22 +50,16 @@ public class Dialog : MonoBehaviour
         continueDialog();
     }
 
-    public void Update() {
-        // continueDialog();
-    }
-
     void continueDialog() {
-        if (currentState == State.Human) {
+        if (currentState == State.Human && chosen) {
             humanReply(npc.GetCurrentDialogue());
             int next = npc.Next();
-            if (next == 0) {
-                continueDialog();
+            if (next > 0) {
+                chosen = false;
+                DisplayChoices();
             }
             else if (next == -1) {
                 End();
-            }
-            else {
-                DisplayChoices();
             }
         }
         
@@ -87,17 +86,22 @@ public class Dialog : MonoBehaviour
         newMessage.GetComponentInChildren<Text>().text = message;
         newMessage.localScale = new Vector3(1, 1, 1);
         
+        System.Action<ITween<float>> updatePos = (t) =>
+            {
+                newMessage.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
+            };
 
-        Canvas.ForceUpdateCanvases();
-
-        scrollRect.content.GetComponent<VerticalLayoutGroup>().CalculateLayoutInputVertical() ;
-        scrollRect.content.GetComponent<ContentSizeFitter>().SetLayoutVertical() ;
-
-        newMessage.GetComponent<HorizontalLayoutGroup>().CalculateLayoutInputHorizontal() ;
-        newMessage.GetComponent<ContentSizeFitter>().SetLayoutHorizontal() ;
-
-        scrollRect.verticalNormalizedPosition=0f;
-        Canvas.ForceUpdateCanvases();
+        System.Action<ITween<float>> finishTween = (t) =>
+            {
+                if (currentState == State.Waiting) {
+                    currentState = State.Human;
+                    
+                };
+                continueDialog();
+            };
+        
+        currentState = State.Waiting;
+        TweenFactory.Tween("Reply", 0, 1f, 2f, TweenScaleFunctions.QuinticEaseOut, updatePos, finishTween);
     }
     public void houseReply(string message) {
         RectTransform newMessage = (RectTransform) Instantiate(HouseMessageBox, new Vector2(0, 0), ScrollViewContent.rotation);
@@ -123,6 +127,13 @@ public class Dialog : MonoBehaviour
             button.transform.localScale = new Vector3(1, 1, 1);
             button.onClick.AddListener(() => chooseMessage(choice));
             button.GetComponentInChildren<Text>().text = choice;
+            
+            System.Action<ITween<float>> updatePos = (t) =>
+            {
+                button.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
+            };
+            TweenFactory.Tween("FadeIn" + choice, 0f, 1f, 1f, TweenScaleFunctions.QuinticEaseOut, updatePos);
+
             buttons.Add(button);
         }
     }
@@ -130,6 +141,12 @@ public class Dialog : MonoBehaviour
     public void End() {
         Debug.Log("FINISHED WITH: " + npc.GetTrigger());
         currentState = State.End;
+        if (npc.GetTrigger() == TRIGGER_IN) {
+            StartCoroutine(loadScene("Winning Endscreen"));
+        } 
+        else {
+            StartCoroutine(loadScene("Home"));
+        }
     }
 
     public void moveInChoiceButtons() {
@@ -146,6 +163,10 @@ public class Dialog : MonoBehaviour
         }
     }
 
+    private IEnumerator loadScene(string scene) {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(scene);
+    }
 
     private void chooseMessage(string choice) {
         houseReply(choice);
@@ -155,6 +176,6 @@ public class Dialog : MonoBehaviour
 
         currentState = State.Human;
 
-        continueDialog();
+        chosen = true;
     }
 }
