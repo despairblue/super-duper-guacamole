@@ -2539,6 +2539,374 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1585410505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1585410507}
+  - component: {fileID: 1585410506}
+  m_Layer: 0
+  m_Name: Robert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1585410506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585410505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 22
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 245
+        y: 150
+        width: 150
+        height: 125
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 010000000200000003000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 522
+        y: 88
+        width: 150
+        height: 125
+      Text: Do you play a lot of video games?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 521
+        y: 253
+        width: 150
+        height: 125
+      Text: How is it like to work on video games? Is it fun and exciting?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 0a000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 520
+        y: 421
+        width: 150
+        height: 125
+      Text: Where do you want to work when you are done with your studies?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 10000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 765
+        y: 86
+        width: 150
+        height: 125
+      Text: "Well, since I became a Game Programming student, I haven\u2019t had the
+        time to play a whole lot. I mostly play League of Legends or Overwatch with
+        my friends for a few short rounds when I have the time."
+      Type: 0
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 05000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 983
+        y: 88
+        width: 150
+        height: 125
+      Text: Do you want Robert  to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 0600000007000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 1216
+        y: 58
+        width: 150
+        height: 125
+      Text: That sounds amazing. I Love watching other people play. I will watch all
+        of your matches.
+      Type: 2
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 08000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 1215
+        y: 227
+        width: 150
+        height: 125
+      Text: Those games suck. Get better taste or get lost.
+      Type: 2
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1465
+        y: 59
+        width: 150
+        height: 125
+      Text: You'll get a lot to watch then!
+      Type: 0
+      NodeType: 2
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1465
+        y: 225
+        width: 150
+        height: 125
+      Text: You don't know anything about video games if you think so. Your opinion
+        does not matter.
+      Type: 0
+      NodeType: 2
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 763
+        y: 252
+        width: 150
+        height: 125
+      Text: It kind of is. I just hate working with game designers. They are all stupid
+        and think they know everything when they are actually pretty useless. Other
+        than dealing with those guys, I love it!
+      Type: 0
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 998
+        y: 269
+        width: 150
+        height: 125
+      Text: Do you want Robert  to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0c0000000d000000
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 1290
+        y: 398
+        width: 150
+        height: 125
+      Text: Game Designers are people too. We can't be together until you understand
+        this.
+      Type: 2
+      NodeType: 1
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 1284
+        y: 565
+        width: 150
+        height: 125
+      Text: 'I completely understand. Game Designers suck. Let''s hate them together. '
+      Type: 2
+      NodeType: 1
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 1499
+        y: 396
+        width: 150
+        height: 125
+      Text: Cool! Let's make a plan to kill them all :)
+      Type: 0
+      NodeType: 2
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1491
+        y: 564
+        width: 150
+        height: 125
+      Text: You are a very irrational creature.
+      Type: 0
+      NodeType: 2
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 695
+        y: 588
+        width: 150
+        height: 125
+      Text: I want to work at either Riot or Blizzard.
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 11000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 702
+        y: 738
+        width: 150
+        height: 125
+      Text: Do you want Robert  to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 1200000013000000
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 620
+        y: 888
+        width: 150
+        height: 125
+      Text: Wow, that's cool. Then you will be able to tell me in advance which classes
+        will be buffed. Please move in.
+      Type: 2
+      NodeType: 1
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 863
+        y: 895
+        width: 150
+        height: 125
+      Text: Lol sucks and Diablo Immortal makes me sad. You can't be here, sorry.
+      Type: 2
+      NodeType: 1
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 15000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 615
+        y: 1051
+        width: 150
+        height: 125
+      Text: Sorry. I will probably have to sign an NDA. But we can still have fun
+        :)
+      Type: 0
+      NodeType: 2
+      Parent: 18
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 21
+      Size:
+        serializedVersion: 2
+        x: 867
+        y: 1051
+        width: 150
+        height: 125
+      Text: Do you not have a phone?
+      Type: 0
+      NodeType: 2
+      Parent: 19
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - Robert
+--- !u!4 &1585410507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585410505}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1860151010
 GameObject:
   m_ObjectHideFlags: 0
