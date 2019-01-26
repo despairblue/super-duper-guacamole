@@ -34,7 +34,6 @@ RectTransform:
   - {fileID: 5687771850758299392}
   - {fileID: 1697389007}
   - {fileID: 8100899136867780288}
-  - {fileID: 4265642206290646973}
   - {fileID: 3653729546298152794}
   - {fileID: 2767611180473514802}
   - {fileID: 1678702751794747728}
@@ -122,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4201183c4edbece6dafeeb59c732a84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   npc: {fileID: 0}
   ChatBoxHouse: {fileID: 2758145066030228556}
   Answer1: {fileID: 8962895938457823610}
@@ -231,12 +231,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1448381363}
-  m_RootOrder: 3
+  m_Father: {fileID: 1678702751794747728}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -453, y: -49}
+  m_AnchoredPosition: {x: -458.77496, y: -28.000008}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5948797666482748317
@@ -616,7 +616,7 @@ RectTransform:
   m_Children:
   - {fileID: 1647369856381284154}
   m_Father: {fileID: 1448381363}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -733,7 +733,7 @@ RectTransform:
   m_Children:
   - {fileID: 3615231082698491283}
   m_Father: {fileID: 1448381363}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -901,7 +901,7 @@ PrefabInstance:
     - target: {fileID: 576379422746711532, guid: ff70d15a7da13c94f8f9f6c010f72517,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 576379422746711532, guid: ff70d15a7da13c94f8f9f6c010f72517,
         type: 3}
@@ -985,12 +985,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff70d15a7da13c94f8f9f6c010f72517, type: 3}
---- !u!224 &1678702751794747728 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 576379422746711532, guid: ff70d15a7da13c94f8f9f6c010f72517,
-    type: 3}
-  m_PrefabInstance: {fileID: 1203663166435478716}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4892829783775603039 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6004027855304828387, guid: ff70d15a7da13c94f8f9f6c010f72517,
@@ -1003,6 +997,12 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &1678702751794747728 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 576379422746711532, guid: ff70d15a7da13c94f8f9f6c010f72517,
+    type: 3}
+  m_PrefabInstance: {fileID: 1203663166435478716}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2680642279678757758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1010,11 +1010,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448381363}
     m_Modifications:
-    - target: {fileID: 3495093695106595962, guid: 2513df24d86efb645b582eff06066a5b,
-        type: 3}
-      propertyPath: m_Name
-      value: Choice Box (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1053,7 +1048,7 @@ PrefabInstance:
     - target: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
         type: 3}
@@ -1120,8 +1115,19 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3495093695106595962, guid: 2513df24d86efb645b582eff06066a5b,
+        type: 3}
+      propertyPath: m_Name
+      value: Choice Box (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2513df24d86efb645b582eff06066a5b, type: 3}
+--- !u!224 &8072900080415321703 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2680642279678757758}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3735162604581749438 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1650142008713300416, guid: 2513df24d86efb645b582eff06066a5b,
@@ -1134,12 +1140,6 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &8072900080415321703 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2680642279678757758}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4900803568301911867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1147,11 +1147,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448381363}
     m_Modifications:
-    - target: {fileID: 5046064696130899737, guid: f81b495b8db7b674391a952e8157dccb,
-        type: 3}
-      propertyPath: m_Name
-      value: Chat Box House
-      objectReference: {fileID: 0}
     - target: {fileID: 7091939427657700361, guid: f81b495b8db7b674391a952e8157dccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1190,7 +1185,7 @@ PrefabInstance:
     - target: {fileID: 7091939427657700361, guid: f81b495b8db7b674391a952e8157dccb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7091939427657700361, guid: f81b495b8db7b674391a952e8157dccb,
         type: 3}
@@ -1257,8 +1252,19 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5046064696130899737, guid: f81b495b8db7b674391a952e8157dccb,
+        type: 3}
+      propertyPath: m_Name
+      value: Chat Box House
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f81b495b8db7b674391a952e8157dccb, type: 3}
+--- !u!224 &2767611180473514802 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7091939427657700361, guid: f81b495b8db7b674391a952e8157dccb,
+    type: 3}
+  m_PrefabInstance: {fileID: 4900803568301911867}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2758145066030228556 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7081277860805102455, guid: f81b495b8db7b674391a952e8157dccb,
@@ -1271,12 +1277,6 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &2767611180473514802 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7091939427657700361, guid: f81b495b8db7b674391a952e8157dccb,
-    type: 3}
-  m_PrefabInstance: {fileID: 4900803568301911867}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4910144325896032188
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1284,11 +1284,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448381363}
     m_Modifications:
-    - target: {fileID: 3495093695106595962, guid: 2513df24d86efb645b582eff06066a5b,
-        type: 3}
-      propertyPath: m_Name
-      value: Choice Box (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1327,7 +1322,7 @@ PrefabInstance:
     - target: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
         type: 3}
@@ -1394,6 +1389,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3495093695106595962, guid: 2513df24d86efb645b582eff06066a5b,
+        type: 3}
+      propertyPath: m_Name
+      value: Choice Box (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2513df24d86efb645b582eff06066a5b, type: 3}
 --- !u!224 &1233819263780465317 stripped
@@ -1409,11 +1409,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448381363}
     m_Modifications:
-    - target: {fileID: 3495093695106595962, guid: 2513df24d86efb645b582eff06066a5b,
-        type: 3}
-      propertyPath: m_Name
-      value: Choice Box
-      objectReference: {fileID: 0}
     - target: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1452,7 +1447,7 @@ PrefabInstance:
     - target: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
         type: 3}
@@ -1519,14 +1514,13 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3495093695106595962, guid: 2513df24d86efb645b582eff06066a5b,
+        type: 3}
+      propertyPath: m_Name
+      value: Choice Box
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2513df24d86efb645b582eff06066a5b, type: 3}
---- !u!224 &4593635468550751651 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7675507279891767482}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8962895938457823610 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1650142008713300416, guid: 2513df24d86efb645b582eff06066a5b,
@@ -1539,3 +1533,9 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &4593635468550751651 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6141570869144970521, guid: 2513df24d86efb645b582eff06066a5b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7675507279891767482}
+  m_PrefabAsset: {fileID: 0}
