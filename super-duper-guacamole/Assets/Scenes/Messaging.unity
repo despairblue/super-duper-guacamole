@@ -112,6 +112,416 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &411519063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 411519064}
+  - component: {fileID: 411519065}
+  m_Layer: 0
+  m_Name: Carl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &411519064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411519063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &411519065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411519063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 35
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 31
+        y: 113
+        width: 150
+        height: 125
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0300000004000000030000000400000003000000040000001c000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 587
+        y: 218
+        width: 150
+        height: 125
+      Text: How is it like to work as a doctor? Do you get confronted with a lot of
+        suffering and death?
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 596
+        y: 366
+        width: 150
+        height: 125
+      Text: Do you want more children?
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 809
+        y: 219
+        width: 150
+        height: 125
+      Text: "Oh no, not at all. I have my own practice and help people who I have
+        known for decades. I wouldn\u2019t want it any other way. "
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 806
+        y: 368
+        width: 150
+        height: 125
+      Text: Oh, god no! We have enough on our hands with the two kids we have.
+      Type: 0
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 13000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 1092
+        y: 240
+        width: 150
+        height: 125
+      Text: Do you want Carl to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f00000010000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1356
+        y: 369
+        width: 150
+        height: 125
+      Text: Wow, that sounds amazing. You seem to be a very well balanced person.
+      Type: 2
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 11000000
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 1347
+        y: 513
+        width: 150
+        height: 125
+      Text: So you do not help the poor and disadvantaged by working a super stressful
+        job at a public hospital for a low wage? What a terrible person you are. Begone.
+      Type: 2
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 12000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 1582
+        y: 367
+        width: 150
+        height: 125
+      Text: Thank you. I'm looking forward to moving in.
+      Type: 0
+      NodeType: 2
+      Parent: 15
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 1581
+        y: 513
+        width: 150
+        height: 125
+      Text: And what are YOU doing to save mankind?
+      Type: 0
+      NodeType: 2
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 916
+        y: 607
+        width: 150
+        height: 125
+      Text: What should you ask next?
+      Type: 1
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 1199
+        y: 662
+        width: 150
+        height: 125
+      Text: Are your kids a lot of work?
+      Type: 2
+      NodeType: 1
+      Parent: 19
+      Trigger: 0
+      TriggerText: 
+      Connections: 16000000
+    - ID: 22
+      Size:
+        serializedVersion: 2
+        x: 1432
+        y: 702
+        width: 150
+        height: 125
+      Text: Oh, you have no idea. Both of them are hyperactive, and my wife refuses
+        to let them take their medication. They are very active and need be kept busy
+        at all times. Otherwise their energy gets totally out of control and chaos
+        ensues.
+      Type: 0
+      NodeType: 1
+      Parent: 20
+      Trigger: 0
+      TriggerText: 
+      Connections: 17000000
+    - ID: 23
+      Size:
+        serializedVersion: 2
+        x: 1636
+        y: 707
+        width: 150
+        height: 125
+      Text: Do you want Carl to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 22
+      Trigger: 0
+      TriggerText: 
+      Connections: 1800000019000000
+    - ID: 24
+      Size:
+        serializedVersion: 2
+        x: 1491
+        y: 886
+        width: 150
+        height: 125
+      Text: Sounds like a lively family. I think I would really enjoy that.
+      Type: 2
+      NodeType: 1
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
+      Connections: 1a000000
+    - ID: 25
+      Size:
+        serializedVersion: 2
+        x: 1777
+        y: 870
+        width: 150
+        height: 125
+      Text: Wow, you want to drug your children? That's terrible. You are a terrible
+        person. I don't want to have anything to do with you.
+      Type: 2
+      NodeType: 1
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
+      Connections: 1b000000
+    - ID: 26
+      Size:
+        serializedVersion: 2
+        x: 1487
+        y: 1053
+        width: 150
+        height: 125
+      Text: You will never be bored with us. I promise.
+      Type: 0
+      NodeType: 2
+      Parent: 24
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 27
+      Size:
+        serializedVersion: 2
+        x: 1772
+        y: 1042
+        width: 150
+        height: 125
+      Text: It's a medical procedure to help them!
+      Type: 0
+      NodeType: 2
+      Parent: 25
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 28
+      Size:
+        serializedVersion: 2
+        x: 577
+        y: 61
+        width: 150
+        height: 125
+      Text: How is your marriage? Do you and your wife get along well?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 1d000000
+    - ID: 29
+      Size:
+        serializedVersion: 2
+        x: 815
+        y: 61
+        width: 150
+        height: 125
+      Text: 'Oh, yes. We love and support each other as much as we can. Although we
+        do sometimes disagree about how to best raise our children. '
+      Type: 0
+      NodeType: 1
+      Parent: 28
+      Trigger: 0
+      TriggerText: 
+      Connections: 1e000000
+    - ID: 30
+      Size:
+        serializedVersion: 2
+        x: 1068
+        y: 64
+        width: 150
+        height: 125
+      Text: Do you want Carl to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 29
+      Trigger: 0
+      TriggerText: 
+      Connections: 1f00000020000000
+    - ID: 31
+      Size:
+        serializedVersion: 2
+        x: 1335
+        y: 28
+        width: 150
+        height: 125
+      Text: Oh, that's lovely. I would love to be the home of a loving family.
+      Type: 2
+      NodeType: 1
+      Parent: 30
+      Trigger: 0
+      TriggerText: 
+      Connections: 21000000
+    - ID: 32
+      Size:
+        serializedVersion: 2
+        x: 1331
+        y: 181
+        width: 150
+        height: 125
+      Text: I don't like disagreements. You can't move in here unless you are in absolute
+        harmony.
+      Type: 2
+      NodeType: 1
+      Parent: 30
+      Trigger: 0
+      TriggerText: 
+      Connections: 22000000
+    - ID: 33
+      Size:
+        serializedVersion: 2
+        x: 1538
+        y: 32
+        width: 150
+        height: 125
+      Text: Great. We will fill our new home with love.
+      Type: 0
+      NodeType: 2
+      Parent: 31
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 34
+      Size:
+        serializedVersion: 2
+        x: 1539
+        y: 183
+        width: 150
+        height: 125
+      Text: It's... normal to ... argue ... a little... :(
+      Type: 0
+      NodeType: 2
+      Parent: 32
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - Carl
 --- !u!1 &504516041
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +633,416 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &703330530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 703330532}
+  - component: {fileID: 703330531}
+  m_Layer: 0
+  m_Name: Gerard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &703330531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703330530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 63
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 760
+        y: 68
+        width: 150
+        height: 125
+      Text: I am looking for a place to sleep from time to time. Don't need much more
+        than that.
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 010000000300000033000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 304
+        y: 167
+        width: 150
+        height: 125
+      Text: What exactly is it that you do for a living?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 39000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 757
+        y: 221
+        width: 150
+        height: 125
+      Text: Is your job dangerous?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 2e000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 499
+        y: 592
+        width: 150
+        height: 125
+      Text: ' I am sent out to assassinate individuals that the government deems as
+        dangerous.'
+      Type: 1
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 050000001e000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 296
+        y: 730
+        width: 150
+        height: 125
+      Text: Wow, you make the world a better place. You are a hero. It would be my
+        honor to provide you shelter.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 299
+        y: 884
+        width: 150
+        height: 125
+      Text: Glad to hear that. But I'm just doing my duty.
+      Type: 0
+      NodeType: 2
+      Parent: 5
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 30
+      Size:
+        serializedVersion: 2
+        x: 504
+        y: 744
+        width: 150
+        height: 125
+      Text: So you murder people without questions because your bosses tell you to?
+        I can't live with someone like that. Please go.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 26000000
+    - ID: 38
+      Size:
+        serializedVersion: 2
+        x: 502
+        y: 889
+        width: 150
+        height: 125
+      Text: I understand. Not everyone can handle things like that. Farewell.
+      Type: 0
+      NodeType: 2
+      Parent: 30
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 46
+      Size:
+        serializedVersion: 2
+        x: 762
+        y: 364
+        width: 150
+        height: 125
+      Text: No, not at all. I work with a very well trained team and only take out
+        individuals inside our country. It is surprisingly safe.
+      Type: 1
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 2f00000030000000
+    - ID: 47
+      Size:
+        serializedVersion: 2
+        x: 682
+        y: 517
+        width: 150
+        height: 125
+      Text: Wow, that sounds really cool. You must be a really good person if your
+        team members rely so much on one another. Will you move in?
+      Type: 2
+      NodeType: 1
+      Parent: 46
+      Trigger: 0
+      TriggerText: 
+      Connections: 31000000
+    - ID: 48
+      Size:
+        serializedVersion: 2
+        x: 902
+        y: 518
+        width: 150
+        height: 125
+      Text: You don't even leave them a chance to fight for their life in 1 on 1 hand-to-hand
+        combat? I hate cowards. Get lost!
+      Type: 2
+      NodeType: 1
+      Parent: 46
+      Trigger: 0
+      TriggerText: 
+      Connections: 32000000
+    - ID: 49
+      Size:
+        serializedVersion: 2
+        x: 686
+        y: 662
+        width: 150
+        height: 125
+      Text: Yes. Teamwork is the most important aspect of my life.
+      Type: 0
+      NodeType: 2
+      Parent: 47
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 50
+      Size:
+        serializedVersion: 2
+        x: 901
+        y: 663
+        width: 150
+        height: 125
+      Text: You do not understand the nature of combat. But that's okay. Many don't.
+      Type: 0
+      NodeType: 2
+      Parent: 48
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 51
+      Size:
+        serializedVersion: 2
+        x: 1222
+        y: 215
+        width: 150
+        height: 125
+      Text: ' How well does your job pay?'
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 34000000
+    - ID: 52
+      Size:
+        serializedVersion: 2
+        x: 1222
+        y: 363
+        width: 150
+        height: 125
+      Text: I could tell you, but then I would have to kill you. Just kidding :)
+      Type: 1
+      NodeType: 1
+      Parent: 51
+      Trigger: 0
+      TriggerText: 
+      Connections: 3500000036000000
+    - ID: 53
+      Size:
+        serializedVersion: 2
+        x: 1109
+        y: 515
+        width: 150
+        height: 125
+      Text: A man with a sense of humor. Excellent. Do you want do move in?
+      Type: 2
+      NodeType: 1
+      Parent: 52
+      Trigger: 0
+      TriggerText: 
+      Connections: 37000000
+    - ID: 54
+      Size:
+        serializedVersion: 2
+        x: 1328
+        y: 522
+        width: 150
+        height: 125
+      Text: I don't want to die. Please leave me alone :(
+      Type: 2
+      NodeType: 1
+      Parent: 52
+      Trigger: 0
+      TriggerText: 
+      Connections: 38000000
+    - ID: 55
+      Size:
+        serializedVersion: 2
+        x: 1109
+        y: 667
+        width: 150
+        height: 125
+      Text: Sure. I'm glad we have the same kind of humor. This should be fun.
+      Type: 0
+      NodeType: 2
+      Parent: 53
+      Trigger: 1
+      TriggerText: win
+      Connections: 
+    - ID: 56
+      Size:
+        serializedVersion: 2
+        x: 1337
+        y: 671
+        width: 150
+        height: 125
+      Text: I'm an assassin not an arsonist, but I respect your choice. Forgive me,
+        I will leave you now.
+      Type: 0
+      NodeType: 2
+      Parent: 54
+      Trigger: 1
+      TriggerText: out
+      Connections: 
+    - ID: 57
+      Size:
+        serializedVersion: 2
+        x: 495
+        y: 170
+        width: 150
+        height: 125
+      Text: I'm a cleaner.
+      Type: 1
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 3a000000
+    - ID: 58
+      Size:
+        serializedVersion: 2
+        x: 305
+        y: 309
+        width: 150
+        height: 125
+      Text: Oh so you tidying people's places?
+      Type: 2
+      NodeType: 1
+      Parent: 57
+      Trigger: 0
+      TriggerText: 
+      Connections: 3b000000
+    - ID: 59
+      Size:
+        serializedVersion: 2
+        x: 501
+        y: 309
+        width: 150
+        height: 125
+      Text: Not exactly. I clean people.
+      Type: 1
+      NodeType: 1
+      Parent: 58
+      Trigger: 0
+      TriggerText: 
+      Connections: 3c000000
+    - ID: 60
+      Size:
+        serializedVersion: 2
+        x: 303
+        y: 447
+        width: 150
+        height: 125
+      Text: So you work in a hospital?
+      Type: 2
+      NodeType: 1
+      Parent: 59
+      Trigger: 0
+      TriggerText: 
+      Connections: 3d000000
+    - ID: 61
+      Size:
+        serializedVersion: 2
+        x: 501
+        y: 450
+        width: 150
+        height: 125
+      Text: I clean them more thoroughly than that. They're basically gone when I'm
+        done with them.
+      Type: 1
+      NodeType: 1
+      Parent: 60
+      Trigger: 0
+      TriggerText: 
+      Connections: 3e000000
+    - ID: 62
+      Size:
+        serializedVersion: 2
+        x: 295
+        y: 586
+        width: 150
+        height: 125
+      Text: '...'
+      Type: 2
+      NodeType: 1
+      Parent: 61
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+  CurrentSet: 0
+  TabList:
+  - angelique
+--- !u!4 &703330532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703330530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1362466740
 PrefabInstance:
@@ -474,6 +1294,11 @@ PrefabInstance:
       propertyPath: answer3Button
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7525105882396470574, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: carl
+      value: 
+      objectReference: {fileID: 411519065}
     - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -795,6 +1620,374 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1585410505
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1585410507}
+  - component: {fileID: 1585410506}
+  m_Layer: 0
+  m_Name: Robert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1585410506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585410505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 22
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 245
+        y: 150
+        width: 150
+        height: 125
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 010000000200000003000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 522
+        y: 88
+        width: 150
+        height: 125
+      Text: Do you play a lot of video games?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 521
+        y: 253
+        width: 150
+        height: 125
+      Text: How is it like to work on video games? Is it fun and exciting?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 0a000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 520
+        y: 421
+        width: 150
+        height: 125
+      Text: Where do you want to work when you are done with your studies?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 10000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 765
+        y: 86
+        width: 150
+        height: 125
+      Text: "Well, since I became a Game Programming student, I haven\u2019t had the
+        time to play a whole lot. I mostly play League of Legends or Overwatch with
+        my friends for a few short rounds when I have the time."
+      Type: 0
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 05000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 983
+        y: 88
+        width: 150
+        height: 125
+      Text: Do you want Robert  to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 0600000007000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 1216
+        y: 58
+        width: 150
+        height: 125
+      Text: That sounds amazing. I Love watching other people play. I will watch all
+        of your matches.
+      Type: 2
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 08000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 1215
+        y: 227
+        width: 150
+        height: 125
+      Text: Those games suck. Get better taste or get lost.
+      Type: 2
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1465
+        y: 59
+        width: 150
+        height: 125
+      Text: You'll get a lot to watch then!
+      Type: 0
+      NodeType: 2
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1465
+        y: 225
+        width: 150
+        height: 125
+      Text: You don't know anything about video games if you think so. Your opinion
+        does not matter.
+      Type: 0
+      NodeType: 2
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 763
+        y: 252
+        width: 150
+        height: 125
+      Text: It kind of is. I just hate working with game designers. They are all stupid
+        and think they know everything when they are actually pretty useless. Other
+        than dealing with those guys, I love it!
+      Type: 0
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 998
+        y: 269
+        width: 150
+        height: 125
+      Text: Do you want Robert  to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0c0000000d000000
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 1290
+        y: 398
+        width: 150
+        height: 125
+      Text: Game Designers are people too. We can't be together until you understand
+        this.
+      Type: 2
+      NodeType: 1
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 1284
+        y: 565
+        width: 150
+        height: 125
+      Text: 'I completely understand. Game Designers suck. Let''s hate them together. '
+      Type: 2
+      NodeType: 1
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 1499
+        y: 396
+        width: 150
+        height: 125
+      Text: Cool! Let's make a plan to kill them all :)
+      Type: 0
+      NodeType: 2
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1491
+        y: 564
+        width: 150
+        height: 125
+      Text: You are a very irrational creature.
+      Type: 0
+      NodeType: 2
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 695
+        y: 588
+        width: 150
+        height: 125
+      Text: I want to work at either Riot or Blizzard.
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 11000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 702
+        y: 738
+        width: 150
+        height: 125
+      Text: Do you want Robert  to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 1200000013000000
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 620
+        y: 888
+        width: 150
+        height: 125
+      Text: Wow, that's cool. Then you will be able to tell me in advance which classes
+        will be buffed. Please move in.
+      Type: 2
+      NodeType: 1
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 863
+        y: 895
+        width: 150
+        height: 125
+      Text: Lol sucks and Diablo Immortal makes me sad. You can't be here, sorry.
+      Type: 2
+      NodeType: 1
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 15000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 615
+        y: 1051
+        width: 150
+        height: 125
+      Text: Sorry. I will probably have to sign an NDA. But we can still have fun
+        :)
+      Type: 0
+      NodeType: 2
+      Parent: 18
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 21
+      Size:
+        serializedVersion: 2
+        x: 867
+        y: 1051
+        width: 150
+        height: 125
+      Text: Do you not have a phone?
+      Type: 0
+      NodeType: 2
+      Parent: 19
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - Robert
+--- !u!4 &1585410507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585410505}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1607053878
 GameObject:

@@ -34,6 +34,8 @@ public class Dialog : MonoBehaviour
     private List<Button> buttons;
     public ScrollRect scrollRect;
 
+    public Dialogues carl;
+
     bool chosen = true;
 
     // Start is called before the first frame update
@@ -68,16 +70,15 @@ public class Dialog : MonoBehaviour
     void Start()
     {
         string matchName = PlayerPrefs.GetString("name");
+        Debug.Log(matchName);
 
         Sprite profilePic = Resources.Load<Sprite>("Sprites/PB" + matchName);
 
         TopProfilePic.sprite = profilePic;
         TopProfilePic.GetComponentInChildren<TextMeshProUGUI>().text = matchName;
 
-        // npc.SetTree(matchName);
-        // npc.SetTree("Angelique");
         npc = GameObject.Find(matchName).GetComponent<Dialogues>();
-
+        
         startDialog();
     }
 
