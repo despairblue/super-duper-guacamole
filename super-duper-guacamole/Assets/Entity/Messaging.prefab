@@ -128,6 +128,7 @@ MonoBehaviour:
     type: 3}
   responseButton: {fileID: 5254639267771982687, guid: 00d27125b158b167d95c423711409a4a,
     type: 3}
+  scrollRect: {fileID: 2818757584442123716}
 --- !u!1 &1697389006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,8 +1519,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 357.5}
-  m_SizeDelta: {x: 0, y: -985}
+  m_AnchoredPosition: {x: 0, y: -67.5}
+  m_SizeDelta: {x: 0, y: -135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2818757584442123716
 MonoBehaviour:
@@ -1540,7 +1541,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 10
   m_Viewport: {fileID: 3999337611487837842}
   m_HorizontalScrollbar: {fileID: 322952891413731838}
   m_VerticalScrollbar: {fileID: 445127879511315096}

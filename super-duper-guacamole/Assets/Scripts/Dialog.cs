@@ -29,11 +29,11 @@ public class Dialog : MonoBehaviour
 
     public Button responseButton;
     private List<Button> buttons;
+    public ScrollRect scrollRect;
 
     // Start is called before the first frame update
     void deleteButtons() {
         foreach(Button btn in buttons) {
-            Debug.Log(btn);
             Destroy(btn.gameObject);
         }
 
@@ -75,8 +75,9 @@ public class Dialog : MonoBehaviour
         TopProfilePic.sprite = profilePic;
         TopProfilePic.GetComponentInChildren<TextMeshProUGUI>().text = matchName;
 
-        npc.SetTree(matchName);
-        npc.SetTree("Jerry");
+        // npc.SetTree(matchName);
+        // npc.SetTree("Angelique");
+        npc = GameObject.Find(matchName).GetComponent<Dialogues>();
 
         startDialog();
     }
@@ -85,6 +86,18 @@ public class Dialog : MonoBehaviour
         newMessage.SetParent(ScrollViewContent, false);
         newMessage.GetComponentInChildren<Text>().text = message;
         newMessage.localScale = new Vector3(1, 1, 1);
+        
+
+        Canvas.ForceUpdateCanvases();
+
+        scrollRect.content.GetComponent<VerticalLayoutGroup>().CalculateLayoutInputVertical() ;
+        scrollRect.content.GetComponent<ContentSizeFitter>().SetLayoutVertical() ;
+
+        newMessage.GetComponent<HorizontalLayoutGroup>().CalculateLayoutInputHorizontal() ;
+        newMessage.GetComponent<ContentSizeFitter>().SetLayoutHorizontal() ;
+
+        scrollRect.verticalNormalizedPosition=0f;
+        Canvas.ForceUpdateCanvases();
     }
     public void houseReply(string message) {
         RectTransform newMessage = (RectTransform) Instantiate(HouseMessageBox, new Vector2(0, 0), ScrollViewContent.rotation);
@@ -115,6 +128,7 @@ public class Dialog : MonoBehaviour
     }
 
     public void End() {
+        Debug.Log("FINISHED WITH: " + npc.GetTrigger());
         currentState = State.End;
     }
 
