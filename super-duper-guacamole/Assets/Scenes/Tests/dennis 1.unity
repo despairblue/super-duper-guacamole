@@ -1936,7 +1936,7 @@ GameObject:
   - component: {fileID: 411519064}
   - component: {fileID: 411519065}
   m_Layer: 0
-  m_Name: Carl - Doctor Dad
+  m_Name: Carl - Doctor Dab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2034,8 +2034,8 @@ MonoBehaviour:
     - ID: 7
       Size:
         serializedVersion: 2
-        x: 806
-        y: 368
+        x: 834
+        y: 381
         width: 150
         height: 125
       Text: Oh, god no! We have enough on our hands with the two kids we have.
@@ -2099,8 +2099,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 15
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: lose
       Connections: 
     - ID: 18
       Size:
@@ -2113,8 +2113,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 16
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 19
       Size:
@@ -2215,22 +2215,22 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 24
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: lose
       Connections: 
     - ID: 27
       Size:
         serializedVersion: 2
-        x: 1772
-        y: 1042
+        x: 1799
+        y: 1028
         width: 150
         height: 125
       Text: It's a medical procedure to help them!
       Type: 0
       NodeType: 2
       Parent: 25
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 28
       Size:
@@ -2315,8 +2315,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 31
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: lose
       Connections: 
     - ID: 34
       Size:
@@ -2329,8 +2329,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 32
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
   CurrentSet: 0
   TabList:
