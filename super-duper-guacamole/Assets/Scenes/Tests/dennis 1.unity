@@ -2473,6 +2473,7 @@ MonoBehaviour:
   HumansMessageBox: {fileID: 0}
   responseButton: {fileID: 0}
   scrollRect: {fileID: 0}
+  carl: {fileID: 0}
 --- !u!1 &1525780202
 GameObject:
   m_ObjectHideFlags: 0
@@ -2783,7 +2784,7 @@ MonoBehaviour:
         y: 396
         width: 150
         height: 125
-      Text: Cool! Let's make a plan to kill them all :)
+      Text: You are a very irrational creature.
       Type: 0
       NodeType: 2
       Parent: 12
@@ -2797,7 +2798,7 @@ MonoBehaviour:
         y: 564
         width: 150
         height: 125
-      Text: You are a very irrational creature.
+      Text: Cool! Let's make a plan to kill them all :)
       Type: 0
       NodeType: 2
       Parent: 13
