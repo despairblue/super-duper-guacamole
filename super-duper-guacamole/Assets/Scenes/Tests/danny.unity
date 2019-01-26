@@ -697,7 +697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 9
+  - CurrentId: 29
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
@@ -737,13 +737,13 @@ MonoBehaviour:
         y: 210
         width: 150
         height: 125
-      Text: 
+      Text: So, how many cats do you have exactly?
       Type: 2
-      NodeType: 2
+      NodeType: 1
       Parent: 0
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 09000000
     - ID: 3
       Size:
         serializedVersion: 2
@@ -751,13 +751,13 @@ MonoBehaviour:
         y: 359
         width: 150
         height: 125
-      Text: 
+      Text: Will you be moving in by yourself? Well, apart from the cats of I guess.
       Type: 2
-      NodeType: 2
+      NodeType: 1
       Parent: 0
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 0a000000
     - ID: 4
       Size:
         serializedVersion: 2
@@ -794,18 +794,20 @@ MonoBehaviour:
         y: 64
         width: 150
         height: 125
-      Text: Oh, so lovely of you to ask. I'm writing mostly about lonely elderly widows
-        with an insatuable hunger for sex, created by being neglected by their husbands
-        for years. Now that the old man's dead, they can live the life they where
-        deprived from by the partriarchi. The're are so many sexual encounters with
-        handy man's of all sorts other girl's from her book club. I put a copy up
-        the shelf for you to read, once I finnish it.
+      Text: Oh, so lovely of you to ask. I used to write for video games. I wrote
+        for Electronic Arts and now I live of the royalties and write what I actually
+        want to write. I'm writing mostly about lonely elderly widows with an insatuable
+        hunger for sex, created by being neglected by their husbands for years. Now
+        that the old man's dead, they can live the life they where deprived from by
+        the partriarchi. The're are so many sexual encounters with handy man's of
+        all sorts other girl's from her book club. I put a copy up the shelf for you
+        to read, once I finnish it.
       Type: 1
       NodeType: 1
       Parent: 5
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 10000000
     - ID: 7
       Size:
         serializedVersion: 2
@@ -831,6 +833,291 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 438
+        y: 210
+        width: 150
+        height: 125
+      Text: Oh, I think 4. I can never be really sure. Sometimes they bring friends
+        and sometimes they just go. I do love them but they have their own live.
+      Type: 1
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 440
+        y: 358
+        width: 150
+        height: 125
+      Text: Oh, of course. I'm not very good with people.
+      Type: 1
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b0000000d000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 608
+        y: 359
+        width: 150
+        height: 125
+      Text: Do you have contact with other people? Like ever?
+      Type: 2
+      NodeType: 1
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0c000000
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 780
+        y: 360
+        width: 150
+        height: 125
+      Text: Oh no. I could never let anyone into the house, let alone into my life.
+        I life for my cats and writing books.
+      Type: 0
+      NodeType: 2
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 609
+        y: 498
+        width: 150
+        height: 125
+      Text: Do you have regular contact with your family?
+      Type: 2
+      NodeType: 1
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 782
+        y: 501
+        width: 150
+        height: 125
+      Text: Oh but sure, my cats are always there.
+      Type: 1
+      NodeType: 1
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f00000012000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 942
+        y: 501
+        width: 150
+        height: 125
+      Text: How often do you clean?
+      Type: 2
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 943
+        y: 67
+        width: 150
+        height: 125
+      Text: Wha.... Is any of this autobiographic?
+      Type: 2
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 11000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 1103
+        y: 67
+        width: 150
+        height: 125
+      Text: Oh no. I could never let anyone into the house, let alone into my life.
+        I life for my cats and writing books.
+      Type: 1
+      NodeType: 1
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f00000015000000
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 942
+        y: 639
+        width: 150
+        height: 125
+      Text: How many cats do you want to have eventually?
+      Type: 2
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 13000000
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 1102
+        y: 639
+        width: 150
+        height: 125
+      Text: I don't understand. The cats just come to me, I don't get them.
+      Type: 0
+      NodeType: 2
+      Parent: 18
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 1102
+        y: 501
+        width: 150
+        height: 125
+      Text: That's the beauty with cats, the are so clean they even clean up after
+        me.
+      Type: 0
+      NodeType: 2
+      Parent: 15
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 21
+      Size:
+        serializedVersion: 2
+        x: 1265
+        y: 68
+        width: 150
+        height: 125
+      Text: How much money do you make writing books?
+      Type: 2
+      NodeType: 1
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 16000000
+    - ID: 22
+      Size:
+        serializedVersion: 2
+        x: 1425
+        y: 68
+        width: 150
+        height: 125
+      Text: Well that's up to my publisher I think.
+      Type: 1
+      NodeType: 1
+      Parent: 21
+      Trigger: 0
+      TriggerText: 
+      Connections: 17000000
+    - ID: 23
+      Size:
+        serializedVersion: 2
+        x: 1585
+        y: 68
+        width: 150
+        height: 125
+      Text: Oh you have a publisher?
+      Type: 2
+      NodeType: 1
+      Parent: 22
+      Trigger: 0
+      TriggerText: 
+      Connections: 18000000
+    - ID: 24
+      Size:
+        serializedVersion: 2
+        x: 1745
+        y: 68
+        width: 150
+        height: 125
+      Text: Oh no. I look for one when my book is done.
+      Type: 1
+      NodeType: 1
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
+      Connections: 19000000
+    - ID: 25
+      Size:
+        serializedVersion: 2
+        x: 1905
+        y: 68
+        width: 150
+        height: 125
+      Text: And you're almost done?
+      Type: 2
+      NodeType: 1
+      Parent: 24
+      Trigger: 0
+      TriggerText: 
+      Connections: 1a000000
+    - ID: 26
+      Size:
+        serializedVersion: 2
+        x: 2065
+        y: 68
+        width: 150
+        height: 125
+      Text: But of course. I've been working on it for 30 years already. It's almost
+        done. I just need to finish the heroine and write about all her sexual adventures.
+      Type: 1
+      NodeType: 1
+      Parent: 25
+      Trigger: 0
+      TriggerText: 
+      Connections: 1b000000
+    - ID: 27
+      Size:
+        serializedVersion: 2
+        x: 2067
+        y: 218
+        width: 150
+        height: 125
+      Text: 30 years? Have you ever finished any book?
+      Type: 2
+      NodeType: 1
+      Parent: 26
+      Trigger: 0
+      TriggerText: 
+      Connections: 1c000000
+    - ID: 28
+      Size:
+        serializedVersion: 2
+        x: 2067
+        y: 360
+        width: 150
+        height: 125
+      Text: This will be my first.
+      Type: 0
+      NodeType: 2
+      Parent: 27
       Trigger: 0
       TriggerText: 
       Connections: 
