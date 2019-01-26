@@ -69,7 +69,7 @@ public class HomeInteraction : MonoBehaviour
             loadNormalView();
         }
         else { 
-            personText.transform.position = new Vector3(personText.transform.position.x, -1.9f, personText.transform.position.z);
+            personText.transform.position = new Vector3(personText.transform.position.x, 3.8f, personText.transform.position.z);
             infoText.gameObject.SetActive(true);
             infoText.text = displayablePerson.InfoText;
         }
@@ -79,7 +79,7 @@ public class HomeInteraction : MonoBehaviour
     {
         if (infoText.gameObject.activeSelf) {
             infoText.gameObject.SetActive(false);
-            personText.transform.position = new Vector3(personText.transform.position.x, -2.7f, personText.transform.position.z);
+            personText.transform.position = new Vector3(personText.transform.position.x, 3f, personText.transform.position.z);
         }
     }
 
