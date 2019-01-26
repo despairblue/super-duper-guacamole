@@ -952,8 +952,8 @@ MonoBehaviour:
     - ID: 17
       Size:
         serializedVersion: 2
-        x: 1141
-        y: 407
+        x: 1136
+        y: 471
         width: 150
         height: 125
       Text: Oh no. I could never let anyone into the house, let alone into my life.
@@ -995,8 +995,8 @@ MonoBehaviour:
     - ID: 20
       Size:
         serializedVersion: 2
-        x: 1138
-        y: 571
+        x: 1135
+        y: 600
         width: 150
         height: 125
       Text: That's the beauty with cats, they are so clean they even clean up after
@@ -1131,8 +1131,8 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 8
-      Trigger: 1
-      TriggerText: in
+      Trigger: 0
+      TriggerText: 
       Connections: 25000000
     - ID: 30
       Size:
@@ -1146,8 +1146,8 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 4
-      Trigger: 1
-      TriggerText: in
+      Trigger: 0
+      TriggerText: 
       Connections: 26000000
     - ID: 31
       Size:
@@ -1160,8 +1160,8 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 8
-      Trigger: 1
-      TriggerText: out
+      Trigger: 0
+      TriggerText: 
       Connections: 24000000
     - ID: 32
       Size:
@@ -1194,11 +1194,11 @@ MonoBehaviour:
     - ID: 34
       Size:
         serializedVersion: 2
-        x: 1349
-        y: 864
+        x: 1498
+        y: 868
         width: 150
         height: 125
-      Text: 
+      Text: Such a pity.
       Type: 0
       NodeType: 2
       Parent: 33
@@ -1208,11 +1208,11 @@ MonoBehaviour:
     - ID: 35
       Size:
         serializedVersion: 2
-        x: 1343
-        y: 734
+        x: 1500
+        y: 731
         width: 150
         height: 125
-      Text: 
+      Text: We're going to have a fabulous time.
       Type: 0
       NodeType: 2
       Parent: 32
@@ -1222,44 +1222,44 @@ MonoBehaviour:
     - ID: 36
       Size:
         serializedVersion: 2
-        x: 974
-        y: 338
+        x: 1144
+        y: 336
         width: 150
         height: 125
-      Text: 
+      Text: Such a pity.
       Type: 0
       NodeType: 2
       Parent: 31
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 37
       Size:
         serializedVersion: 2
-        x: 983
-        y: 203
+        x: 1144
+        y: 208
         width: 150
         height: 125
-      Text: 
+      Text: That's very kind of you.
       Type: 0
       NodeType: 2
       Parent: 29
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 38
       Size:
         serializedVersion: 2
-        x: 634
-        y: 348
+        x: 779
+        y: 362
         width: 150
         height: 125
-      Text: 
+      Text: Meow.
       Type: 0
       NodeType: 2
       Parent: 30
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 39
       Size:
@@ -1274,22 +1274,22 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 20
-      Trigger: 1
-      TriggerText: out
+      Trigger: 0
+      TriggerText: 
       Connections: 28000000
     - ID: 40
       Size:
         serializedVersion: 2
-        x: 1332
-        y: 574
+        x: 1514
+        y: 569
         width: 150
         height: 125
-      Text: 
+      Text: Such a pity.
       Type: 0
       NodeType: 2
       Parent: 39
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 41
       Size:
@@ -1302,22 +1302,22 @@ MonoBehaviour:
       Type: 2
       NodeType: 1
       Parent: 20
-      Trigger: 1
-      TriggerText: in
+      Trigger: 0
+      TriggerText: 
       Connections: 2a000000
     - ID: 42
       Size:
         serializedVersion: 2
-        x: 1359
-        y: 427
+        x: 1512
+        y: 432
         width: 150
         height: 125
-      Text: 
+      Text: Meow.
       Type: 0
       NodeType: 2
       Parent: 41
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 43
       Size:
@@ -1363,7 +1363,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &390273326
 GameObject:
@@ -2583,7 +2583,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &504516041
 GameObject:
@@ -2723,6 +2723,7 @@ MonoBehaviour:
   HumansMessageBox: {fileID: 0}
   responseButton: {fileID: 0}
   scrollRect: {fileID: 0}
+  carl: {fileID: 0}
 --- !u!1 &703330530
 GameObject:
   m_ObjectHideFlags: 0
