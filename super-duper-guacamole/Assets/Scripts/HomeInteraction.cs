@@ -54,8 +54,14 @@ public class HomeInteraction : MonoBehaviour
         loadNextPerson();
     }
 
-    public void displayInfo() {
-        displayInfo(currentPerson);
+    public void displayCurrentPersonInfo() {
+        if (!HouseSelected)
+        {
+            displayInfo(currentPerson);
+        }
+        else {
+            displayInfo(House);
+        }
     }
 
     public void displayInfo(Person displayablePerson) {
