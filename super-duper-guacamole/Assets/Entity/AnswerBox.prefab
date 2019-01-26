@@ -230,6 +230,32 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3792744687443588544, guid: ff70d15a7da13c94f8f9f6c010f72517,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3792744687443588544, guid: ff70d15a7da13c94f8f9f6c010f72517,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f8a40ce4ecabeb6b8ff2bae78468a99,
+        type: 3}
+    - target: {fileID: 3792744687443588544, guid: ff70d15a7da13c94f8f9f6c010f72517,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.56078434
+      objectReference: {fileID: 0}
+    - target: {fileID: 3792744687443588544, guid: ff70d15a7da13c94f8f9f6c010f72517,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.56078434
+      objectReference: {fileID: 0}
+    - target: {fileID: 3792744687443588544, guid: ff70d15a7da13c94f8f9f6c010f72517,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.56078434
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1741302167901121514, guid: ff70d15a7da13c94f8f9f6c010f72517, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ff70d15a7da13c94f8f9f6c010f72517, type: 3}

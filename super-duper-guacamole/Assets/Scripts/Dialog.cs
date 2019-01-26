@@ -144,6 +144,7 @@ public class Dialog : MonoBehaviour
             };
             yield return new WaitForSeconds(0.1f);
             TweenFactory.Tween("FadeIn" + choice, 0, 1f, 1f, TweenScaleFunctions.QuinticEaseOut, setAlpha);
+            scrollRect.verticalNormalizedPosition = 0;
         }
     }
 
