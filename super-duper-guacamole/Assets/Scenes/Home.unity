@@ -387,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 4972079528893698313, guid: e9eea96bd6f6cf940989b5ea5d65143c,
         type: 3}
       propertyPath: persons.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4972079528893698313, guid: e9eea96bd6f6cf940989b5ea5d65143c,
         type: 3}
@@ -404,6 +404,11 @@ PrefabInstance:
       propertyPath: persons.Array.data[0]
       value: 
       objectReference: {fileID: 959779424}
+    - target: {fileID: 4972079528893698313, guid: e9eea96bd6f6cf940989b5ea5d65143c,
+        type: 3}
+      propertyPath: persons.Array.data[3]
+      value: 
+      objectReference: {fileID: 2011370920}
     - target: {fileID: 4464528381046834197, guid: e9eea96bd6f6cf940989b5ea5d65143c,
         type: 3}
       propertyPath: PersonImage
@@ -539,3 +544,19 @@ MonoBehaviour:
   PersonName: Familiy
   InfoText: 'My family and I need a new home. We are looking for a family friendly
     environment. '
+--- !u!114 &2011370920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011370917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2cd40966fd36af47988d0a0b466b7d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PersonImage: {fileID: 21300000, guid: ba88ef9809968c2449e4afff9538bf6d, type: 3}
+  PersonName: Robert
+  InfoText: "Hi, I\u2019m Robert. I\u2019m a Game Programming  student and I\u2019m
+    looking for a new place to live. "
