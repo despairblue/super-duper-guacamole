@@ -1934,6 +1934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 411519064}
+  - component: {fileID: 411519065}
   m_Layer: 0
   m_Name: Carl - Doctor Dad
   m_TagString: Untagged
@@ -1955,6 +1956,385 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &411519065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411519063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 35
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 31
+        y: 113
+        width: 150
+        height: 125
+      Text: What do you want to ask?
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0300000004000000030000000400000003000000040000001c000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 587
+        y: 218
+        width: 150
+        height: 125
+      Text: How is it like to work as a doctor? Do you get confronted with a lot of
+        suffering and death?
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 596
+        y: 366
+        width: 150
+        height: 125
+      Text: Do you want more children?
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 809
+        y: 219
+        width: 150
+        height: 125
+      Text: "Oh no, not at all. I have my own practice and help people who I have
+        known for decades. I wouldn\u2019t want it any other way. "
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 806
+        y: 368
+        width: 150
+        height: 125
+      Text: Oh, god no! We have enough on our hands with the two kids we have.
+      Type: 0
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 13000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 1092
+        y: 240
+        width: 150
+        height: 125
+      Text: Do you want Carl to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f00000010000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1356
+        y: 369
+        width: 150
+        height: 125
+      Text: Wow, that sounds amazing. You seem to be a very well balanced person.
+      Type: 2
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 11000000
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 1347
+        y: 513
+        width: 150
+        height: 125
+      Text: So you do not help the poor and disadvantaged by working a super stressful
+        job at a public hospital for a low wage? What a terrible person you are. Begone.
+      Type: 2
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 12000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 1582
+        y: 367
+        width: 150
+        height: 125
+      Text: Thank you. I'm looking forward to moving in.
+      Type: 0
+      NodeType: 2
+      Parent: 15
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 1581
+        y: 513
+        width: 150
+        height: 125
+      Text: And what are YOU doing to save mankind?
+      Type: 0
+      NodeType: 2
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 916
+        y: 607
+        width: 150
+        height: 125
+      Text: What should you ask next?
+      Type: 1
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 1199
+        y: 662
+        width: 150
+        height: 125
+      Text: Are your kids a lot of work?
+      Type: 2
+      NodeType: 1
+      Parent: 19
+      Trigger: 0
+      TriggerText: 
+      Connections: 16000000
+    - ID: 22
+      Size:
+        serializedVersion: 2
+        x: 1432
+        y: 702
+        width: 150
+        height: 125
+      Text: Oh, you have no idea. Both of them are hyperactive, and my wife refuses
+        to let them take their medication. They are very active and need be kept busy
+        at all times. Otherwise their energy gets totally out of control and chaos
+        ensues.
+      Type: 0
+      NodeType: 1
+      Parent: 20
+      Trigger: 0
+      TriggerText: 
+      Connections: 17000000
+    - ID: 23
+      Size:
+        serializedVersion: 2
+        x: 1636
+        y: 707
+        width: 150
+        height: 125
+      Text: Do you want Carl to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 22
+      Trigger: 0
+      TriggerText: 
+      Connections: 1800000019000000
+    - ID: 24
+      Size:
+        serializedVersion: 2
+        x: 1491
+        y: 886
+        width: 150
+        height: 125
+      Text: Sounds like a lively family. I think I would really enjoy that.
+      Type: 2
+      NodeType: 1
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
+      Connections: 1a000000
+    - ID: 25
+      Size:
+        serializedVersion: 2
+        x: 1777
+        y: 870
+        width: 150
+        height: 125
+      Text: Wow, you want to drug your children? That's terrible. You are a terrible
+        person. I don't want to have anything to do with you.
+      Type: 2
+      NodeType: 1
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
+      Connections: 1b000000
+    - ID: 26
+      Size:
+        serializedVersion: 2
+        x: 1487
+        y: 1053
+        width: 150
+        height: 125
+      Text: You will never be bored with us. I promise.
+      Type: 0
+      NodeType: 2
+      Parent: 24
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 27
+      Size:
+        serializedVersion: 2
+        x: 1772
+        y: 1042
+        width: 150
+        height: 125
+      Text: It's a medical procedure to help them!
+      Type: 0
+      NodeType: 2
+      Parent: 25
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 28
+      Size:
+        serializedVersion: 2
+        x: 577
+        y: 61
+        width: 150
+        height: 125
+      Text: How is your marriage? Do you and your wife get along well?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 1d000000
+    - ID: 29
+      Size:
+        serializedVersion: 2
+        x: 815
+        y: 61
+        width: 150
+        height: 125
+      Text: 'Oh, yes. We love and support each other as much as we can. Although we
+        do sometimes disagree about how to best raise our children. '
+      Type: 0
+      NodeType: 1
+      Parent: 28
+      Trigger: 0
+      TriggerText: 
+      Connections: 1e000000
+    - ID: 30
+      Size:
+        serializedVersion: 2
+        x: 1068
+        y: 64
+        width: 150
+        height: 125
+      Text: Do you want Carl to move in?
+      Type: 1
+      NodeType: 1
+      Parent: 29
+      Trigger: 0
+      TriggerText: 
+      Connections: 1f00000020000000
+    - ID: 31
+      Size:
+        serializedVersion: 2
+        x: 1335
+        y: 28
+        width: 150
+        height: 125
+      Text: Oh, that's lovely. I would love to be the home of a loving family.
+      Type: 2
+      NodeType: 1
+      Parent: 30
+      Trigger: 0
+      TriggerText: 
+      Connections: 21000000
+    - ID: 32
+      Size:
+        serializedVersion: 2
+        x: 1331
+        y: 181
+        width: 150
+        height: 125
+      Text: I don't like disagreements. You can't move in here unless you are in absolute
+        harmony.
+      Type: 2
+      NodeType: 1
+      Parent: 30
+      Trigger: 0
+      TriggerText: 
+      Connections: 22000000
+    - ID: 33
+      Size:
+        serializedVersion: 2
+        x: 1538
+        y: 32
+        width: 150
+        height: 125
+      Text: Great. We will fill our new home with love.
+      Type: 0
+      NodeType: 2
+      Parent: 31
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 34
+      Size:
+        serializedVersion: 2
+        x: 1539
+        y: 183
+        width: 150
+        height: 125
+      Text: It's... normal to ... argue ... a little... :(
+      Type: 0
+      NodeType: 2
+      Parent: 32
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - Carl
 --- !u!1 &504516041
 GameObject:
   m_ObjectHideFlags: 0
