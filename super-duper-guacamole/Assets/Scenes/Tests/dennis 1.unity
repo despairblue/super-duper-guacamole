@@ -3097,8 +3097,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 9
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: lose
       Connections: 
     - ID: 12
       Size:
@@ -3111,8 +3111,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 10
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 13
       Size:
@@ -3241,8 +3241,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 19
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: lose
       Connections: 
     - ID: 22
       Size:
@@ -3255,8 +3255,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 20
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 23
       Size:
@@ -3368,8 +3368,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 28
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: lose
       Connections: 
     - ID: 31
       Size:
@@ -3382,8 +3382,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 29
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 32
       Size:
@@ -3454,8 +3454,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 34
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: lose
       Connections: 
     - ID: 37
       Size:
@@ -3468,8 +3468,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 35
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 38
       Size:
@@ -3581,8 +3581,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 45
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: lose
       Connections: 
     - ID: 48
       Size:
@@ -3596,8 +3596,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 46
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 49
       Size:
@@ -3669,8 +3669,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 51
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: lose
       Connections: 
     - ID: 54
       Size:
@@ -3684,8 +3684,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 52
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
   CurrentSet: 0
   TabList:
