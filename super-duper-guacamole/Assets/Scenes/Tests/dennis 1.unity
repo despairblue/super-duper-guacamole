@@ -2192,8 +2192,8 @@ MonoBehaviour:
     - ID: 25
       Size:
         serializedVersion: 2
-        x: 1777
-        y: 870
+        x: 1781
+        y: 894
         width: 150
         height: 125
       Text: Wow, you want to drug your children? That's terrible. You are a terrible
@@ -2221,8 +2221,8 @@ MonoBehaviour:
     - ID: 27
       Size:
         serializedVersion: 2
-        x: 1799
-        y: 1028
+        x: 1781
+        y: 1049
         width: 150
         height: 125
       Text: It's a medical procedure to help them!
@@ -2699,8 +2699,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 6
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 9
       Size:
@@ -2714,8 +2714,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 7
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 10
       Size:
@@ -2787,8 +2787,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 12
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 15
       Size:
@@ -2801,8 +2801,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 13
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
     - ID: 16
       Size:
@@ -2873,8 +2873,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 18
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: win
       Connections: 
     - ID: 21
       Size:
@@ -2887,8 +2887,8 @@ MonoBehaviour:
       Type: 0
       NodeType: 2
       Parent: 19
-      Trigger: 0
-      TriggerText: 
+      Trigger: 1
+      TriggerText: out
       Connections: 
   CurrentSet: 0
   TabList:
