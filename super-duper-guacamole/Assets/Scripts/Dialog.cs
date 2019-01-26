@@ -17,19 +17,21 @@ public class Dialog : MonoBehaviour
     public State currentState;
     public Dialogues npc;
     public Text Answer1;
-    private Button answer1Button;
+    public Button answer1Button;
     public Text Answer2;
-    private Button answer2Button;
+    public Button answer2Button;
     public Text Answer3;
-    private Button answer3Button;
+    public Button answer3Button;
 
     public Image TopProfilePic;
 
     public RectTransform ScrollViewContent;
-    public Scrollbar ScrollBar;
+    public ScrollRect ScrollRect;
 
     public RectTransform HouseMessageBox;
     public RectTransform HumansMessageBox;
+
+    private Button[] buttons;
 
     // Start is called before the first frame update
     void hideButtons() {
@@ -57,9 +59,11 @@ public class Dialog : MonoBehaviour
         answer2Button = Answer2.GetComponentInParent<Button>();
         answer3Button = Answer3.GetComponentInParent<Button>();
 
-        answer1Button.onClick.AddListener(delegate {chooseMessage(0); });
-        answer2Button.onClick.AddListener(delegate {chooseMessage(2); });
-        answer3Button.onClick.AddListener(delegate {chooseMessage(1); });
+        buttons = new Button[] {answer1Button, answer2Button, answer3Button};
+        for (int i=0; i<buttons.Length; i++) {
+            int index = i;
+            buttons[i].onClick.AddListener(() => chooseMessage(index));
+        }
 
         DisplayChoices();
         moveInChoiceButtons();
@@ -69,10 +73,7 @@ public class Dialog : MonoBehaviour
         newMessage.SetParent(ScrollViewContent, false);
         newMessage.GetComponentInChildren<Text>().text = message;
         newMessage.localScale = new Vector3(1, 1, 1);
-        ScrollBar.value = 1;
-        // moveInMessage(newMessage);
     }
-
     public void houseReply(string message) {
         RectTransform newMessage = (RectTransform) Instantiate(HouseMessageBox, new Vector2(0, 0), ScrollViewContent.rotation);
         reply(newMessage, message);
@@ -89,9 +90,13 @@ public class Dialog : MonoBehaviour
         humanReply(npc.GetCurrentDialogue());
         string[] choices = npc.GetChoices();
         
-        Answer1.text = choices[0];
-        Answer2.text = choices[2];
-        Answer3.text = choices[1];
+        for (int i=0; i<choices.Length; i++) {
+            buttons[i].GetComponentInChildren<Text>().text = choices[i];
+        }
+
+        for (int i=choices.Length; i<buttons.Length; i++) {
+            buttons[i].gameObject.SetActive(false);
+        }
     }
 
     public void DisplayDecisions() {
@@ -101,9 +106,10 @@ public class Dialog : MonoBehaviour
         humanReply(npc.GetCurrentDialogue());
 
         string[] choices = npc.GetChoices();
-        answer2Button.gameObject.SetActive(false);
-        Answer1.text = choices[0];
-        Answer3.text = choices[1];
+        
+        answer1Button.GetComponentInChildren<Text>().text = choices[0];
+        answer2Button.GetComponentInChildren<Text>().text = choices[1];
+        answer3Button.gameObject.SetActive(false);
     }
 
     public void End() {
@@ -116,14 +122,13 @@ public class Dialog : MonoBehaviour
     }
 
     public void moveInMessage(RectTransform message) {
-        System.Action<ITween<Vector2>> updatePos = (t) =>
+        System.Action<ITween<float>> move = (t) =>
             {
-                message.position = t.CurrentValue;
+                message.Translate(new Vector2(t.CurrentValue, 0));
             };
-        Vector2 startPos = new Vector2(-500, message.transform.position.y);
-        Vector2 endPos = message.transform.position;
+        message.transform.position = new Vector2(-500, 0);
 
-        TweenFactory.Tween("MoveInMessage", startPos, endPos, 0.4f, TweenScaleFunctions.QuinticEaseOut, updatePos);
+        TweenFactory.Tween("MoveInMessage", 0, 500, 0.4f, TweenScaleFunctions.QuinticEaseOut, move);
     }
 
     public void moveInChoiceButtons() {
@@ -145,14 +150,24 @@ public class Dialog : MonoBehaviour
         string[] choices = npc.GetChoices();
 
         if (i >= choices.Length) {
-            Debug.LogError("Choice is out of Bounds");
+            Debug.LogError(i.ToString() + ". Choice is out of Bounds");
             return;
         }
         string choice = choices[i];
         houseReply(choice);
 
-        npc.NextChoice(choice);
-        humanReply(npc.GetCurrentDialogue());
+        string trigger = npc.GetTrigger();
+        Debug.Log(trigger);
+        if (trigger == "yes") {
+            Debug.Log("YES");
+        }
+        else if (trigger == "no") {
+            Debug.Log("NO");
+        }
+        else {
+            npc.NextChoice(choice);
+            humanReply(npc.GetCurrentDialogue());
+        }
 
         switch (currentState) {
             case State.Choices: 
