@@ -18,6 +18,7 @@ public class HomeInteraction : MonoBehaviour
 
     public GameObject completeInfoBox;
 
+
     public Text infoText;
     public Button infoButton;
     public GameObject infoPanel;
@@ -50,31 +51,61 @@ public class HomeInteraction : MonoBehaviour
 
 
     public void likePerson() {
-        if (HouseSelected)
-        {
-            Like.GetComponentInChildren<AudioSource>().Play();
-            loadEasterEgg();
-        }
-        else {
-            Like.GetComponentInChildren<AudioSource>().Play();
-            loadMessage();
-        }
-        
+        Like.GetComponentInChildren<AudioSource>().Play();
+        playLikingAnimation();
     }
 
     public void dislikePerson()
     {
         Dislike.GetComponentInChildren<AudioSource>().Play();
-        loadNormalView();
-        if (HouseSelected)
+        playDislikingAnimation();               
+    }
+
+    private void playDislikingAnimation() {
+        System.Action<ITween<Vector3>> swiping = (t) =>
         {
-            HouseSelected = false;
-            setPerson(currentPerson);
-        }
-        else {
-            Dislike.GetComponentInChildren<AudioSource>().Play();
-            loadNextPerson();
-        }
+            personImage.transform.localPosition = t.CurrentValue;
+        };
+
+        System.Action<ITween<Vector3>> finishTween = (t) =>
+        {
+            loadNormalView();
+            
+            personImage.transform.localPosition = new Vector3(0, -140, personImage.transform.localPosition.z);
+            if (HouseSelected)
+            {
+                HouseSelected = false;
+                setPerson(currentPerson);
+            }
+            else
+            { 
+                loadNextPerson();
+            }
+        };
+
+        TweenFactory.Tween("Dislike", personImage.transform.localPosition, new Vector3(-1500, 100, personImage.transform.localPosition.z), 1f, TweenScaleFunctions.QuinticEaseOut, swiping, finishTween);
+    }
+
+    private void playLikingAnimation()
+    {
+        System.Action<ITween<Vector3>> swiping = (t) =>
+        {
+            personImage.transform.localPosition = t.CurrentValue;
+        };
+
+        System.Action<ITween<Vector3>> finishTween = (t) =>
+        {
+            if (HouseSelected)
+            {
+                loadEasterEgg();
+            }
+            else
+            {
+                loadMessage();
+            }
+        };
+
+        TweenFactory.Tween("Like", personImage.transform.localPosition, new Vector3(1500, 100, personImage.transform.localPosition.z), 1f, TweenScaleFunctions.QuinticEaseOut, swiping, finishTween);
     }
 
     public void displayCurrentPersonInfo() {
@@ -100,11 +131,15 @@ public class HomeInteraction : MonoBehaviour
             infoPanel.transform.localPosition = new Vector3(infoPanel.transform.localPosition.x, infoPanel.transform.localPosition.y - 50, infoPanel.transform.localPosition.z);
             personOccupation.gameObject.SetActive(false);
         }
+        playInfoBoxAnimation();
+    }
+
+    private void playInfoBoxAnimation() {
         System.Action<ITween<float>> updateAlpha = (t) =>
         {
             completeInfoBox.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
         };
-        TweenFactory.Tween("Reply", 0, 1, 1f, TweenScaleFunctions.QuinticEaseOut, updateAlpha);
+        TweenFactory.Tween("Show Info", 0, 1, 1f, TweenScaleFunctions.QuinticEaseOut, updateAlpha);
     }
 
     private void loadNormalView()
