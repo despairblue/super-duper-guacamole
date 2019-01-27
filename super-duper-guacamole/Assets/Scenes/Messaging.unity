@@ -1809,7 +1809,7 @@ GameObject:
   - component: {fileID: 1266940804}
   - component: {fileID: 1266940803}
   m_Layer: 0
-  m_Name: "Angelique\x13\x13"
+  m_Name: Angelique
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
