@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Losing Endscreen.unity
     guid: f6d25aae5c03f494fb3b649796caa705
+  - enabled: 1
+    path: Assets/Scenes/Robin.unity
+    guid: 15d91ece27dae1814bd5864c4103746b
   m_configObjects: {}
