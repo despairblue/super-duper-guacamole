@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using DigitalRuby.Tween;
 
 public class HomeInteraction : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class HomeInteraction : MonoBehaviour
 
     public GameObject Like;
     public GameObject Dislike;
+
+    public GameObject completeInfoBox;
 
     public Text infoText;
     public Button infoButton;
@@ -97,6 +100,11 @@ public class HomeInteraction : MonoBehaviour
             infoPanel.transform.localPosition = new Vector3(infoPanel.transform.localPosition.x, infoPanel.transform.localPosition.y - 50, infoPanel.transform.localPosition.z);
             personOccupation.gameObject.SetActive(false);
         }
+        System.Action<ITween<float>> updateAlpha = (t) =>
+        {
+            completeInfoBox.GetComponent<CanvasGroup>().alpha = t.CurrentValue;
+        };
+        TweenFactory.Tween("Reply", 0, 1, 1f, TweenScaleFunctions.QuinticEaseOut, updateAlpha);
     }
 
     private void loadNormalView()
@@ -104,7 +112,7 @@ public class HomeInteraction : MonoBehaviour
         if (infoText.gameObject.activeSelf) {
             infoButton.gameObject.SetActive(true);
             infoText.gameObject.SetActive(false);
-            personText.transform.localPosition = new Vector3(personText.transform.localPosition.x, 766, personText.transform.position.z);
+            personText.transform.localPosition = new Vector3(personText.transform.localPosition.x, 100, personText.transform.position.z);
             infoPanel.transform.localScale = new Vector3(infoPanel.transform.localScale.x, 0.5f, infoPanel.transform.localScale.z);
             infoPanel.transform.localPosition = new Vector3(infoPanel.transform.localPosition.x, infoPanel.transform.localPosition.y + 50, infoPanel.transform.localPosition.z);
             personOccupation.gameObject.SetActive(true);

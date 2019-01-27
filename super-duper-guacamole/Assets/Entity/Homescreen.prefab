@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 323516771}
   - component: {fileID: 323516770}
   - component: {fileID: 323516769}
+  - component: {fileID: 3140835445148558086}
   m_Layer: 5
   m_Name: Info
   m_TagString: Untagged
@@ -32,6 +33,7 @@ RectTransform:
   m_Children:
   - {fileID: 5704673866075935848}
   - {fileID: 6889760272004695806}
+  - {fileID: 6293329660407667726}
   - {fileID: 8830323161618566700}
   m_Father: {fileID: 1448381363}
   m_RootOrder: 5
@@ -131,6 +133,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!225 &3140835445148558086
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323516767}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &844417109
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +179,7 @@ RectTransform:
   - {fileID: 2367421739454138999}
   - {fileID: 3221692123958923427}
   m_Father: {fileID: 1448381363}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -311,7 +325,7 @@ RectTransform:
   - {fileID: 8665442259661891257}
   - {fileID: 6413777973555549364}
   m_Father: {fileID: 1448381363}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -596,7 +610,6 @@ RectTransform:
   - {fileID: 920574444768279302}
   - {fileID: 6717533036298058952}
   - {fileID: 323516768}
-  - {fileID: 6293329660407667726}
   - {fileID: 844417110}
   - {fileID: 1031197787}
   - {fileID: 2222105874235089594}
@@ -689,6 +702,7 @@ MonoBehaviour:
   House: {fileID: 0}
   Like: {fileID: 844417109}
   Dislike: {fileID: 1031197786}
+  completeInfoBox: {fileID: 323516767}
   infoText: {fileID: 8103155855557578205}
   infoButton: {fileID: 813237950576871678}
   infoPanel: {fileID: 3838945882673581342}
@@ -1980,12 +1994,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4595994790301352721}
-  m_Father: {fileID: 1448381363}
-  m_RootOrder: 6
+  m_Father: {fileID: 323516768}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -67.6, y: 766.5501}
+  m_AnchoredPosition: {x: -70.570816, y: 99.960205}
   m_SizeDelta: {x: 824.5, y: 82.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1384490421597487873
@@ -2060,7 +2074,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 323516768}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2141,7 +2155,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1.00032}
   m_Children: []
   m_Father: {fileID: 1448381363}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2286,7 +2300,7 @@ RectTransform:
   m_Children:
   - {fileID: 5526475088722334707}
   m_Father: {fileID: 1448381363}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2420,7 +2434,7 @@ RectTransform:
   m_Children:
   - {fileID: 6587396477136552527}
   m_Father: {fileID: 1448381363}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
