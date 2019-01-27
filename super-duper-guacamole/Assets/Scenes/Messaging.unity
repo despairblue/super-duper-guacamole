@@ -631,7 +631,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &901484117
 GameObject:
@@ -3497,4 +3497,206 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2130358544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2130358546}
+  - component: {fileID: 2130358545}
+  m_Layer: 0
+  m_Name: House (you)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2130358545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130358544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 10
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 759
+        y: 87
+        width: 150
+        height: 125
+      Text: I feel so lonely. I need someone to live inside of me. It should be someone
+        nice who can pay for heating and who will treat me well. But I have to be
+        careful. Picking the wrong person could be dangerous.
+      Type: 1
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0100000002000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 568
+        y: 340
+        width: 150
+        height: 125
+      Text: How should I judge people?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 1003
+        y: 341
+        width: 150
+        height: 125
+      Text: Can't I just live by myself and be independent?
+      Type: 2
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 03000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 997
+        y: 538
+        width: 150
+        height: 125
+      Text: Well, that might be fine for a while. But my little brother stayed empty
+        for too long and people just kept going in and destroying him. He is now a
+        crack house. I don't want to live like that. I need someone to take care of
+        me.
+      Type: 1
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 571
+        y: 563
+        width: 150
+        height: 125
+      Text: Should I judge them by their looks? Or do I judge them only by what they
+        say? Do I take into account what they like? Or should I rely on my common
+        sense and combine all of the information I can gather about them?
+      Type: 1
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 05000000060000000700000008000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 389
+        y: 783
+        width: 150
+        height: 125
+      Text: I will judge people purely based on their looks. A person's personality
+        manifests in their body. This  is the best way.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 633
+        y: 787
+        width: 150
+        height: 125
+      Text: I should listen to people. How they look is not important. What they say
+        shows me who they are. And I am very good at reading between the lines.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 843
+        y: 786
+        width: 150
+        height: 125
+      Text: I should pick someone who likes the same things I like. If we have things
+        in common, nothing can go wrong.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1043
+        y: 787
+        width: 150
+        height: 125
+      Text: I will use all of the information I have. Common sense will save me and
+        lead me to a fulfilled life of  pure happiness
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 763
+        y: 1028
+        width: 150
+        height: 125
+      Text: I am so smart. This is the perfect plan. Let do this!
+      Type: 0
+      NodeType: 2
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - House
+--- !u!4 &2130358546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130358544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
