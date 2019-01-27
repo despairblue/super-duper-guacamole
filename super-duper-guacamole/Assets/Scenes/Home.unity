@@ -357,15 +357,10 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.98823535
       objectReference: {fileID: 0}
-    - target: {fileID: 920574444768279302, guid: e9eea96bd6f6cf940989b5ea5d65143c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.08416748
-      objectReference: {fileID: 0}
     - target: {fileID: 5704673866075935848, guid: e9eea96bd6f6cf940989b5ea5d65143c,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000015258789
+      value: 80.000046
       objectReference: {fileID: 0}
     - target: {fileID: 844417111, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -435,6 +430,29 @@ PrefabInstance:
       propertyPath: InfoText
       value: Hi, I am Jerry and I am looking for a new home for myself and my beautiful
         Dog, Erin.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615437289343216756, guid: e9eea96bd6f6cf940989b5ea5d65143c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.9605713
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615437289343216756, guid: e9eea96bd6f6cf940989b5ea5d65143c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000061035156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717533036298058952, guid: e9eea96bd6f6cf940989b5ea5d65143c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.6730957
+      objectReference: {fileID: 0}
+    - target: {fileID: 323516768, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.95001
+      objectReference: {fileID: 0}
+    - target: {fileID: 323516768, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 682.39
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9eea96bd6f6cf940989b5ea5d65143c, type: 3}

@@ -16,6 +16,7 @@ public class HomeInteraction : MonoBehaviour
 
     public Text infoText;
     public Button infoButton;
+    public GameObject infoPanel;
 
     private bool HouseSelected = false;
     private Person currentPerson;
@@ -30,7 +31,6 @@ public class HomeInteraction : MonoBehaviour
         if (!HouseSelected)
         {
             setPerson(House);
-            Debug.Log(currentPerson.PersonName);
             loadNormalView();
             displayInfo(House);
             disableLiking();
@@ -74,6 +74,8 @@ public class HomeInteraction : MonoBehaviour
             infoText.gameObject.SetActive(true);
             infoText.text = displayablePerson.InfoText;
             infoButton.gameObject.SetActive(false);
+            infoPanel.transform.localScale = new Vector3(infoPanel.transform.localScale.x, 1, infoPanel.transform.localScale.z);
+            infoPanel.transform.localPosition = new Vector3(infoPanel.transform.localPosition.x, infoPanel.transform.localPosition.y - 50, infoPanel.transform.localPosition.z);
         }
     }
 
@@ -82,7 +84,9 @@ public class HomeInteraction : MonoBehaviour
         if (infoText.gameObject.activeSelf) {
             infoButton.gameObject.SetActive(true);
             infoText.gameObject.SetActive(false);
-            personText.transform.position = new Vector3(personText.transform.position.x, 3f, personText.transform.position.z);
+            personText.transform.localPosition = new Vector3(personText.transform.localPosition.x, 736, personText.transform.position.z);
+            infoPanel.transform.localScale = new Vector3(infoPanel.transform.localScale.x, 0.5f, infoPanel.transform.localScale.z);
+            infoPanel.transform.localPosition = new Vector3(infoPanel.transform.localPosition.x, infoPanel.transform.localPosition.y + 50, infoPanel.transform.localPosition.z);
         }
     }
 
