@@ -35,8 +35,6 @@ public class Dialog : MonoBehaviour
     private List<Button> buttons;
     public ScrollRect scrollRect;
 
-    public Dialogues carl;
-
     bool chosen = true;
 
     // Start is called before the first frame update
