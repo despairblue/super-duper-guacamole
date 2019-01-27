@@ -1226,6 +1226,7 @@ GameObject:
   - component: {fileID: 384455898448494077}
   - component: {fileID: 65507602876825963}
   - component: {fileID: 8977140858163331318}
+  - component: {fileID: 5745728323752912877}
   m_Layer: 5
   m_Name: MessagesButton
   m_TagString: Untagged
@@ -1332,6 +1333,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &5745728323752912877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8505576805100175525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: -5, y: -11.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &8887242856910187666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,6 +1359,7 @@ GameObject:
   - component: {fileID: 3653729546298152794}
   - component: {fileID: 6183764011105547342}
   - component: {fileID: 9211012473447470637}
+  - component: {fileID: 4511771745071502358}
   m_Layer: 5
   m_Name: Person Image Top Panel
   m_TagString: Untagged
@@ -1407,6 +1424,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &4511771745071502358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887242856910187666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1573420865, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: -5, y: -11.5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &8998126543448981665
 GameObject:
   m_ObjectHideFlags: 0
