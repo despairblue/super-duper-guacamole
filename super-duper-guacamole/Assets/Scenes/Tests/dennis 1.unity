@@ -2025,12 +2025,12 @@ MonoBehaviour:
         height: 125
       Text: "Oh no, not at all. I have my own practice and help people who I have
         known for decades. I wouldn\u2019t want it any other way. "
-      Type: 0
+      Type: 1
       NodeType: 1
       Parent: 3
       Trigger: 0
       TriggerText: 
-      Connections: 0e000000
+      Connections: 0f00000010000000
     - ID: 7
       Size:
         serializedVersion: 2
@@ -2044,21 +2044,7 @@ MonoBehaviour:
       Parent: 4
       Trigger: 0
       TriggerText: 
-      Connections: 13000000
-    - ID: 14
-      Size:
-        serializedVersion: 2
-        x: 1092
-        y: 240
-        width: 150
-        height: 125
-      Text: Do you want Carl to move in?
-      Type: 1
-      NodeType: 1
-      Parent: 6
-      Trigger: 0
-      TriggerText: 
-      Connections: 0f00000010000000
+      Connections: 14000000
     - ID: 15
       Size:
         serializedVersion: 2
@@ -2069,7 +2055,7 @@ MonoBehaviour:
       Text: Wow, that sounds amazing. You seem to be a very well balanced person.
       Type: 2
       NodeType: 1
-      Parent: 14
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 11000000
@@ -2084,7 +2070,7 @@ MonoBehaviour:
         job at a public hospital for a low wage? What a terrible person you are. Begone.
       Type: 2
       NodeType: 1
-      Parent: 14
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 12000000
@@ -2116,20 +2102,6 @@ MonoBehaviour:
       Trigger: 1
       TriggerText: out
       Connections: 
-    - ID: 19
-      Size:
-        serializedVersion: 2
-        x: 916
-        y: 607
-        width: 150
-        height: 125
-      Text: What should you ask next?
-      Type: 1
-      NodeType: 1
-      Parent: 7
-      Trigger: 0
-      TriggerText: 
-      Connections: 14000000
     - ID: 20
       Size:
         serializedVersion: 2
@@ -2138,9 +2110,9 @@ MonoBehaviour:
         width: 150
         height: 125
       Text: Are your kids a lot of work?
-      Type: 2
+      Type: 0
       NodeType: 1
-      Parent: 19
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 16000000
@@ -2155,23 +2127,9 @@ MonoBehaviour:
         to let them take their medication. They are very active and need be kept busy
         at all times. Otherwise their energy gets totally out of control and chaos
         ensues.
-      Type: 0
-      NodeType: 1
-      Parent: 20
-      Trigger: 0
-      TriggerText: 
-      Connections: 17000000
-    - ID: 23
-      Size:
-        serializedVersion: 2
-        x: 1636
-        y: 707
-        width: 150
-        height: 125
-      Text: Do you want Carl to move in?
       Type: 1
       NodeType: 1
-      Parent: 22
+      Parent: 20
       Trigger: 0
       TriggerText: 
       Connections: 1800000019000000
@@ -2185,7 +2143,7 @@ MonoBehaviour:
       Text: Sounds like a lively family. I think I would really enjoy that.
       Type: 2
       NodeType: 1
-      Parent: 23
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 1a000000
@@ -2200,7 +2158,7 @@ MonoBehaviour:
         person. I don't want to have anything to do with you.
       Type: 2
       NodeType: 1
-      Parent: 23
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 1b000000
@@ -2255,23 +2213,9 @@ MonoBehaviour:
         height: 125
       Text: 'Oh, yes. We love and support each other as much as we can. Although we
         do sometimes disagree about how to best raise our children. '
-      Type: 0
-      NodeType: 1
-      Parent: 28
-      Trigger: 0
-      TriggerText: 
-      Connections: 1e000000
-    - ID: 30
-      Size:
-        serializedVersion: 2
-        x: 1068
-        y: 64
-        width: 150
-        height: 125
-      Text: Do you want Carl to move in?
       Type: 1
       NodeType: 1
-      Parent: 29
+      Parent: 28
       Trigger: 0
       TriggerText: 
       Connections: 1f00000020000000
@@ -2285,7 +2229,7 @@ MonoBehaviour:
       Text: Oh, that's lovely. I would love to be the home of a loving family.
       Type: 2
       NodeType: 1
-      Parent: 30
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 21000000
@@ -2300,7 +2244,7 @@ MonoBehaviour:
         harmony.
       Type: 2
       NodeType: 1
-      Parent: 30
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 22000000
@@ -2841,23 +2785,9 @@ MonoBehaviour:
       Text: "Well, since I became a Game Programming student, I haven\u2019t had the
         time to play a whole lot. I mostly play League of Legends or Overwatch with
         my friends for a few short rounds when I have the time."
-      Type: 0
-      NodeType: 1
-      Parent: 1
-      Trigger: 0
-      TriggerText: 
-      Connections: 05000000
-    - ID: 5
-      Size:
-        serializedVersion: 2
-        x: 983
-        y: 88
-        width: 150
-        height: 125
-      Text: Do you want Robert  to move in?
       Type: 1
       NodeType: 1
-      Parent: 4
+      Parent: 1
       Trigger: 0
       TriggerText: 
       Connections: 0600000007000000
@@ -2872,7 +2802,7 @@ MonoBehaviour:
         of your matches.
       Type: 2
       NodeType: 1
-      Parent: 5
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 08000000
@@ -2886,7 +2816,7 @@ MonoBehaviour:
       Text: Those games suck. Get better taste or get lost.
       Type: 2
       NodeType: 1
-      Parent: 5
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 09000000
@@ -2929,23 +2859,9 @@ MonoBehaviour:
       Text: It kind of is. I just hate working with game designers. They are all stupid
         and think they know everything when they are actually pretty useless. Other
         than dealing with those guys, I love it!
-      Type: 0
-      NodeType: 1
-      Parent: 2
-      Trigger: 0
-      TriggerText: 
-      Connections: 0b000000
-    - ID: 11
-      Size:
-        serializedVersion: 2
-        x: 998
-        y: 269
-        width: 150
-        height: 125
-      Text: Do you want Robert  to move in?
       Type: 1
       NodeType: 1
-      Parent: 10
+      Parent: 2
       Trigger: 0
       TriggerText: 
       Connections: 0c0000000d000000
@@ -2960,7 +2876,7 @@ MonoBehaviour:
         this.
       Type: 2
       NodeType: 1
-      Parent: 11
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 0e000000
@@ -2974,7 +2890,7 @@ MonoBehaviour:
       Text: 'I completely understand. Game Designers suck. Let''s hate them together. '
       Type: 2
       NodeType: 1
-      Parent: 11
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 0f000000
@@ -3014,23 +2930,9 @@ MonoBehaviour:
         width: 150
         height: 125
       Text: I want to work at either Riot or Blizzard.
-      Type: 0
-      NodeType: 1
-      Parent: 3
-      Trigger: 0
-      TriggerText: 
-      Connections: 11000000
-    - ID: 17
-      Size:
-        serializedVersion: 2
-        x: 702
-        y: 738
-        width: 150
-        height: 125
-      Text: Do you want Robert  to move in?
       Type: 1
       NodeType: 1
-      Parent: 16
+      Parent: 3
       Trigger: 0
       TriggerText: 
       Connections: 1200000013000000
@@ -3045,7 +2947,7 @@ MonoBehaviour:
         will be buffed. Please move in.
       Type: 2
       NodeType: 1
-      Parent: 17
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 14000000
@@ -3059,7 +2961,7 @@ MonoBehaviour:
       Text: Lol sucks and Diablo Immortal makes me sad. You can't be here, sorry.
       Type: 2
       NodeType: 1
-      Parent: 17
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 15000000
