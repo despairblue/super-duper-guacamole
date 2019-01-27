@@ -9,6 +9,21 @@ public class PersonRepository : MonoBehaviour
     public Person[] persons;
 
     private int i = 0;
+
+    public void shuffle(Person[] list) {
+        int n = list.Length;
+        while (n > 1) {
+            n--;
+            int k = Random.Range(0, n);
+            Person value = list[k];
+            list[k] = list[n];
+            list[n] = value;
+        }
+    }
+
+    public void Start() {
+        shuffle(persons);
+    }
     
 
     public Person getPerson() {
