@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class ReplayScript : MonoBehaviour
 {
     public void restart() {
-        SceneManager.LoadScene("Home");
+        SceneManager.LoadScene("Start");
     }
 }
