@@ -148,11 +148,15 @@ public class Dialog : MonoBehaviour
 
     public void End() {
         Debug.Log("FINISHED WITH: " + npc.GetTrigger());
+        string matchName = PlayerPrefs.GetString("name");
+        if (matchName == "Robert") {
+            matchName = "Robin";
+        }
         currentState = State.End;
         string trigger = npc.GetTrigger();
         switch (trigger) {
             case TRIGGER_WIN:
-                StartCoroutine(loadScene("Winning Endscreen"));
+                StartCoroutine(loadScene(matchName));
                 break;
             case TRIGGER_LOSE:
                 StartCoroutine(loadScene("Losing Endscreen"));
