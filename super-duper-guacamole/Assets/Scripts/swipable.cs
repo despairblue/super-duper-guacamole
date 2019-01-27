@@ -46,12 +46,12 @@ public class swipable : EventTrigger
 
     public void swipeLeft() {
         dependency = GameObject.Find("Homescreen").GetComponent<HomeInteraction>();
-        dependency.dislikePerson();
+        dependency.dislikeLogic();
     }
 
     public void swipeRight() {
         dependency = GameObject.Find("Homescreen").GetComponent<HomeInteraction>();
-        dependency.likePerson();
+        dependency.likeLogic();
     }
 
     private void moveBack() {

@@ -51,13 +51,12 @@ public class HomeInteraction : MonoBehaviour
 
 
     public void likePerson() {
-        Like.GetComponentInChildren<AudioSource>().Play();
         playLikingAnimation();
     }
 
     public void dislikePerson()
     {
-        Dislike.GetComponentInChildren<AudioSource>().Play();
+        
         playDislikingAnimation();               
     }
 
@@ -72,18 +71,36 @@ public class HomeInteraction : MonoBehaviour
             loadNormalView();
             
             personImage.transform.localPosition = new Vector3(0, -140, personImage.transform.localPosition.z);
-            if (HouseSelected)
-            {
-                HouseSelected = false;
-                setPerson(currentPerson);
-            }
-            else
-            { 
-                loadNextPerson();
-            }
+            dislikeLogic();
         };
 
-        TweenFactory.Tween("Dislike", personImage.transform.localPosition, new Vector3(-1500, 100, personImage.transform.localPosition.z), 1f, TweenScaleFunctions.QuinticEaseOut, swiping, finishTween);
+        TweenFactory.Tween("Dislike", personImage.transform.localPosition, new Vector3(-1200, 100, personImage.transform.localPosition.z), 0.5f, TweenScaleFunctions.QuinticEaseOut, swiping, finishTween);
+    }
+
+    public void dislikeLogic() {
+        Dislike.GetComponentInChildren<AudioSource>().Play();
+        if (HouseSelected)
+        {
+            HouseSelected = false;
+            setPerson(currentPerson);
+        }
+        else
+        {
+            loadNextPerson();
+        }
+    }
+
+    public void likeLogic()
+    {
+        Like.GetComponentInChildren<AudioSource>().Play();
+        if (HouseSelected)
+        {
+            loadEasterEgg();
+        }
+        else
+        {
+            loadMessage();
+        }
     }
 
     private void playLikingAnimation()
@@ -95,17 +112,10 @@ public class HomeInteraction : MonoBehaviour
 
         System.Action<ITween<Vector3>> finishTween = (t) =>
         {
-            if (HouseSelected)
-            {
-                loadEasterEgg();
-            }
-            else
-            {
-                loadMessage();
-            }
+            likeLogic();
         };
 
-        TweenFactory.Tween("Like", personImage.transform.localPosition, new Vector3(1500, 100, personImage.transform.localPosition.z), 1f, TweenScaleFunctions.QuinticEaseOut, swiping, finishTween);
+        TweenFactory.Tween("Like", personImage.transform.localPosition, new Vector3(1200, 100, personImage.transform.localPosition.z), 0.5f, TweenScaleFunctions.QuinticEaseOut, swiping, finishTween);
     }
 
     public void displayCurrentPersonInfo() {
