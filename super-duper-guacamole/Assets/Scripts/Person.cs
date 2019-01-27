@@ -8,4 +8,6 @@ public class Person : MonoBehaviour
     public Sprite PersonImage;
     public string PersonName;
     public string InfoText;
+    public string Occupation;
+    public string age;
 }

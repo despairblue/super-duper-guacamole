@@ -431,6 +431,16 @@ PrefabInstance:
       value: Hi, I am Jerry and I am looking for a new home for myself and my beautiful
         Dog, Erin.
       objectReference: {fileID: 0}
+    - target: {fileID: 4464528381046834197, guid: e9eea96bd6f6cf940989b5ea5d65143c,
+        type: 3}
+      propertyPath: age
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464528381046834197, guid: e9eea96bd6f6cf940989b5ea5d65143c,
+        type: 3}
+      propertyPath: Occupation
+      value: Event-Manager
+      objectReference: {fileID: 0}
     - target: {fileID: 8615437289343216756, guid: e9eea96bd6f6cf940989b5ea5d65143c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -500,6 +510,8 @@ MonoBehaviour:
   PersonImage: {fileID: 21300000, guid: d5eca78f299fca345b63364bc74a3423, type: 3}
   PersonName: House (you)
   InfoText: This is you. You want to find somebody to move in.
+  Occupation: 
+  age: 
 --- !u!4 &1488700099
 Transform:
   m_ObjectHideFlags: 0
@@ -602,6 +614,8 @@ MonoBehaviour:
   PersonName: Angelique
   InfoText: 'I like spending cozy evenings at home, reading a good book with a glass
     of wine and petting my beautiful, cute little kitties. '
+  Occupation: Author
+  age: 53
 --- !u!114 &2011370919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,6 +632,8 @@ MonoBehaviour:
   PersonName: Carl
   InfoText: 'My family and I need a new home. We are looking for a family friendly
     environment. '
+  Occupation: Medical Doctor
+  age: 47
 --- !u!114 &2011370920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,6 +650,8 @@ MonoBehaviour:
   PersonName: Robert
   InfoText: "Hi, I\u2019m Robert. I\u2019m a Game Programming  student and I\u2019m
     looking for a new place to live. "
+  Occupation: Programming Student
+  age: 22
 --- !u!114 &2011370921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,6 +668,8 @@ MonoBehaviour:
   PersonName: Gerard
   InfoText: "I am looking for a place to sleep from time to time. Don\u2019t need
     much more than that. "
+  Occupation: Assassin
+  age: 53
 --- !u!1 &2047701779
 GameObject:
   m_ObjectHideFlags: 0
