@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ReplayScript : MonoBehaviour
+public class StartGameScript : MonoBehaviour
 {
-    public void restart() {
-        SceneManager.LoadScene("Start");
+    public void startGame() {
+        SceneManager.LoadScene("Home");
     }
 }
