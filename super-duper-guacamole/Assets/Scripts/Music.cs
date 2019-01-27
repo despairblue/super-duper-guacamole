@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class Music : MonoBehaviour
 {
-    private AudioSource audioSource;
+    public static AudioSource audioSource;
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null) {
+            DontDestroyOnLoad(gameObject);
+            audioSource = GetComponent<AudioSource>();
+        }
+        else {
+            Destroy(gameObject);
+        }
     }
 
     public void PlayMusic()
