@@ -9,6 +9,7 @@ public class HomeInteraction : MonoBehaviour
     public PersonRepository repo;
     public Image personImage;
     public Text personText;
+    public Text personOccupation;
     public Person House;
 
     public GameObject Like;
@@ -78,6 +79,7 @@ public class HomeInteraction : MonoBehaviour
             infoButton.gameObject.SetActive(false);
             infoPanel.transform.localScale = new Vector3(infoPanel.transform.localScale.x, 1, infoPanel.transform.localScale.z);
             infoPanel.transform.localPosition = new Vector3(infoPanel.transform.localPosition.x, infoPanel.transform.localPosition.y - 50, infoPanel.transform.localPosition.z);
+            personOccupation.gameObject.SetActive(false);
         }
     }
 
@@ -86,9 +88,10 @@ public class HomeInteraction : MonoBehaviour
         if (infoText.gameObject.activeSelf) {
             infoButton.gameObject.SetActive(true);
             infoText.gameObject.SetActive(false);
-            personText.transform.localPosition = new Vector3(personText.transform.localPosition.x, 736, personText.transform.position.z);
+            personText.transform.localPosition = new Vector3(personText.transform.localPosition.x, 766, personText.transform.position.z);
             infoPanel.transform.localScale = new Vector3(infoPanel.transform.localScale.x, 0.5f, infoPanel.transform.localScale.z);
             infoPanel.transform.localPosition = new Vector3(infoPanel.transform.localPosition.x, infoPanel.transform.localPosition.y + 50, infoPanel.transform.localPosition.z);
+            personOccupation.gameObject.SetActive(true);
         }
     }
 
@@ -108,7 +111,8 @@ public class HomeInteraction : MonoBehaviour
         if (person != null)
         {
             personImage.sprite = person.PersonImage;
-            personText.text = person.PersonName;
+            personText.text = person.PersonName + ", " + person.age;
+            personOccupation.text = "Occupation: " + person.Occupation;
         }
     }
 
