@@ -23,4 +23,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Robin.unity
     guid: 15d91ece27dae1814bd5864c4103746b
+  - enabled: 1
+    path: Assets/Scenes/Endscreen/Angelique Endscreen.unity
+    guid: 8f6fec6711b9ea747a30658e70632760
+  - enabled: 1
+    path: Assets/Scenes/Endscreen/Carl Endscreen.unity
+    guid: a7b1e10e6c016aa419f0e09b72b442ae
+  - enabled: 1
+    path: Assets/Scenes/Endscreen/Gerrard Endscreen.unity
+    guid: 089f5dc31f74c634da0f0ec311975ccd
+  - enabled: 1
+    path: Assets/Scenes/Endscreen/Jerry Endscreen.unity
+    guid: 0cf5cc11b880d7c43bb2c24c54eb642f
+  - enabled: 1
+    path: Assets/Scenes/Endscreen/Robert Endscreen.unity
+    guid: a4c44d019e65913418132b449b83afc7
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 9b74d8d0d6c86484a862a02a955f991e
   m_configObjects: {}
