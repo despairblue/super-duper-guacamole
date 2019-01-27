@@ -47,15 +47,31 @@ public class HomeInteraction : MonoBehaviour
 
 
     public void likePerson() {
-        Like.GetComponentInChildren<AudioSource>().Play();
-        loadMessage();
+        if (HouseSelected)
+        {
+            Like.GetComponentInChildren<AudioSource>().Play();
+            loadEasterEgg();
+        }
+        else {
+            Like.GetComponentInChildren<AudioSource>().Play();
+            loadMessage();
+        }
+        
     }
 
     public void dislikePerson()
     {
         Dislike.GetComponentInChildren<AudioSource>().Play();
         loadNormalView();
-        loadNextPerson();
+        if (HouseSelected)
+        {
+            HouseSelected = false;
+            setPerson(currentPerson);
+        }
+        else {
+            Dislike.GetComponentInChildren<AudioSource>().Play();
+            loadNextPerson();
+        }
     }
 
     public void displayCurrentPersonInfo() {
@@ -97,6 +113,12 @@ public class HomeInteraction : MonoBehaviour
 
     private void loadMessage() {
         PlayerPrefs.SetString("name", currentPerson.PersonName);
+        SceneManager.LoadScene("Messaging");
+    }
+
+    private void loadEasterEgg()
+    {
+        PlayerPrefs.SetString("name", House.PersonName);
         SceneManager.LoadScene("Messaging");
     }
 
