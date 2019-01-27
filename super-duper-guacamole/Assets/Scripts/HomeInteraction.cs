@@ -46,11 +46,13 @@ public class HomeInteraction : MonoBehaviour
 
 
     public void likePerson() {
+        Like.GetComponentInChildren<AudioSource>().Play();
         loadMessage();
     }
 
     public void dislikePerson()
     {
+        Dislike.GetComponentInChildren<AudioSource>().Play();
         loadNormalView();
         loadNextPerson();
     }

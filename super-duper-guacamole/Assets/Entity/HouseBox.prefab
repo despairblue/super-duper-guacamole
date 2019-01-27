@@ -95,6 +95,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7763969652713375963}
     m_Modifications:
+    - target: {fileID: 5046064696130899737, guid: f81b495b8db7b674391a952e8157dccb,
+        type: 3}
+      propertyPath: m_Name
+      value: Chat Box House
+      objectReference: {fileID: 0}
     - target: {fileID: 7091939427657700361, guid: f81b495b8db7b674391a952e8157dccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -200,11 +205,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 5046064696130899737, guid: f81b495b8db7b674391a952e8157dccb,
-        type: 3}
-      propertyPath: m_Name
-      value: Chat Box House
-      objectReference: {fileID: 0}
     - target: {fileID: 2759667211902595251, guid: f81b495b8db7b674391a952e8157dccb,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -229,6 +229,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6174223774801265529, guid: f81b495b8db7b674391a952e8157dccb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2765286090f1e1c51b0462be10bbdc79,
+        type: 3}
+    - target: {fileID: 6174223774801265529, guid: f81b495b8db7b674391a952e8157dccb,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6381695139819513645, guid: f81b495b8db7b674391a952e8157dccb, type: 3}

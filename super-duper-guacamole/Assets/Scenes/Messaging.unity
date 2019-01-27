@@ -896,7 +896,7 @@ MonoBehaviour:
       NodeType: 2
       Parent: 13
       Trigger: 1
-      TriggerText: out
+      TriggerText: win
       Connections: 
     - ID: 16
       Size:
@@ -2136,7 +2136,7 @@ PrefabInstance:
     - target: {fileID: 5527040657813754119, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000048010215
+      value: 0.0000630612
       objectReference: {fileID: 0}
     - target: {fileID: 5527040657813754119, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
