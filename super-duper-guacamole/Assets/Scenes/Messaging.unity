@@ -1809,7 +1809,7 @@ GameObject:
   - component: {fileID: 1266940804}
   - component: {fileID: 1266940803}
   m_Layer: 0
-  m_Name: Angelique
+  m_Name: "Angelique\x13\x13"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2335,7 +2335,7 @@ MonoBehaviour:
       NodeType: 2
       Parent: 32
       Trigger: 1
-      TriggerText: win
+      TriggerText: lose
       Connections: 
     - ID: 36
       Size:
@@ -2363,7 +2363,7 @@ MonoBehaviour:
       NodeType: 2
       Parent: 29
       Trigger: 1
-      TriggerText: win
+      TriggerText: lose
       Connections: 
     - ID: 38
       Size:
@@ -2377,7 +2377,7 @@ MonoBehaviour:
       NodeType: 2
       Parent: 30
       Trigger: 1
-      TriggerText: win
+      TriggerText: lose
       Connections: 
     - ID: 39
       Size:
@@ -2435,7 +2435,7 @@ MonoBehaviour:
       NodeType: 2
       Parent: 41
       Trigger: 1
-      TriggerText: win
+      TriggerText: lose
       Connections: 
     - ID: 43
       Size:
