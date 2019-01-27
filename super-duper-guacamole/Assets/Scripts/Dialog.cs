@@ -36,6 +36,7 @@ public class Dialog : MonoBehaviour
     public ScrollRect scrollRect;
 
     bool chosen = true;
+    string matchName;
 
     // Start is called before the first frame update
     void deleteButtons() {
@@ -68,7 +69,7 @@ public class Dialog : MonoBehaviour
 
     void Start()
     {
-        string matchName = PlayerPrefs.GetString("name");
+        matchName = PlayerPrefs.GetString("name");
         Debug.Log(matchName);
 
         Sprite profilePic = Resources.Load<Sprite>("Sprites/PB" + matchName);
@@ -95,7 +96,6 @@ public class Dialog : MonoBehaviour
             {
                 if (currentState == State.Waiting) {
                     currentState = State.Human;
-                    
                 };
                 continueDialog();
                 scrollRect.verticalNormalizedPosition = 0;
@@ -148,7 +148,6 @@ public class Dialog : MonoBehaviour
 
     public void End() {
         Debug.Log("FINISHED WITH: " + npc.GetTrigger());
-        string matchName = PlayerPrefs.GetString("name");
         if (matchName == "Robert") {
             matchName = "Robin";
         }
@@ -161,11 +160,8 @@ public class Dialog : MonoBehaviour
             case TRIGGER_LOSE:
                 StartCoroutine(loadScene("Losing Endscreen"));
                 break;
-            case TRIGGER_OUT:
-                StartCoroutine(loadScene("Home"));
-                break;
             default:
-                Debug.LogError("Unknown trigger: " + trigger);
+                StartCoroutine(loadScene("Home"));
                 break;
         }
     }

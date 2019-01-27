@@ -129,7 +129,6 @@ MonoBehaviour:
   responseButton: {fileID: 5254639267771982687, guid: 00d27125b158b167d95c423711409a4a,
     type: 3}
   scrollRect: {fileID: 2818757584442123716}
-  carl: {fileID: 0}
 --- !u!1 &1697389006
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
