@@ -155,10 +155,10 @@ public class Dialog : MonoBehaviour
         string trigger = npc.GetTrigger();
         switch (trigger) {
             case TRIGGER_WIN:
-                StartCoroutine(loadScene(matchName));
+                StartCoroutine(loadScene(matchName + " Endscreen"));
                 break;
             case TRIGGER_LOSE:
-                StartCoroutine(loadScene("Losing Endscreen"));
+                StartCoroutine(loadScene(matchName + " Endscreen"));
                 break;
             default:
                 StartCoroutine(loadScene("Home"));
