@@ -123,11 +123,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Messaging
       objectReference: {fileID: 0}
-    - target: {fileID: 4892829783775603039, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_Text
-      value: A2
-      objectReference: {fileID: 0}
     - target: {fileID: 1448381363, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -212,9 +207,193 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 694
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 123.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 806.1017
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.29992676
+      objectReference: {fileID: 0}
+    - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654511967182377838, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1654511967182377838, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099994102620620709, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099994102620620709, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527040657813754119, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1697389007, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3653729546298152794, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4265642206290646973, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3877590247863577516, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9012517244762878370, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1697389006, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4892829783775603039, guid: affb44b7d6fc601458284a3ddbf2f2f0,
+        type: 3}
+      propertyPath: m_Text
+      value: A2
       objectReference: {fileID: 0}
     - target: {fileID: 272457278, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
       propertyPath: m_havePropertiesChanged
@@ -299,76 +478,6 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3653729546298152794, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 694
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 123.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2767611180473514802, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 806.1017
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7083995449084157832, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2758145066030228556, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_Text
@@ -389,22 +498,8 @@ PrefabInstance:
       propertyPath: m_FontData.m_VerticalOverflow
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4265642206290646973, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1678702751794747728, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4593635468550751651, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1697389007, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
@@ -578,105 +673,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: A3
       objectReference: {fileID: 0}
-    - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8100899136867780288, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.29992676
-      objectReference: {fileID: 0}
-    - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 286569812888930568, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1233819263780465317, guid: affb44b7d6fc601458284a3ddbf2f2f0,
         type: 3}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3877590247863577516, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9012517244762878370, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5527040657813754119, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3999337611487837842, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654511967182377838, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1654511967182377838, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4099994102620620709, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4099994102620620709, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1669075458818226884, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6714613167140940463, guid: affb44b7d6fc601458284a3ddbf2f2f0,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: affb44b7d6fc601458284a3ddbf2f2f0, type: 3}
@@ -3146,8 +3146,8 @@ MonoBehaviour:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 804
-        y: 349
+        x: 1348
+        y: 40
         width: 150
         height: 125
       Text: What do you want to ask?
@@ -3160,8 +3160,8 @@ MonoBehaviour:
     - ID: 1
       Size:
         serializedVersion: 2
-        x: 1113
-        y: 170
+        x: 1433
+        y: 210
         width: 150
         height: 125
       Text: What kind of events do you manage?
@@ -3174,8 +3174,8 @@ MonoBehaviour:
     - ID: 2
       Size:
         serializedVersion: 2
-        x: 1073
-        y: 428
+        x: 1255
+        y: 212
         width: 150
         height: 125
       Text: Do you plan to get more dogs?
@@ -3188,8 +3188,8 @@ MonoBehaviour:
     - ID: 3
       Size:
         serializedVersion: 2
-        x: 905
-        y: 674
+        x: 1065
+        y: 220
         width: 150
         height: 125
       Text: How did you get  your scar?
@@ -3202,62 +3202,48 @@ MonoBehaviour:
     - ID: 4
       Size:
         serializedVersion: 2
-        x: 1407
-        y: 156
+        x: 1449
+        y: 376
         width: 150
         height: 125
       Text: I often host tournaments at home in which dog owners can let their dogs
         compete against one another to measure their strength and determination. I
         just love watching dogs unleash their potential and engage in combat.
-      Type: 0
+      Type: 1
       NodeType: 1
       Parent: 1
       Trigger: 0
       TriggerText: 
-      Connections: 08000000
+      Connections: 090000000a000000
     - ID: 5
       Size:
         serializedVersion: 2
-        x: 1333
-        y: 431
+        x: 1253
+        y: 369
         width: 150
         height: 125
       Text: No! This is the best dog ever. There can never  be another dog like her.
-      Type: 0
+      Type: 1
       NodeType: 1
       Parent: 2
       Trigger: 0
       TriggerText: 
-      Connections: 0d000000
+      Connections: 0e0000000f000000
     - ID: 6
       Size:
         serializedVersion: 2
-        x: 902
-        y: 836
+        x: 1008
+        y: 379
         width: 150
         height: 125
       Text: I was trying to protect my dear Erin when she was attacked by some asshole
         owner's dog.
-      Type: 0
+      Type: 1
       NodeType: 1
       Parent: 3
       Trigger: 0
       TriggerText: 
-      Connections: 26000000
-    - ID: 8
-      Size:
-        serializedVersion: 2
-        x: 1608
-        y: 154
-        width: 150
-        height: 125
-      Text: Do you want Jerry to move in.
-      Type: 1
-      NodeType: 1
-      Parent: 4
-      Trigger: 0
-      TriggerText: 
-      Connections: 090000000a000000
+      Connections: 2700000028000000
     - ID: 9
       Size:
         serializedVersion: 2
@@ -3269,7 +3255,7 @@ MonoBehaviour:
         in.
       Type: 2
       NodeType: 1
-      Parent: 8
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 0b000000
@@ -3284,7 +3270,7 @@ MonoBehaviour:
         your dog. I will tell the police about this.
       Type: 2
       NodeType: 1
-      Parent: 8
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 0c000000
@@ -3316,45 +3302,31 @@ MonoBehaviour:
       Trigger: 1
       TriggerText: out
       Connections: 
-    - ID: 13
-      Size:
-        serializedVersion: 2
-        x: 1543
-        y: 422
-        width: 150
-        height: 125
-      Text: What do you want to ask?
-      Type: 1
-      NodeType: 1
-      Parent: 5
-      Trigger: 0
-      TriggerText: 
-      Connections: 0e0000000f000000
     - ID: 14
       Size:
         serializedVersion: 2
-        x: 1764
-        y: 386
+        x: 1171
+        y: 696
         width: 150
         height: 125
       Text: How does the dog react to strangers?
       Type: 2
       NodeType: 1
-      Parent: 13
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 10000000
     - ID: 15
       Size:
         serializedVersion: 2
-        x: 1767
-        y: 554
+        x: 1351
+        y: 694
         width: 150
         height: 125
       Text: How did your dog get the scars?
       Type: 2
       NodeType: 1
-      Parent: 13
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 11000000
@@ -3367,12 +3339,12 @@ MonoBehaviour:
         height: 125
       Text: She protects me fram dangerous indicusuals and follows my every command
         to the letter.
-      Type: 0
+      Type: 1
       NodeType: 1
       Parent: 14
       Trigger: 0
       TriggerText: 
-      Connections: 12000000
+      Connections: 1300000014000000
     - ID: 17
       Size:
         serializedVersion: 2
@@ -3382,26 +3354,12 @@ MonoBehaviour:
         height: 125
       Text: Some other owner's dog did not play by the rules and this viscious beast
         hurt my beautiful princess.
-      Type: 0
+      Type: 1
       NodeType: 1
       Parent: 15
       Trigger: 0
       TriggerText: 
-      Connections: 17000000
-    - ID: 18
-      Size:
-        serializedVersion: 2
-        x: 2198
-        y: 380
-        width: 150
-        height: 125
-      Text: Do you want Jerry to move in.
-      Type: 1
-      NodeType: 1
-      Parent: 16
-      Trigger: 0
-      TriggerText: 
-      Connections: 1300000014000000
+      Connections: 1800000019000000
     - ID: 19
       Size:
         serializedVersion: 2
@@ -3413,7 +3371,7 @@ MonoBehaviour:
         I shelter. Do you want to move in?
       Type: 2
       NodeType: 1
-      Parent: 18
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 15000000
@@ -3428,7 +3386,7 @@ MonoBehaviour:
         me. I don't like that. I want to be around people. You can't move in, sorry.
       Type: 2
       NodeType: 1
-      Parent: 18
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 16000000
@@ -3460,20 +3418,6 @@ MonoBehaviour:
       Trigger: 1
       TriggerText: out
       Connections: 
-    - ID: 23
-      Size:
-        serializedVersion: 2
-        x: 2174
-        y: 576
-        width: 150
-        height: 125
-      Text: What do you want to ask?
-      Type: 1
-      NodeType: 1
-      Parent: 17
-      Trigger: 0
-      TriggerText: 
-      Connections: 1800000019000000
     - ID: 24
       Size:
         serializedVersion: 2
@@ -3484,7 +3428,7 @@ MonoBehaviour:
       Text: What rules do you mean?
       Type: 2
       NodeType: 1
-      Parent: 23
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 1a000000
@@ -3498,7 +3442,7 @@ MonoBehaviour:
       Text: Wow, that's terrible. Did she suffer any mental damage from that attack?
       Type: 2
       NodeType: 1
-      Parent: 23
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 20000000
@@ -3511,23 +3455,9 @@ MonoBehaviour:
         height: 125
       Text: It's part of the rules that I can't talk about it. Let me move in and
         you will find out :)
-      Type: 0
-      NodeType: 1
-      Parent: 24
-      Trigger: 0
-      TriggerText: 
-      Connections: 1b000000
-    - ID: 27
-      Size:
-        serializedVersion: 2
-        x: 2658
-        y: 810
-        width: 150
-        height: 125
-      Text: What do you want to ask?
       Type: 1
       NodeType: 1
-      Parent: 26
+      Parent: 24
       Trigger: 0
       TriggerText: 
       Connections: 1c0000001d000000
@@ -3541,7 +3471,7 @@ MonoBehaviour:
       Text: Wow, now I'm curious. Please move in.
       Type: 2
       NodeType: 1
-      Parent: 27
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 1e000000
@@ -3555,7 +3485,7 @@ MonoBehaviour:
       Text: That sounds fishy. No way. You can't move in.
       Type: 2
       NodeType: 1
-      Parent: 27
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 1f000000
@@ -3596,23 +3526,9 @@ MonoBehaviour:
         height: 125
       Text: 'Her confidence and pride were hurt a little bit. But she is strong. I
         have trained her well and she is just as amazing again as she was before. '
-      Type: 0
-      NodeType: 1
-      Parent: 25
-      Trigger: 0
-      TriggerText: 
-      Connections: 21000000
-    - ID: 33
-      Size:
-        serializedVersion: 2
-        x: 2175
-        y: 1092
-        width: 150
-        height: 125
-      Text: Do you want Jerry to move in.
       Type: 1
       NodeType: 1
-      Parent: 32
+      Parent: 25
       Trigger: 0
       TriggerText: 
       Connections: 2200000023000000
@@ -3627,7 +3543,7 @@ MonoBehaviour:
         as you treat your dog. Please move in.
       Type: 2
       NodeType: 1
-      Parent: 33
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 24000000
@@ -3641,7 +3557,7 @@ MonoBehaviour:
       Text: Sorry, no. A traumatized dog could really cause damage to my furniture.
       Type: 2
       NodeType: 1
-      Parent: 33
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 25000000
@@ -3673,110 +3589,82 @@ MonoBehaviour:
       Trigger: 1
       TriggerText: out
       Connections: 
-    - ID: 38
-      Size:
-        serializedVersion: 2
-        x: 910
-        y: 1038
-        width: 150
-        height: 125
-      Text: What do you want to say?
-      Type: 1
-      NodeType: 1
-      Parent: 6
-      Trigger: 0
-      TriggerText: 
-      Connections: 2700000028000000
     - ID: 39
       Size:
         serializedVersion: 2
-        x: 760
-        y: 1197
+        x: 842
+        y: 751
         width: 150
         height: 125
       Text: Wow, you're a real hero. Risking your life for your dog.
       Type: 2
       NodeType: 1
-      Parent: 38
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 29000000
     - ID: 40
       Size:
         serializedVersion: 2
-        x: 1087
-        y: 1207
+        x: 1018
+        y: 756
         width: 150
         height: 125
       Text: Why did the other dog attack Erin?
       Type: 2
       NodeType: 1
-      Parent: 38
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 31000000
     - ID: 41
       Size:
         serializedVersion: 2
-        x: 748
-        y: 1373
+        x: 807
+        y: 929
         width: 150
         height: 125
       Text: Well, I do everything for those I love.
-      Type: 0
-      NodeType: 1
-      Parent: 39
-      Trigger: 0
-      TriggerText: 
-      Connections: 2c000000
-    - ID: 44
-      Size:
-        serializedVersion: 2
-        x: 748
-        y: 1535
-        width: 150
-        height: 125
-      Text: Do you want Jerry to move in?
       Type: 1
       NodeType: 1
-      Parent: 41
+      Parent: 39
       Trigger: 0
       TriggerText: 
       Connections: 2d0000002e000000
     - ID: 45
       Size:
         serializedVersion: 2
-        x: 624
-        y: 1719
+        x: 684
+        y: 1288
         width: 150
         height: 125
       Text: You are amazing. I would be honored to shelter you two. Want to move in?
       Type: 2
       NodeType: 1
-      Parent: 44
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 2f000000
     - ID: 46
       Size:
         serializedVersion: 2
-        x: 869
-        y: 1727
+        x: 879
+        y: 1271
         width: 150
         height: 125
       Text: Sounds like you will die soon and not be able to pay rent. Sorry, you
         gotta go.
       Type: 2
       NodeType: 1
-      Parent: 44
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 30000000
     - ID: 47
       Size:
         serializedVersion: 2
-        x: 628
-        y: 1857
+        x: 651
+        y: 1443
         width: 150
         height: 125
       Text: That's right. You should feel honored.
@@ -3789,8 +3677,8 @@ MonoBehaviour:
     - ID: 48
       Size:
         serializedVersion: 2
-        x: 881
-        y: 1866
+        x: 879
+        y: 1453
         width: 150
         height: 125
       Text: This is how the world treats its heroes. But that's okay. I'm used to
@@ -3804,29 +3692,15 @@ MonoBehaviour:
     - ID: 49
       Size:
         serializedVersion: 2
-        x: 1100
-        y: 1370
+        x: 1110
+        y: 941
         width: 150
         height: 125
       Text: Some people just don't train their dogs properly and turn them into savage
         beasts.
-      Type: 0
-      NodeType: 1
-      Parent: 40
-      Trigger: 0
-      TriggerText: 
-      Connections: 32000000
-    - ID: 50
-      Size:
-        serializedVersion: 2
-        x: 1305
-        y: 1379
-        width: 150
-        height: 125
-      Text: Do you want Jerry to move in?
       Type: 1
       NodeType: 1
-      Parent: 49
+      Parent: 40
       Trigger: 0
       TriggerText: 
       Connections: 3300000034000000
@@ -3841,7 +3715,7 @@ MonoBehaviour:
         a person. Please move in.
       Type: 2
       NodeType: 1
-      Parent: 50
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 35000000
@@ -3856,7 +3730,7 @@ MonoBehaviour:
         need more than that. You can't move in.
       Type: 2
       NodeType: 1
-      Parent: 50
+      Parent: -2
       Trigger: 0
       TriggerText: 
       Connections: 36000000
