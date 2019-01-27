@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Losing Endscreen.unity
     guid: f6d25aae5c03f494fb3b649796caa705
   - enabled: 1
-    path: Assets/Scenes/Robin.unity
+    path: Assets/Scenes/Endscreen/Robin Endscreen.unity
     guid: 15d91ece27dae1814bd5864c4103746b
   - enabled: 1
     path: Assets/Scenes/Endscreen/Angelique Endscreen.unity
@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Endscreen/Carl Endscreen.unity
     guid: a7b1e10e6c016aa419f0e09b72b442ae
   - enabled: 1
-    path: Assets/Scenes/Endscreen/Gerrard Endscreen.unity
+    path: Assets/Scenes/Endscreen/Gerard Endscreen.unity
     guid: 089f5dc31f74c634da0f0ec311975ccd
   - enabled: 1
     path: Assets/Scenes/Endscreen/Jerry Endscreen.unity
