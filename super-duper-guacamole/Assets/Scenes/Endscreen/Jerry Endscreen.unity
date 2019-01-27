@@ -607,10 +607,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 52
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 4
     m_MaxSize: 52
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -618,7 +618,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "Jerry held dog fighting events inside of you. His \u201Cguests\u201D did
+    not treat you very well. He lost a lot of money and could not pay his rent."
 --- !u!222 &1185418068
 CanvasRenderer:
   m_ObjectHideFlags: 0
