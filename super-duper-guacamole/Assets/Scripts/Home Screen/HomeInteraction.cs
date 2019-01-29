@@ -68,7 +68,7 @@ public class HomeInteraction : MonoBehaviour
 
         System.Action<ITween<Vector3>> finishTween = (t) =>
         {
-            loadNormalView();
+            
             
             personImage.transform.localPosition = new Vector3(0, -140, personImage.transform.localPosition.z);
             dislikeLogic();
@@ -82,11 +82,13 @@ public class HomeInteraction : MonoBehaviour
         if (HouseSelected)
         {
             HouseSelected = false;
+            loadNormalView();
             setPerson(currentPerson);
         }
         else
         {
             loadNextPerson();
+            loadNormalView();
         }
     }
 
@@ -188,6 +190,7 @@ public class HomeInteraction : MonoBehaviour
             personImage.sprite = person.PersonImage;
             personText.text = person.PersonName + ", " + person.age;
             personOccupation.text = "Occupation: " + person.Occupation;
+            infoText.text = person.InfoText;
         }
     }
 
