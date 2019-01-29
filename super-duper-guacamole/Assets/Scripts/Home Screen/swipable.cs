@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using DigitalRuby.Tween;
 
 
-public class swipable : EventTrigger
+public class Swipable : EventTrigger
 {
     private int dragMargin = 500;
     private Vector2 startPos;
