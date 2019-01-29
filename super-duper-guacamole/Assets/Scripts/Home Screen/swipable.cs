@@ -7,7 +7,7 @@ using DigitalRuby.Tween;
 
 public class swipable : EventTrigger
 {
-    private int dragMargin = 300;
+    private int dragMargin = 500;
     private Vector2 startPos;
     private Vector2 dragStartPos;
     private HomeInteraction dependency;
@@ -32,10 +32,10 @@ public class swipable : EventTrigger
 
     public override void OnEndDrag(PointerEventData data)
     {
-        if ((data.position - startPos).x >= dragMargin) {
+        if ((data.position - dragStartPos).x >= dragMargin) {
             swipeRight();
         }
-        else if ((data.position - startPos).x <= -dragMargin) {
+        if ((data.position - dragStartPos).x <= -dragMargin) {
             swipeLeft();
         }
         else {

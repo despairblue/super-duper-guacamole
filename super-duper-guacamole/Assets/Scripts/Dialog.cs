@@ -148,7 +148,7 @@ public class Dialog : MonoBehaviour
 
     public void End() {
         Debug.Log("FINISHED WITH: " + npc.GetTrigger());
-        // if (matchName == "Robert") matchName = "Robin";
+        //if (matchName == "Robert") matchName = "Robin";
         currentState = State.End;
         string trigger = npc.GetTrigger();
         switch (trigger) {
